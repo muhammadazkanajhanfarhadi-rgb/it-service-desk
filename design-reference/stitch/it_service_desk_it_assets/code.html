@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"border-hover":"rgba(59, 130, 246, 0.40)","secondary-container":"#045ecf","on-secondary-fixed-variant":"#004398","on-tertiary-fixed":"#001a42","on-secondary-container":"#d5e0ff","on-secondary-fixed":"#001a43","background":"#0c1321","on-primary-fixed-variant":"#003ea8","outline":"#8d90a0","tertiary-container":"#0f69dc","primary-dark":"#1D4ED8","on-primary-fixed":"#00174b","on-tertiary":"#002e6a","on-secondary":"#002d6c","on-surface":"#dce2f6","inverse-on-surface":"#2a3040","on-surface-variant":"#c3c6d7","tertiary-fixed":"#d8e2ff","inverse-surface":"#dce2f6","text-tertiary":"#64748B","text-disabled":"#475569","sidebar-surface":"#10182A","surface":"#0c1321","overlay-backdrop":"rgba(0, 0, 0, 0.60)","tertiary-fixed-dim":"#adc6ff","surface-variant":"#2e3544","card-elevated":"#16233F","surface-bright":"#323949","border-glass":"rgba(255, 255, 255, 0.08)","on-error-container":"#ffdad6","surface-container":"#19202e","accent-electric":"#4F8CFF","surface-tint":"#b4c5ff","status-info":"#38BDF8","text-primary":"#F8FAFC","primary-fixed-dim":"#b4c5ff","card-surface":"#121C31","status-warning":"#F59E0B","input-surface":"#0F1930","surface-container-high":"#232a39","on-tertiary-container":"#edf0ff","primary-fixed":"#dbe1ff","primary-container":"#2563eb","secondary-fixed-dim":"#afc6ff","border-subtle":"rgba(148, 163, 184, 0.14)","error":"#ffb4ab","status-danger":"#EF4444","error-container":"#93000a","surface-container-highest":"#2e3544","primary":"#b4c5ff","surface-container-low":"#151b2a","on-background":"#dce2f6","text-secondary":"#94A3B8","surface-container-lowest":"#070e1c","secondary":"#afc6ff","inverse-primary":"#0053db","outline-variant":"#434655","on-tertiary-fixed-variant":"#004395","app-bg":"#0B1220","surface-dim":"#0c1321","on-error":"#690005","on-primary-container":"#eeefff","status-success":"#22C55E","status-pending":"#A78BFA","on-primary":"#002a78","border-input":"rgba(148, 163, 184, 0.16)","accent-light":"#60A5FA","interactive-active-bg":"rgba(37, 99, 235, 0.18)","tertiary":"#adc6ff","secondary-fixed":"#d9e2ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-lg":"1rem","space-xs":"0.25rem","margin-desktop":"2rem","space-xl":"1.5rem","gutter":"1rem","space-2xl":"2rem","margin":"1rem","space-md":"0.75rem","gutter-desktop":"1.5rem","space-sm":"0.5rem"},fontFamily:{"headline-xl":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"caption":["Inter"],"headline-sm":["Inter"],"headline-xl-mobile":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"label-sm":["Inter"],"code-meta":["Inter"],"headline-lg":["Inter"],"body-sm":["Inter"]},fontSize:{"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"16px","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"caption":["11px",{"lineHeight":"14px","fontWeight":"400"}],"headline-sm":["15px",{"lineHeight":"20px","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"code-meta":["12px",{"lineHeight":"16px","fontWeight":"600"}],"headline-lg":["22px",{"lineHeight":"28px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}]}}}};</script></head><body class="bg-app-bg text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-sidebar-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-xl flex items-center gap-space-sm"><img alt="Apex Desk Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VKUVTXqCpH-FXGmoK-2kF4Tt2Dm-ELJWNCFuhJRqxpucrf4IryWidKtv_Q0i67U1DztVk9VzJC0EsZC-a1xPMoyWWek-zeUmUQrolyMIxGtdrX_HloMIiTdV0dL-dQC5QOeFeXOaoHF4wjDBw80_QhVfa9HVVIO2AcIxk-DSzSILIDugmjsidWD6D0DWWMHSP0kOcZ83Y-Tgw13zy8zqj4TqsCM5GHesvHzCzQa9YO"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight">Apex Desk</span><span class="font-caption text-caption text-text-tertiary">Enterprise IT Ops</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Main</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-white shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl"><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="dashboard" href="#"><span>Dashboard</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="my-tickets" href="#"><span>My Tickets</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="all-tickets" href="#"><span>All Tickets</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="create-ticket" href="#"><span>Create Ticket</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="service-catalog" href="#"><span>Service Catalog</span></a><a aria-current="page" class="flex items-center px-space-md py-space-sm transition-all font-body-md bg-primary-container text-white shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl" data-path="assets" href="#"><span>Assets</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="knowledge-base" href="#"><span>Knowledge Base</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="reports" href="#"><span>Reports</span></a></nav></div><div class="px-space-md py-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Administration</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-white shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl"><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="users" href="#"><span>Users</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="categories" href="#"><span>Categories</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="sla" href="#"><span>SLA</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="settings" href="#"><span>Settings</span></a></nav></div></div><div class="p-space-md bg-surface-container-lowest m-space-md rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><div class="relative flex-shrink-0"><img alt="Azka Avatar" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-status-success"></span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-text-primary truncate">Azka</span><span class="font-caption text-caption text-text-secondary truncate">Incident Lead</span></div></div><a class="text-on-surface-variant hover:text-status-danger p-space-xs rounded-lg transition-colors flex items-center justify-center" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-xl">logout</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 px-margin-desktop flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><nav class="hidden sm:flex items-center gap-space-sm font-body-sm text-body-sm text-text-secondary"><span class="hover:text-text-primary cursor-pointer transition-colors">Home</span><span class="text-outline-variant font-caption text-caption">/</span><span class="hover:text-text-primary cursor-pointer transition-colors">Assets</span><span class="text-outline-variant font-caption text-caption">/</span><span class="text-text-primary font-label-md text-label-md">IT Asset Management</span></nav></div><div class="flex items-center gap-space-lg"><div class="relative hidden md:flex items-center"><div class="absolute left-space-md flex items-center pointer-events-none text-text-tertiary"><span class="material-symbols-outlined text-lg">search</span></div><input class="w-72 h-10 bg-input-surface text-text-primary placeholder:text-text-tertiary pl-10 pr-16 rounded-xl font-body-md text-body-md focus:bg-surface-container focus:text-text-primary transition-all outline-none" placeholder="Search incidents, tickets, KB..." type="text"/><div class="absolute right-space-sm flex items-center gap-space-xs pointer-events-none"><kbd class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-high text-text-secondary">⌘K</kbd></div></div><div class="flex items-center gap-space-sm"><button class="relative p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-danger"></span></button><button class="p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-colors" type="button"><span class="material-symbols-outlined text-xl">help</span></button><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-full"><span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span><span class="font-label-sm text-label-sm text-status-success hidden lg:inline">Operational</span></div></div><div class="flex items-center gap-space-md"><img alt="Azka Avatar" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/></div></div></header><main class="w-full pt-16 bg-app-bg px-margin-desktop min-h-screen"><div class="flex flex-col w-full pb-space-2xl gap-space-xl">
+<!-- Top Command Ribbon: Breadcrumb & Title Area -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-code-meta text-code-meta text-accent-electric tracking-wide uppercase">Hardware &amp; Infrastructure</span>
+<span class="text-text-tertiary font-caption text-caption">•</span>
+<span class="font-code-meta text-code-meta text-status-success flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success animate-pulse"></span>
+          Telemetry Live
+        </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-text-primary tracking-tight">IT Assets</h1>
+<p class="font-body-md text-body-md text-text-secondary">Manage company IT devices, fleet health, inventory custody, and depreciation lifecycle.</p>
+</div>
+<!-- Header Action CTAs -->
+<div class="flex items-center gap-space-md flex-wrap">
+<button class="inline-flex items-center gap-space-sm px-space-lg h-10 rounded-xl bg-card-surface hover:bg-card-elevated text-text-primary font-label-md text-label-md transition-all shadow-sm group" type="button">
+<span class="material-symbols-outlined text-text-secondary group-hover:text-status-info transition-colors text-lg">download</span>
+<span>Export CSV</span>
+</button>
+<button class="inline-flex items-center gap-space-sm px-space-lg h-10 rounded-xl bg-card-surface hover:bg-card-elevated text-text-primary font-label-md text-label-md transition-all shadow-sm group" type="button">
+<span class="material-symbols-outlined text-text-secondary group-hover:text-status-warning transition-colors text-lg">verified_user</span>
+<span>Audit Report</span>
+</button>
+<button class="inline-flex items-center gap-space-sm px-space-xl h-10 rounded-xl bg-primary-container hover:bg-primary-dark text-text-primary font-label-md text-label-md shadow-[0_0_30px_rgba(37,99,235,0.35)] transition-all" type="button">
+<span class="material-symbols-outlined text-lg">add_circle</span>
+<span>Register Asset</span>
+</button>
+</div>
+</div>
+<!-- KPI Metrics Grid (5 Balanced Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Card 1: Total Assets -->
+<div class="bg-card-surface rounded-2xl p-space-lg shadow-md flex flex-col justify-between hover:bg-card-elevated transition-all">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-text-secondary uppercase tracking-wider">Total Assets</span>
+<div class="p-2 rounded-xl bg-surface-container-high text-accent-light">
+<span class="material-symbols-outlined text-lg">devices</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-xl text-headline-xl text-text-primary tracking-tight">1,248</div>
+<div class="flex items-center gap-1.5 mt-space-xs font-body-sm text-body-sm text-text-secondary">
+<span class="text-status-success font-label-sm text-label-sm flex items-center">
+<span class="material-symbols-outlined text-base">trending_up</span> +34
+          </span>
+<span>this month</span>
+</div>
+</div>
+</div>
+<!-- Card 2: In Use -->
+<div class="bg-card-surface rounded-2xl p-space-lg shadow-md flex flex-col justify-between hover:bg-card-elevated transition-all">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-text-secondary uppercase tracking-wider">In Use</span>
+<div class="p-2 rounded-xl bg-status-success/10 text-status-success">
+<span class="material-symbols-outlined text-lg">person_check</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-xl text-headline-xl text-text-primary tracking-tight">1,082</div>
+<div class="flex items-center gap-2 mt-space-xs font-body-sm text-body-sm text-text-secondary">
+<span class="w-2 h-2 rounded-full bg-status-success"></span>
+<span>86.7% assigned</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Available -->
+<div class="bg-card-surface rounded-2xl p-space-lg shadow-md flex flex-col justify-between hover:bg-card-elevated transition-all">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-text-secondary uppercase tracking-wider">Available</span>
+<div class="p-2 rounded-xl bg-status-info/10 text-status-info">
+<span class="material-symbols-outlined text-lg">inventory_2</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-xl text-headline-xl text-text-primary tracking-tight">114</div>
+<div class="flex items-center gap-2 mt-space-xs font-body-sm text-body-sm text-text-secondary">
+<span class="w-2 h-2 rounded-full bg-status-info"></span>
+<span>In IT staging depot</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Maintenance -->
+<div class="bg-card-surface rounded-2xl p-space-lg shadow-md flex flex-col justify-between hover:bg-card-elevated transition-all">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-text-secondary uppercase tracking-wider">Maintenance</span>
+<div class="p-2 rounded-xl bg-status-warning/10 text-status-warning">
+<span class="material-symbols-outlined text-lg">build_circle</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-xl text-headline-xl text-text-primary tracking-tight">36</div>
+<div class="flex items-center gap-2 mt-space-xs font-body-sm text-body-sm text-text-secondary">
+<span class="w-2 h-2 rounded-full bg-status-warning animate-pulse"></span>
+<span>Depot &amp; RMA servicing</span>
+</div>
+</div>
+</div>
+<!-- Card 5: Retired -->
+<div class="bg-card-surface rounded-2xl p-space-lg shadow-md flex flex-col justify-between hover:bg-card-elevated transition-all">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-text-secondary uppercase tracking-wider">Retired</span>
+<div class="p-2 rounded-xl bg-surface-container-high text-text-tertiary">
+<span class="material-symbols-outlined text-lg">archive</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-xl text-headline-xl text-text-primary tracking-tight">16</div>
+<div class="flex items-center gap-2 mt-space-xs font-body-sm text-body-sm text-text-secondary">
+<span class="w-2 h-2 rounded-full bg-text-disabled"></span>
+<span>Decommissioned / eWaste</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Filter & Query Control Center -->
+<div class="bg-card-surface rounded-2xl p-space-xl shadow-md flex flex-col gap-space-lg">
+<!-- Row 1: Search and Multi-Selects -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Search Input -->
+<div class="md:col-span-4 relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-text-tertiary text-lg pointer-events-none">search</span>
+<input class="w-full h-10 bg-input-surface text-text-primary placeholder:text-text-tertiary pl-10 pr-14 rounded-xl font-body-md text-body-md focus:bg-surface-container focus:outline-none transition-all" placeholder="Search by Asset ID, serial, model, or user..." type="text"/>
+<div class="absolute right-space-sm pointer-events-none">
+<kbd class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-high text-text-secondary">⌘K</kbd>
+</div>
+</div>
+<!-- Asset Category Dropdown -->
+<div class="md:col-span-2 relative">
+<select class="w-full h-10 bg-input-surface text-text-primary px-space-md pr-8 rounded-xl font-body-md text-body-md focus:bg-surface-container focus:outline-none transition-all appearance-none cursor-pointer">
+<option>All Categories</option>
+<option>Laptops (MacBook / Dell)</option>
+<option>Desktops &amp; Workstations</option>
+<option>Servers &amp; Cloud Pods</option>
+<option>Network &amp; Switches</option>
+<option>Displays &amp; Peripherals</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-md top-1/2 -translate-y-1/2 text-text-tertiary pointer-events-none text-base">expand_more</span>
+</div>
+<!-- Status Dropdown -->
+<div class="md:col-span-2 relative">
+<select class="w-full h-10 bg-input-surface text-text-primary px-space-md pr-8 rounded-xl font-body-md text-body-md focus:bg-surface-container focus:outline-none transition-all appearance-none cursor-pointer">
+<option>All Statuses</option>
+<option>In Use (Active)</option>
+<option>Available (Depot)</option>
+<option>Maintenance (RMA)</option>
+<option>Retired (Decommissioned)</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-md top-1/2 -translate-y-1/2 text-text-tertiary pointer-events-none text-base">expand_more</span>
+</div>
+<!-- Department Dropdown -->
+<div class="md:col-span-2 relative">
+<select class="w-full h-10 bg-input-surface text-text-primary px-space-md pr-8 rounded-xl font-body-md text-body-md focus:bg-surface-container focus:outline-none transition-all appearance-none cursor-pointer">
+<option>All Departments</option>
+<option>Engineering &amp; Infra</option>
+<option>Product &amp; Design</option>
+<option>SecOps &amp; Security</option>
+<option>Data Platform</option>
+<option>IT Asset Depot</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-md top-1/2 -translate-y-1/2 text-text-tertiary pointer-events-none text-base">expand_more</span>
+</div>
+<!-- Assignee / User Dropdown -->
+<div class="md:col-span-2 relative">
+<select class="w-full h-10 bg-input-surface text-text-primary px-space-md pr-8 rounded-xl font-body-md text-body-md focus:bg-surface-container focus:outline-none transition-all appearance-none cursor-pointer">
+<option>All Assignees</option>
+<option>Assigned to Individuals</option>
+<option>Assigned to Teams</option>
+<option>Unassigned / IT Depot</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-md top-1/2 -translate-y-1/2 text-text-tertiary pointer-events-none text-base">expand_more</span>
+</div>
+</div>
+<!-- Row 2: Quick Filter Segment Chips & Quick Reset -->
+<div class="flex items-center justify-between flex-wrap gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="px-space-md py-1.5 rounded-full bg-primary-container text-text-primary font-label-sm text-label-sm shadow-[0_0_20px_rgba(37,99,235,0.3)] transition-all" type="button">
+          All Assets <span class="ml-1 opacity-80 font-code-meta">1,248</span>
+</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-high hover:bg-surface-variant text-text-secondary hover:text-text-primary font-label-sm text-label-sm transition-all" type="button">
+          Laptops <span class="ml-1 opacity-70 font-code-meta">742</span>
+</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-high hover:bg-surface-variant text-text-secondary hover:text-text-primary font-label-sm text-label-sm transition-all" type="button">
+          Servers &amp; Cloud Pods <span class="ml-1 opacity-70 font-code-meta">184</span>
+</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-high hover:bg-surface-variant text-text-secondary hover:text-text-primary font-label-sm text-label-sm transition-all" type="button">
+          Needs Maintenance <span class="ml-1 text-status-warning font-code-meta">36</span>
+</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-high hover:bg-surface-variant text-text-secondary hover:text-text-primary font-label-sm text-label-sm transition-all" type="button">
+          Expiring Warranty (&lt;60d) <span class="ml-1 text-status-danger font-code-meta">18</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-text-tertiary">
+<span class="material-symbols-outlined text-base text-status-info">filter_alt</span>
+<span>Showing 8 filters active</span>
+<button class="text-accent-light hover:underline ml-1" type="button">Reset</button>
+</div>
+</div>
+</div>
+<!-- Asset Inventory Master Table -->
+<div class="bg-card-surface rounded-2xl shadow-md overflow-hidden flex flex-col">
+<!-- Table Header Info Bar -->
+<div class="px-space-xl py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<span class="font-headline-sm text-headline-sm text-text-primary">Fleet Inventory Register</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-text-secondary font-code-meta text-code-meta">8 Active in View</span>
+</div>
+<div class="flex items-center gap-space-md font-body-sm text-body-sm text-text-secondary">
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="w-4 h-4 rounded bg-input-surface text-primary-container focus:ring-0 cursor-pointer" type="checkbox"/>
+<span>Select all 1,248 items</span>
+</label>
+</div>
+</div>
+<!-- Responsive Table Container -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-lowest text-text-secondary uppercase font-code-meta text-code-meta tracking-wider">
+<tr>
+<th class="py-space-md px-space-xl w-12 text-center" scope="col">
+<input class="w-4 h-4 rounded bg-input-surface text-primary-container focus:ring-0 cursor-pointer" type="checkbox"/>
+</th>
+<th class="py-space-md px-space-md" scope="col">Asset ID</th>
+<th class="py-space-md px-space-md" scope="col">Device &amp; Category</th>
+<th class="py-space-md px-space-md" scope="col">Brand &amp; Model</th>
+<th class="py-space-md px-space-md" scope="col">Assigned User</th>
+<th class="py-space-md px-space-md" scope="col">Department</th>
+<th class="py-space-md px-space-md" scope="col">Status</th>
+<th class="py-space-md px-space-md" scope="col">Warranty Status</th>
+<th class="py-space-md px-space-md" scope="col">Last Maintenance</th>
+<th class="py-space-md px-space-xl text-right" scope="col">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-none">
+<!-- Row 1: MacBook Pro 16 - In Use -->
+<tr class="hover:bg-card-elevated/70 transition-colors group">
+<td class="py-space-md px-space-xl text-center">
+<input class="w-4 h-4 rounded bg-input-surface text-primary-container focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<a class="font-code-meta text-code-meta text-accent-electric hover:underline font-semibold tracking-wide" href="#">#AST-09142</a>
+<div class="font-caption text-caption text-text-tertiary">SN: C02G6024MD6R</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-md text-label-md text-text-primary">Workstation Laptop</div>
+<span class="inline-block px-2 py-0.5 mt-0.5 rounded bg-surface-container-high text-text-secondary font-caption text-caption">Laptop Fleet</span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-md text-label-md text-text-primary">Apple • MacBook Pro 16" M3 Pro</div>
+<div class="font-caption text-caption text-text-secondary">36GB RAM / 512GB SSD / Space Black</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex items-center gap-space-sm">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Close up professional portrait of Azka, a tech incident commander with a focused calm look, studio lighting, navy tone background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmGeWfKY9wp1Hv7YG5wk8L725K2VliEfIL9_UgZ3pAciHdDDKISJ7p7tNppauIrQXcqD9j1AF_Wf_9_GG4uVkJ_XQ0gDeFaypr6GRfDjN9K_4QnSPbCWxSt4pm7tNX1XqQpOC2E7RK7TGby-URV3VWUnTWsky9ivsJHCweBKEQtY-FHiYk69ecqrbDws3LiHvRnA7-6NHDs_RMTJ9jak1XBD60RIa9VARkxU5mTMg"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary">Azka</span>
+<span class="font-caption text-caption text-text-tertiary">azka@apexdesk.internal</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="font-body-sm text-body-sm text-text-primary">Engineering &amp; Infra</span>
+<div class="font-caption text-caption text-text-tertiary">Building A • Tier 4</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-status-success/15 text-status-success font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span> In Use
+              </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-sm text-label-sm text-status-success flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">shield</span> Active
+              </div>
+<div class="font-caption text-caption text-text-tertiary">Expires Nov 2027</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="text-text-primary font-body-sm text-body-sm">Oct 18, 2024</div>
+<div class="font-caption text-caption text-text-tertiary">OS Security Baseline Passed</div>
+</td>
+<td class="py-space-md px-space-xl whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 text-text-tertiary hover:text-status-info hover:bg-surface-container-high rounded-lg transition-colors" title="View details" type="button">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1.5 text-text-tertiary hover:text-text-primary hover:bg-surface-container-high rounded-lg transition-colors" title="Edit asset" type="button">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+<button class="p-1.5 text-text-tertiary hover:text-text-primary hover:bg-surface-container-high rounded-lg transition-colors" title="More options" type="button">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Dell XPS 15 - In Use -->
+<tr class="hover:bg-card-elevated/70 transition-colors group">
+<td class="py-space-md px-space-xl text-center">
+<input class="w-4 h-4 rounded bg-input-surface text-primary-container focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<a class="font-code-meta text-code-meta text-accent-electric hover:underline font-semibold tracking-wide" href="#">#AST-08420</a>
+<div class="font-caption text-caption text-text-tertiary">SN: 7G8X992D</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-md text-label-md text-text-primary">Workstation Laptop</div>
+<span class="inline-block px-2 py-0.5 mt-0.5 rounded bg-surface-container-high text-text-secondary font-caption text-caption">Laptop Fleet</span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-md text-label-md text-text-primary">Dell • XPS 15 9530</div>
+<div class="font-caption text-caption text-text-secondary">Core i9 / 32GB RAM / RTX 4070</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex items-center gap-space-sm">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of Elena Rostova, senior software developer, dark navy blue lighting, studio portrait style, calm professional" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBADYxd4FKGvDi3aX3hRMtuqtCBmT7hNGYZcm2xUITjwJMznS4ZwvaPdqTDfgxvkWT9jg9TWqWA4ovHivAXRwLeYI7qwqG3bY0xfGxnUKOR6j9M7FwxmAcORdBdaQSzulv053ni4rEv00UHed9ZvOpyx7_lfzFgWbyzOr4BwxSY0ggOjageUTNj-pqzVp5R1EvWVTYcrZhDVbVBs1IYqqVs_ygDHdtE4kGsUkoUS2A"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary">Elena Rostova</span>
+<span class="font-caption text-caption text-text-tertiary">elena.r@apexdesk.internal</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="font-body-sm text-body-sm text-text-primary">Data Platform</span>
+<div class="font-caption text-caption text-text-tertiary">Building C • Remote Sync</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-status-success/15 text-status-success font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span> In Use
+              </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-sm text-label-sm text-status-success flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">shield</span> Active
+              </div>
+<div class="font-caption text-caption text-text-tertiary">Expires Mar 2026</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="text-text-primary font-body-sm text-body-sm">Yesterday</div>
+<div class="font-caption text-caption text-text-tertiary">Thermal Paste &amp; Fan Clean</div>
+</td>
+<td class="py-space-md px-space-xl whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 text-text-tertiary hover:text-status-info hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1.5 text-text-tertiary hover:text-text-primary hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+<button class="p-1.5 text-text-tertiary hover:text-text-primary hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Cisco Catalyst 9300 - In Use -->
+<tr class="hover:bg-card-elevated/70 transition-colors group">
+<td class="py-space-md px-space-xl text-center">
+<input class="w-4 h-4 rounded bg-input-surface text-primary-container focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<a class="font-code-meta text-code-meta text-accent-electric hover:underline font-semibold tracking-wide" href="#">#AST-02319</a>
+<div class="font-caption text-caption text-text-tertiary">SN: FOC2419U91Q</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-md text-label-md text-text-primary">Core Switch</div>
+<span class="inline-block px-2 py-0.5 mt-0.5 rounded bg-surface-container-high text-accent-light font-caption text-caption">Network Node</span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-md text-label-md text-text-primary">Cisco • Catalyst 9300 48-Port</div>
+<div class="font-caption text-caption text-text-secondary">48x 1G PoE+ / 4x 10G SFP+ Uplink</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex items-center gap-space-sm">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of Marcus Vance, network operations engineer with glasses and dark tech attire in front of faint blue illuminated server rack" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB3Tt-NY6hXe5I3mCxZg7kNnwDzDMPCd8vbALIB-fV7N1VjHo-V48noLCb8G6xbIq04CPF5AgwjWDr6rPxXg3cVZ1ga_N7uBfKLCKKZGTyry56NHbJcuR5q0jUNtLtbVCVdPLylbepbU7LEmdniMDekaRAauk7C9QKNGbk0awbY7Az6my_ZnJIqvkbto8JbvkmBX8vb-FaxhSBC-08ZZlHS2tJLmhU9fCjVXdMYBM"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary">Marcus Vance</span>
+<span class="font-caption text-caption text-text-tertiary">m.vance@apexdesk.internal</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="font-body-sm text-body-sm text-text-primary">NetOps</span>
+<div class="font-caption text-caption text-text-tertiary">DC-02 Core Rack 4</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-status-success/15 text-status-success font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span> In Use
+              </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-sm text-label-sm text-status-warning flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span> Expiring
+              </div>
+<div class="font-caption text-caption text-status-warning">42 days left (SmartNet)</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="text-text-primary font-body-sm text-body-sm">Sep 02, 2024</div>
+<div class="font-caption text-caption text-text-tertiary">Firmware 17.09.04a Patch</div>
+</td>
+<td class="py-space-md px-space-xl whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 text-text-tertiary hover:text-status-info hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1.5 text-text-tertiary hover:text-text-primary hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+<button class="p-1.5 text-text-tertiary hover:text-text-primary hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Lenovo ThinkPad X1 - Available -->
+<tr class="hover:bg-card-elevated/70 transition-colors group">
+<td class="py-space-md px-space-xl text-center">
+<input class="w-4 h-4 rounded bg-input-surface text-primary-container focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<a class="font-code-meta text-code-meta text-accent-electric hover:underline font-semibold tracking-wide" href="#">#AST-11003</a>
+<div class="font-caption text-caption text-text-tertiary">SN: PF3K912A</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-md text-label-md text-text-primary">Ultrabook Laptop</div>
+<span class="inline-block px-2 py-0.5 mt-0.5 rounded bg-surface-container-high text-text-secondary font-caption text-caption">Laptop Fleet</span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-md text-label-md text-text-primary">Lenovo • ThinkPad X1 Carbon Gen 11</div>
+<div class="font-caption text-caption text-text-secondary">Core i7 / 16GB RAM / 512GB SSD</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex items-center gap-space-sm text-text-tertiary font-body-sm text-body-sm italic">
+<span class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center not-italic font-code-meta text-caption text-text-secondary">
+<span class="material-symbols-outlined text-sm">inventory</span>
+</span>
+<span>— Unassigned / IT Staging Depot</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="font-body-sm text-body-sm text-text-primary">IT Asset Depot</span>
+<div class="font-caption text-caption text-text-tertiary">Bay 3 • Ready for Dispatch</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-status-info/15 text-status-info font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-status-info"></span> Available
+              </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-sm text-label-sm text-status-success flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">shield</span> Active
+              </div>
+<div class="font-caption text-caption text-text-tertiary">Expires Aug 2026</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="text-text-primary font-body-sm text-body-sm">Nov 01, 2024</div>
+<div class="font-caption text-caption text-text-tertiary">Gold Master Image Re-flashed</div>
+</td>
+<td class="py-space-md px-space-xl whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 text-text-tertiary hover:text-status-info hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1.5 text-text-tertiary hover:text-text-primary hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+<button class="p-1.5 text-text-tertiary hover:text-text-primary hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Dell PowerEdge R750 - Maintenance -->
+<tr class="hover:bg-card-elevated/70 transition-colors group">
+<td class="py-space-md px-space-xl text-center">
+<input class="w-4 h-4 rounded bg-input-surface text-primary-container focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<a class="font-code-meta text-code-meta text-accent-electric hover:underline font-semibold tracking-wide" href="#">#AST-00412</a>
+<div class="font-caption text-caption text-text-tertiary">SN: 4J9B7N3</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-md text-label-md text-text-primary">Rack Server</div>
+<span class="inline-block px-2 py-0.5 mt-0.5 rounded bg-surface-container-high text-status-warning font-caption text-caption">Cluster Node</span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-md text-label-md text-text-primary">Dell • PowerEdge R750</div>
+<div class="font-caption text-caption text-text-secondary">2x Xeon Gold 6330 / 256GB / 8TB NVMe</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex items-center gap-space-sm">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of David Kim, systems architect in deep navy modern workspace with minimal rim lighting, neutral expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI_pxExGqhj43xsj88tnbqJ2ZerKJ99vbuuhSV3BkLKHyY7Ihagg9NtWJe_m65lr59piwPj8kyiHjz86k6vO2LygaVIp2pBq1Vokla_FRT_Za4dy3VRomdCaJiH5OyDYebyPPM9s1Bi4riOl0w08ti2J8NXQZQNzOZN8WkLb_aC8IPfuQJAemjW5rt-EyaaKI4vObkfgAQZeoHn3NBqNz1dEXvwDQdkjNQfhap86c"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary">David Kim</span>
+<span class="font-caption text-caption text-text-tertiary">d.kim@apexdesk.internal</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="font-body-sm text-body-sm text-text-primary">Payments Core</span>
+<div class="font-caption text-caption text-text-tertiary">DC-01 Vault Pod A</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-status-warning/15 text-status-warning font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-status-warning animate-pulse"></span> Maintenance
+              </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-sm text-label-sm text-status-success flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">shield</span> ProSupport+
+              </div>
+<div class="font-caption text-caption text-text-tertiary">Expires Oct 2026</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="text-status-warning font-body-sm text-body-sm font-semibold">Today (In Progress)</div>
+<div class="font-caption text-caption text-text-tertiary">PSU #2 Failover Replacement</div>
+</td>
+<td class="py-space-md px-space-xl whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 text-text-tertiary hover:text-status-info hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1.5 text-text-tertiary hover:text-text-primary hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+<button class="p-1.5 text-text-tertiary hover:text-text-primary hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Apple Studio Display - In Use -->
+<tr class="hover:bg-card-elevated/70 transition-colors group">
+<td class="py-space-md px-space-xl text-center">
+<input class="w-4 h-4 rounded bg-input-surface text-primary-container focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<a class="font-code-meta text-code-meta text-accent-electric hover:underline font-semibold tracking-wide" href="#">#AST-05187</a>
+<div class="font-caption text-caption text-text-tertiary">SN: F6HD82P9J7</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-md text-label-md text-text-primary">Studio Display</div>
+<span class="inline-block px-2 py-0.5 mt-0.5 rounded bg-surface-container-high text-text-secondary font-caption text-caption">Peripherals</span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-md text-label-md text-text-primary">Apple • Studio Display 27"</div>
+<div class="font-caption text-caption text-text-secondary">5K Retina / Nano-texture / Tilt Stand</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex items-center gap-space-sm">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of Siti Rahma, principal UI designer, warm soft studio keylight, deep navy ambient backdrop, relaxed expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD8b00_geF8D17ahVc_xQYCf4Cc7HojksVFmXntjGW2wafz2Zbwbix6Rik1N-hoI2YSidiKeXX1SsNq9H-bHSGY-wcncxxITPHGXUrD91Pr__NDv1M6zclUYtMoYA_bkdYRxREJ8Bh-O67B7MMccIwVYujRRgQYUXEVPZVU5jSZ9UPyubsgIyO-YV1m9aMnTGBh9TR8IInm0FY924RQ30mGYxCI_lNS1fUqnWSTc4"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary">Siti Rahma</span>
+<span class="font-caption text-caption text-text-tertiary">siti.r@apexdesk.internal</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="font-body-sm text-body-sm text-text-primary">Product Design</span>
+<div class="font-caption text-caption text-text-tertiary">Floor 6 • Station 602</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-status-success/15 text-status-success font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span> In Use
+              </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-sm text-label-sm text-status-success flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">shield</span> AppleCare+
+              </div>
+<div class="font-caption text-caption text-text-tertiary">Expires Jan 2026</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="text-text-primary font-body-sm text-body-sm">Jun 14, 2024</div>
+<div class="font-caption text-caption text-text-tertiary">Firmware 17.4 update OK</div>
+</td>
+<td class="py-space-md px-space-xl whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 text-text-tertiary hover:text-status-info hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1.5 text-text-tertiary hover:text-text-primary hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+<button class="p-1.5 text-text-tertiary hover:text-text-primary hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 7: ThinkPad X1 Carbon - Retired -->
+<tr class="hover:bg-card-elevated/70 transition-colors group opacity-75">
+<td class="py-space-md px-space-xl text-center">
+<input class="w-4 h-4 rounded bg-input-surface text-primary-container focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<a class="font-code-meta text-code-meta text-text-tertiary hover:underline font-semibold tracking-wide" href="#">#AST-00109</a>
+<div class="font-caption text-caption text-text-disabled">SN: LR09B2Z1</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-md text-label-md text-text-secondary">Legacy Laptop</div>
+<span class="inline-block px-2 py-0.5 mt-0.5 rounded bg-surface-container-high text-text-disabled font-caption text-caption">Decommissioned</span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-md text-label-md text-text-secondary">Lenovo • ThinkPad X1 Carbon Gen 7</div>
+<div class="font-caption text-caption text-text-tertiary">Core i5 / 8GB RAM / 256GB SSD</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex items-center gap-space-sm text-text-disabled font-body-sm text-body-sm italic">
+<span class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center not-italic font-code-meta text-caption text-text-disabled">
+<span class="material-symbols-outlined text-sm">delete_sweep</span>
+</span>
+<span>— None (Deprecate &amp; Shredded)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="font-body-sm text-body-sm text-text-disabled">SecOps Asset Disposal</span>
+<div class="font-caption text-caption text-text-disabled">Audit Certificate #9914</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-highest text-text-disabled font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-text-disabled"></span> Retired
+              </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-sm text-label-sm text-text-disabled flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">highlight_off</span> Expired
+              </div>
+<div class="font-caption text-caption text-text-disabled">Oct 2024</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="text-text-disabled font-body-sm text-body-sm">Oct 28, 2024</div>
+<div class="font-caption text-caption text-text-disabled">NIST 800-88 Cryptographic Wipe</div>
+</td>
+<td class="py-space-md px-space-xl whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 text-text-disabled hover:text-text-primary hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1.5 text-text-disabled hover:text-text-primary hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 8: Dell PowerEdge R650 - Available -->
+<tr class="hover:bg-card-elevated/70 transition-colors group">
+<td class="py-space-md px-space-xl text-center">
+<input class="w-4 h-4 rounded bg-input-surface text-primary-container focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<a class="font-code-meta text-code-meta text-accent-electric hover:underline font-semibold tracking-wide" href="#">#AST-00891</a>
+<div class="font-caption text-caption text-text-tertiary">SN: 8H72B10</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-md text-label-md text-text-primary">1U Edge Server</div>
+<span class="inline-block px-2 py-0.5 mt-0.5 rounded bg-surface-container-high text-status-info font-caption text-caption">Standby Spare</span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-md text-label-md text-text-primary">Dell • PowerEdge R650xs</div>
+<div class="font-caption text-caption text-text-secondary">Xeon Silver 4314 / 64GB ECC / 1.92TB NVMe</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex items-center gap-space-sm text-text-tertiary font-body-sm text-body-sm italic">
+<span class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center not-italic font-code-meta text-caption text-text-secondary">
+<span class="material-symbols-outlined text-sm">dns</span>
+</span>
+<span>— Unassigned / IT Staging Depot</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="font-body-sm text-body-sm text-text-primary">Engineering &amp; Infra</span>
+<div class="font-caption text-caption text-text-tertiary">Staging Depot Rack 1</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-status-info/15 text-status-info font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-status-info"></span> Available
+              </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="font-label-sm text-label-sm text-status-success flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">shield</span> Active
+              </div>
+<div class="font-caption text-caption text-text-tertiary">Expires May 2027</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="text-text-primary font-body-sm text-body-sm">Oct 24, 2024</div>
+<div class="font-caption text-caption text-text-tertiary">iDRAC9 Firmware Updated</div>
+</td>
+<td class="py-space-md px-space-xl whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 text-text-tertiary hover:text-status-info hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1.5 text-text-tertiary hover:text-text-primary hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+<button class="p-1.5 text-text-tertiary hover:text-text-primary hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Summary Table Footer -->
+<div class="px-space-xl py-space-md bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-lg text-text-secondary font-body-sm text-body-sm">
+<span>Showing <strong class="text-text-primary font-semibold">1–8</strong> of <strong class="text-text-primary font-semibold">1,248</strong> assets</span>
+<div class="flex items-center gap-2">
+<span>Rows per page:</span>
+<select class="bg-input-surface text-text-primary rounded-lg px-2 py-1 font-body-sm text-body-sm focus:outline-none">
+<option selected="">10</option>
+<option>25</option>
+<option>50</option>
+<option>100</option>
+</select>
+</div>
+</div>
+<!-- Pagination Buttons -->
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-high text-text-secondary hover:text-text-primary hover:bg-surface-variant flex items-center justify-center transition-colors disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-base">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary-container text-text-primary font-label-sm text-label-sm font-semibold shadow-sm" type="button">1</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-high text-text-secondary hover:text-text-primary hover:bg-surface-variant font-label-sm text-label-sm transition-colors" type="button">2</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-high text-text-secondary hover:text-text-primary hover:bg-surface-variant font-label-sm text-label-sm transition-colors" type="button">3</button>
+<span class="w-8 h-8 flex items-center justify-center text-text-tertiary font-body-sm text-body-sm">...</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container-high text-text-secondary hover:text-text-primary hover:bg-surface-variant font-label-sm text-label-sm transition-colors" type="button">156</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-high text-text-secondary hover:text-text-primary hover:bg-surface-variant flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-base">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Supporting Fleet Telemetry & Lifecycle Panels -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Panel 1: Asset Lifecycle & Category Allocation -->
+<div class="bg-card-surface rounded-2xl p-space-xl shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary">Fleet Distribution</span>
+<span class="material-symbols-outlined text-text-tertiary text-lg">pie_chart</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Breakdown by categorized hardware group</p>
+</div>
+<!-- Inline SVG Donut Visualization -->
+<div class="flex items-center justify-center my-space-md py-space-sm relative">
+<svg class="w-40 h-40 transform -rotate-90" viewbox="0 0 100 100">
+<circle class="text-surface-container-highest" cx="50" cy="50" fill="transparent" r="40" stroke="currentColor" stroke-width="12"></circle>
+<!-- Laptops: 59.4% (Circumference ~251.2, stroke-dasharray: 149.2 102) -->
+<circle class="text-primary-container" cx="50" cy="50" fill="transparent" r="40" stroke="currentColor" stroke-dasharray="149.2 251.2" stroke-dashoffset="0" stroke-width="12"></circle>
+<!-- Servers: 14.7% (Circumference ~251.2, 37.0) -->
+<circle class="text-accent-electric" cx="50" cy="50" fill="transparent" r="40" stroke="currentColor" stroke-dasharray="37.0 251.2" stroke-dashoffset="-149.2" stroke-width="12"></circle>
+<!-- Network: 12.8% -->
+<circle class="text-status-info" cx="50" cy="50" fill="transparent" r="40" stroke="currentColor" stroke-dasharray="32.1 251.2" stroke-dashoffset="-186.2" stroke-width="12"></circle>
+<!-- Others & Displays: 13.1% -->
+<circle class="text-status-pending" cx="50" cy="50" fill="transparent" r="40" stroke="currentColor" stroke-dasharray="32.9 251.2" stroke-dashoffset="-218.3" stroke-width="12"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<span class="font-headline-lg text-headline-lg text-text-primary tracking-tight">1,248</span>
+<span class="font-caption text-caption text-text-tertiary uppercase tracking-wider">Devices</span>
+</div>
+</div>
+<!-- Segment Labels -->
+<div class="grid grid-cols-2 gap-x-space-md gap-y-space-xs font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="text-text-secondary truncate">Laptops (742)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-accent-electric"></span>
+<span class="text-text-secondary truncate">Servers (184)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-status-info"></span>
+<span class="text-text-secondary truncate">Network (160)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-status-pending"></span>
+<span class="text-text-secondary truncate">Displays &amp; Aux (162)</span>
+</div>
+</div>
+</div>
+<!-- Panel 2: Warranty & Depreciation Warning Queue -->
+<div class="bg-card-surface rounded-2xl p-space-xl shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary">Warranty Watchlist</span>
+<span class="px-2 py-0.5 rounded-full bg-status-warning/15 text-status-warning font-code-meta text-code-meta">18 Expiring Soon</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Renewals requiring vendor purchase orders &lt;60 days</p>
+</div>
+<!-- Itemized Queue -->
+<div class="flex flex-col gap-space-sm my-space-md">
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-status-warning text-lg">warning</span>
+<div>
+<div class="font-label-md text-label-md text-text-primary">Cisco Core Switch 9300 (NetOps)</div>
+<div class="font-caption text-caption text-text-tertiary">#AST-02319 • Cisco SmartNet</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-code-meta text-code-meta text-status-warning font-bold">42 Days</span>
+<div class="font-caption text-caption text-text-tertiary">Dec 18, 2024</div>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-status-warning text-lg">warning</span>
+<div>
+<div class="font-label-md text-label-md text-text-primary">12x Dell Latitude 5440 Units</div>
+<div class="font-caption text-caption text-text-tertiary">Sales Ops Fleet • ProSupport</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-code-meta text-code-meta text-status-warning font-bold">49 Days</span>
+<div class="font-caption text-caption text-text-tertiary">Dec 25, 2024</div>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-status-info text-lg">shield_with_heart</span>
+<div>
+<div class="font-label-md text-label-md text-text-primary">Palo Alto PA-3220 Firewall</div>
+<div class="font-caption text-caption text-text-tertiary">#AST-00912 • SecOps Threat Prevention</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-code-meta text-code-meta text-text-secondary font-bold">58 Days</span>
+<div class="font-caption text-caption text-text-tertiary">Jan 03, 2025</div>
+</div>
+</div>
+</div>
+<button class="w-full py-2 rounded-xl bg-surface-container-high hover:bg-surface-variant text-accent-light font-label-sm text-label-sm transition-colors text-center" type="button">
+        Create Bulk Vendor Renewal Ticket →
+      </button>
+</div>
+<!-- Panel 3: Depot Service Schedule & Dispatch -->
+<div class="bg-card-surface rounded-2xl p-space-xl shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary">IT Depot Operations</span>
+<span class="px-2 py-0.5 rounded-full bg-status-success/15 text-status-success font-code-meta text-code-meta">Staging Ready</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Depot turnaround and provisioning capacity</p>
+</div>
+<!-- Depot Metrics -->
+<div class="my-space-md flex flex-col gap-space-md">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1.5">
+<span class="text-text-secondary">Depot Provisioning Throughput</span>
+<span class="text-text-primary font-semibold">92% Target</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-status-success rounded-full" style="width: 92%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1.5">
+<span class="text-text-secondary">RMA Servicing Load</span>
+<span class="text-text-primary font-semibold">36 of 40 Max Capacity</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-status-warning rounded-full" style="width: 90%;"></div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-center gap-space-md">
+<div class="p-2.5 rounded-xl bg-primary-container/20 text-accent-electric">
+<span class="material-symbols-outlined text-xl">qr_code_scanner</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary">Depot Barcode Quick Intake</span>
+<span class="font-caption text-caption text-text-tertiary">Scan scanner guns to auto-stage new inventory</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex-1 py-2 rounded-xl bg-surface-container-high hover:bg-surface-variant text-text-primary font-label-sm text-label-sm transition-colors text-center" type="button">
+          Schedule Depot Run
+        </button>
+<button class="flex-1 py-2 rounded-xl bg-primary-container hover:bg-primary-dark text-text-primary font-label-sm text-label-sm transition-colors text-center shadow-[0_0_20px_rgba(37,99,235,0.2)]" type="button">
+          Audit Staging Bay
+        </button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"border-hover":"rgba(59, 130, 246, 0.40)","secondary-container":"#045ecf","on-secondary-fixed-variant":"#004398","on-tertiary-fixed":"#001a42","on-secondary-container":"#d5e0ff","on-secondary-fixed":"#001a43","background":"#0c1321","on-primary-fixed-variant":"#003ea8","outline":"#8d90a0","tertiary-container":"#0f69dc","primary-dark":"#1D4ED8","on-primary-fixed":"#00174b","on-tertiary":"#002e6a","on-secondary":"#002d6c","on-surface":"#dce2f6","inverse-on-surface":"#2a3040","on-surface-variant":"#c3c6d7","tertiary-fixed":"#d8e2ff","inverse-surface":"#dce2f6","text-tertiary":"#64748B","text-disabled":"#475569","sidebar-surface":"#10182A","surface":"#0c1321","overlay-backdrop":"rgba(0, 0, 0, 0.60)","tertiary-fixed-dim":"#adc6ff","surface-variant":"#2e3544","card-elevated":"#16233F","surface-bright":"#323949","border-glass":"rgba(255, 255, 255, 0.08)","on-error-container":"#ffdad6","surface-container":"#19202e","accent-electric":"#4F8CFF","surface-tint":"#b4c5ff","status-info":"#38BDF8","text-primary":"#F8FAFC","primary-fixed-dim":"#b4c5ff","card-surface":"#121C31","status-warning":"#F59E0B","input-surface":"#0F1930","surface-container-high":"#232a39","on-tertiary-container":"#edf0ff","primary-fixed":"#dbe1ff","primary-container":"#2563eb","secondary-fixed-dim":"#afc6ff","border-subtle":"rgba(148, 163, 184, 0.14)","error":"#ffb4ab","status-danger":"#EF4444","error-container":"#93000a","surface-container-highest":"#2e3544","primary":"#b4c5ff","surface-container-low":"#151b2a","on-background":"#dce2f6","text-secondary":"#94A3B8","surface-container-lowest":"#070e1c","secondary":"#afc6ff","inverse-primary":"#0053db","outline-variant":"#434655","on-tertiary-fixed-variant":"#004395","app-bg":"#0B1220","surface-dim":"#0c1321","on-error":"#690005","on-primary-container":"#eeefff","status-success":"#22C55E","status-pending":"#A78BFA","on-primary":"#002a78","border-input":"rgba(148, 163, 184, 0.16)","accent-light":"#60A5FA","interactive-active-bg":"rgba(37, 99, 235, 0.18)","tertiary":"#adc6ff","secondary-fixed":"#d9e2ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-lg":"1rem","space-xs":"0.25rem","margin-desktop":"2rem","space-xl":"1.5rem","gutter":"1rem","space-2xl":"2rem","margin":"1rem","space-md":"0.75rem","gutter-desktop":"1.5rem","space-sm":"0.5rem"},fontFamily:{"headline-xl":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"caption":["Inter"],"headline-sm":["Inter"],"headline-xl-mobile":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"label-sm":["Inter"],"code-meta":["Inter"],"headline-lg":["Inter"],"body-sm":["Inter"]},fontSize:{"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"16px","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"caption":["11px",{"lineHeight":"14px","fontWeight":"400"}],"headline-sm":["15px",{"lineHeight":"20px","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"code-meta":["12px",{"lineHeight":"16px","fontWeight":"600"}],"headline-lg":["22px",{"lineHeight":"28px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}]}}}};</script></head><body class="bg-app-bg text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-sidebar-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-xl flex items-center gap-space-sm"><img alt="Apex Desk Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VKUVTXqCpH-FXGmoK-2kF4Tt2Dm-ELJWNCFuhJRqxpucrf4IryWidKtv_Q0i67U1DztVk9VzJC0EsZC-a1xPMoyWWek-zeUmUQrolyMIxGtdrX_HloMIiTdV0dL-dQC5QOeFeXOaoHF4wjDBw80_QhVfa9HVVIO2AcIxk-DSzSILIDugmjsidWD6D0DWWMHSP0kOcZ83Y-Tgw13zy8zqj4TqsCM5GHesvHzCzQa9YO"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight">Apex Desk</span><span class="font-caption text-caption text-text-tertiary">Enterprise IT Ops</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Main</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-on-primary-container shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl"><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="dashboard" href="#"><span>Dashboard</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="my-tickets" href="#"><span>My Tickets</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="all-tickets" href="#"><span>All Tickets</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="create-ticket" href="#"><span>Create Ticket</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="service-catalog" href="#"><span>Service Catalog</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="assets" href="#"><span>Assets</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="knowledge-base" href="#"><span>Knowledge Base</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="reports" href="#"><span>Reports</span></a></nav></div><div class="px-space-md py-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Administration</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-on-primary-container shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl"><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="users" href="#"><span>Users</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="categories" href="#"><span>Categories</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="sla-management" href="#"><span>SLA</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="settings" href="#"><span>Settings</span></a></nav></div></div><div class="p-space-md bg-surface-container-lowest m-space-md rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-status-success"></span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-text-primary truncate">Azka</span><span class="font-caption text-caption text-text-secondary truncate">Incident Lead</span></div></div><a class="text-on-surface-variant hover:text-status-danger p-space-xs rounded-lg transition-colors flex items-center justify-center" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-xl">logout</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 px-margin-desktop flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><nav class="hidden sm:flex items-center gap-space-sm font-body-sm text-body-sm text-text-secondary"><span class="hover:text-text-primary cursor-pointer transition-colors">Home</span><span class="text-outline-variant font-caption text-caption">/</span><span class="hover:text-text-primary cursor-pointer transition-colors">Service Desk</span><span class="text-outline-variant font-caption text-caption">/</span><span class="text-text-primary font-label-md text-label-md">Service Catalog</span></nav></div><div class="flex items-center gap-space-lg"><div class="relative hidden md:flex items-center"><div class="absolute left-space-md flex items-center pointer-events-none text-text-tertiary"><span class="material-symbols-outlined text-lg">search</span></div><input class="w-72 h-10 bg-input-surface text-text-primary placeholder:text-text-tertiary pl-10 pr-16 rounded-xl font-body-md text-body-md focus:bg-surface-container focus:text-text-primary transition-all outline-none" placeholder="Search incidents, tickets, KB..." type="text"/><div class="absolute right-space-sm flex items-center gap-space-xs pointer-events-none"><kbd class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-high text-text-secondary">⌘K</kbd></div></div><div class="flex items-center gap-space-sm"><button class="relative p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-danger"></span></button><button class="p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-colors" type="button"><span class="material-symbols-outlined text-xl">help</span></button><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-full"><span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span><span class="font-label-sm text-label-sm text-status-success hidden lg:inline">Operational</span></div></div><div class="flex items-center gap-space-md"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/></div></div></header><main class="w-full pt-16 bg-app-bg px-margin-desktop min-h-screen"><div class="flex flex-col w-full">
+<div class="py-space-xl flex flex-col gap-space-2xl">
+<!-- Top Header & Breadcrumb Context -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-text-tertiary">
+<span class="hover:text-text-primary transition-colors cursor-pointer">Home</span>
+<span>/</span>
+<span class="hover:text-text-primary transition-colors cursor-pointer">Service Desk</span>
+<span>/</span>
+<span class="hover:text-text-primary transition-colors cursor-pointer">Service Catalog</span>
+<span>/</span>
+<span class="text-text-primary font-label-sm text-label-sm">Laptop Request</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div>
+<h1 class="font-headline-xl text-headline-xl text-text-primary tracking-tight">Service Request: Hardware &amp; Workstation Provisioning</h1>
+<p class="font-body-md text-body-md text-text-secondary mt-space-xs">
+            Submit a catalog fulfillment request. Requests are tracked under automated provisioning workflows.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-auto">
+<span class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-status-info/10 text-status-info font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-status-info"></span>
+            Catalog ID: HW-SRV-4091
+          </span>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-xl bg-card-surface text-text-secondary hover:text-text-primary hover:bg-card-elevated font-label-sm text-label-sm transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-sm">history</span>
+            Request History
+          </button>
+</div>
+</div>
+</div>
+<!-- Main Two-Column Workflow Container -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- LEFT COLUMN (~68% span = 8 cols) -->
+<form class="lg:col-span-8 flex flex-col gap-space-xl" id="service-request-form" onsubmit="event.preventDefault(); showSubmissionToast();">
+<!-- CARD 01: Request Specification -->
+<div class="bg-card-surface rounded-2xl p-space-xl shadow-md flex flex-col gap-space-xl">
+<!-- Embedded Service Header Banner -->
+<div class="rounded-xl bg-surface-container-high/60 p-space-lg flex flex-col md:flex-row gap-space-md justify-between items-start md:items-center">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 flex items-center justify-center text-accent-electric flex-shrink-0">
+<span class="material-symbols-outlined text-2xl">laptop_mac</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-text-primary">Developer Laptop Provisioning (Apple MacBook Pro / ThinkPad X1)</h2>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mt-0.5">
+                  Standard enterprise hardware provisioning for engineers and staff. Includes corporate MDM profile, pre-configured VPN certificates, developer toolchains, and hardware asset tagging.
+                </p>
+</div>
+</div>
+<!-- Badges -->
+<div class="flex flex-row md:flex-col gap-space-xs flex-shrink-0 self-stretch md:self-auto justify-end">
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-status-success/10 text-status-success font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs">schedule</span>
+                SLA: 2–3 Business Days
+              </div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs">inventory_2</span>
+                Stock: 42 in inventory
+              </div>
+</div>
+</div>
+<!-- Section Divider Title -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-lg bg-primary-container text-on-primary font-code-meta text-code-meta flex items-center justify-center">01</span>
+<span class="font-headline-sm text-headline-sm text-text-primary">Requester Profile &amp; Organizational Unit</span>
+</div>
+<span class="font-caption text-caption text-text-tertiary">Verified Identity via Okta SSO</span>
+</div>
+<!-- Form Fields Grid: Requester & Department -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Requester -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-text-secondary flex items-center justify-between">
+<span>Requester Details</span>
+<span class="flex items-center gap-1 font-caption text-caption text-status-success">
+<span class="material-symbols-outlined text-xs">lock</span> Verified
+                </span>
+</label>
+<div class="relative flex items-center">
+<div class="absolute left-3 flex items-center pointer-events-none">
+<img alt="Requester Avatar" class="w-6 h-6 rounded-full object-cover ring-1 ring-border-glass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/>
+</div>
+<input class="w-full h-10 pl-11 pr-10 rounded-xl bg-input-surface text-text-primary font-body-md text-body-md shadow-inner cursor-not-allowed" readonly="" type="text" value="Azka (Incident Lead / Senior SRE)"/>
+<div class="absolute right-3 flex items-center text-text-tertiary">
+<span class="material-symbols-outlined text-base">verified_user</span>
+</div>
+</div>
+</div>
+<!-- Department -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-text-secondary" for="department-select">
+                Department &amp; Cost Center
+              </label>
+<div class="relative">
+<select class="w-full h-10 pl-3 pr-10 rounded-xl bg-input-surface text-text-primary font-body-md text-body-md focus:bg-surface-container outline-none transition-colors appearance-none" id="department-select">
+<option value="eng-infra">Engineering &amp; Infrastructure Operations (DevOps Pod 2)</option>
+<option value="sec-ops">Information Security &amp; Compliance (SecOps Red)</option>
+<option value="core-prod">Core Platform &amp; Distributed Systems</option>
+<option value="data-eng">Data Platform &amp; Analytics Pipeline</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-3 top-2.5 text-text-tertiary">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Section Divider: Reason & Justification -->
+<div class="flex items-center justify-between pt-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-lg bg-primary-container text-on-primary font-code-meta text-code-meta flex items-center justify-center">02</span>
+<span class="font-headline-sm text-headline-sm text-text-primary">Fulfillment Rationale &amp; Timeline</span>
+</div>
+<span class="font-caption text-caption text-text-tertiary">* Required Fields</span>
+</div>
+<!-- Reason Category -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-text-secondary" for="reason-select">
+              Reason for Request <span class="text-status-danger">*</span>
+</label>
+<div class="relative">
+<select class="w-full h-10 pl-3 pr-10 rounded-xl bg-input-surface text-text-primary font-body-md text-body-md focus:bg-surface-container outline-none transition-colors appearance-none" id="reason-select" required="">
+<option selected="" value="refresh">Hardware Upgrade / Cycle Refresh (Device age &gt; 3 years)</option>
+<option value="newhire">New Hire Provisioning</option>
+<option value="damaged">Damaged / Defective Hardware Replacement</option>
+<option value="project">Project Specific High-Compute Allocation</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-3 top-2.5 text-text-tertiary">expand_more</span>
+</div>
+</div>
+<!-- Detailed Reason & Business Justification (Textarea with Markdown Toolbar) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-text-secondary" for="justification-textarea">
+                Detailed Reason &amp; Business Justification <span class="text-status-danger">*</span>
+</label>
+<span class="font-caption text-caption text-text-tertiary">Markdown supported</span>
+</div>
+<!-- Markdown Toolbar -->
+<div class="bg-input-surface rounded-xl overflow-hidden shadow-inner">
+<div class="flex items-center gap-0.5 px-3 py-1.5 bg-surface-container-high/50 text-text-tertiary">
+<button class="p-1 rounded hover:bg-surface-container hover:text-text-primary transition-colors" title="Bold" type="button">
+<span class="material-symbols-outlined text-base">format_bold</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-text-primary transition-colors" title="Italic" type="button">
+<span class="material-symbols-outlined text-base">format_italic</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-text-primary transition-colors" title="Code snippet" type="button">
+<span class="material-symbols-outlined text-base">code</span>
+</button>
+<div class="w-px h-3.5 bg-outline-variant/40 mx-1"></div>
+<button class="p-1 rounded hover:bg-surface-container hover:text-text-primary transition-colors" title="Numbered List" type="button">
+<span class="material-symbols-outlined text-base">format_list_numbered</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-text-primary transition-colors" title="Bulleted List" type="button">
+<span class="material-symbols-outlined text-base">format_list_bulleted</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-text-primary transition-colors" title="Insert Link" type="button">
+<span class="material-symbols-outlined text-base">link</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-text-primary transition-colors" title="Quote" type="button">
+<span class="material-symbols-outlined text-base">format_quote</span>
+</button>
+</div>
+<textarea class="w-full p-3.5 bg-transparent text-text-primary font-body-md text-body-md focus:outline-none resize-none placeholder:text-text-tertiary" id="justification-textarea" required="" rows="4">Current M1 MacBook Pro 2020 battery degraded (&lt;68% health, service recommended) and struggling with local Kubernetes multi-cluster compilation workflows during incident response drills. Requesting standard M3 Pro 36GB unified memory workstation to sustain heavy container virtualization workloads.</textarea>
+</div>
+</div>
+<!-- Required Delivery Date & Hardware Configuration Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Required Date -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-text-secondary" for="required-date">
+                Required Delivery Date <span class="text-status-danger">*</span>
+</label>
+<div class="relative flex items-center">
+<input class="w-full h-10 pl-3 pr-10 rounded-xl bg-input-surface text-text-primary font-body-md text-body-md focus:bg-surface-container outline-none transition-colors shadow-inner" id="required-date" type="text" value="Nov 15, 2026 (Within standard 3 business day SLA)"/>
+<div class="absolute right-3 flex items-center text-text-tertiary pointer-events-none">
+<span class="material-symbols-outlined text-base">calendar_today</span>
+</div>
+</div>
+<span class="font-caption text-caption text-status-success flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">check_circle</span> Meets standard staging cutoff
+              </span>
+</div>
+<!-- Keyboard Layout -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-text-secondary" for="keyboard-select">
+                Hardware Keyboard Layout
+              </label>
+<div class="relative">
+<select class="w-full h-10 pl-3 pr-10 rounded-xl bg-input-surface text-text-primary font-body-md text-body-md focus:bg-surface-container outline-none transition-colors appearance-none" id="keyboard-select">
+<option selected="" value="us-ansi">US ANSI (Standard English layout)</option>
+<option value="jis">JIS (Japanese layout)</option>
+<option value="uk-iso">UK ISO Layout</option>
+<option value="eur-iso">International English ISO</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-3 top-2.5 text-text-tertiary">expand_more</span>
+</div>
+<span class="font-caption text-caption text-text-tertiary">Pre-configured in stock</span>
+</div>
+</div>
+<!-- Peripherals & Accessory Bundles -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-text-secondary" for="peripherals-input">
+              Peripheral &amp; Docking Accessories Bundle
+            </label>
+<div class="relative flex items-center">
+<div class="absolute left-3 flex items-center text-text-tertiary pointer-events-none">
+<span class="material-symbols-outlined text-base">cable</span>
+</div>
+<input class="w-full h-10 pl-10 pr-3 rounded-xl bg-input-surface text-text-primary font-body-md text-body-md focus:bg-surface-container outline-none transition-colors shadow-inner" id="peripherals-input" type="text" value="Dell WD19TBS Thunderbolt Dock + Dual 4K USB-C cables + 140W MagSafe 3 Power Brick"/>
+</div>
+</div>
+</div>
+<!-- CARD 02: Approval Workflow & Status -->
+<div class="bg-card-surface rounded-2xl p-space-xl shadow-md flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-status-warning/15 flex items-center justify-center text-status-warning">
+<span class="material-symbols-outlined text-lg">shield_with_heart</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">Approval Workflow Required</h3>
+<p class="font-caption text-caption text-text-secondary">Governance tier: Capital expenditure &gt; $2,000 USD</p>
+</div>
+</div>
+<!-- Current Status Badge -->
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-status-warning/15 text-status-warning font-label-sm text-label-sm self-start sm:self-auto">
+<span class="w-2 h-2 rounded-full bg-status-warning animate-pulse"></span>
+              Pending Submission &amp; Manager Sign-off
+            </div>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary bg-surface-container-high/40 p-space-md rounded-xl">
+            This item requires Line Manager and IT Asset Management sign-off due to capital expenditure tier (&gt; $2,000 USD). Approvals are triggered automatically via Slack Bot and Corporate Email upon submission.
+          </p>
+<!-- Step Progression Indicator -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-xs">
+<!-- Step 1 -->
+<div class="p-space-md rounded-xl bg-interactive-active-bg/50 flex flex-col gap-space-xs relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-code-meta text-code-meta text-accent-electric">STEP 01</span>
+<span class="material-symbols-outlined text-accent-electric text-base">edit_document</span>
+</div>
+<span class="font-label-md text-label-md text-text-primary">Requester Submission</span>
+<span class="font-caption text-caption text-accent-light">Current / In Progress (You)</span>
+<div class="w-full bg-surface-container h-1 rounded-full overflow-hidden mt-1">
+<div class="bg-accent-electric h-full w-full"></div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-high/30 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-meta text-code-meta text-text-tertiary">STEP 02</span>
+<span class="material-symbols-outlined text-text-tertiary text-base">supervisor_account</span>
+</div>
+<span class="font-label-md text-label-md text-text-secondary">Line Manager Approval</span>
+<span class="font-caption text-caption text-text-tertiary">Sarah Jenkins (VP Eng)</span>
+<div class="w-full bg-surface-container h-1 rounded-full overflow-hidden mt-1">
+<div class="bg-outline-variant h-full w-0"></div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-high/30 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-meta text-code-meta text-text-tertiary">STEP 03</span>
+<span class="material-symbols-outlined text-text-tertiary text-base">verified</span>
+</div>
+<span class="font-label-md text-label-md text-text-secondary">Asset Logistics &amp; MDM</span>
+<span class="font-caption text-caption text-text-tertiary">Hardware Logistics Pod</span>
+<div class="w-full bg-surface-container h-1 rounded-full overflow-hidden mt-1">
+<div class="bg-outline-variant h-full w-0"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 03: Telemetry & Supporting Attachments -->
+<div class="bg-card-surface rounded-2xl p-space-xl shadow-md flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-lg bg-primary-container text-on-primary font-code-meta text-code-meta flex items-center justify-center">03</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">Supporting Documentation &amp; Pre-Approvals</h3>
+</div>
+<span class="font-caption text-caption text-text-tertiary">Optional</span>
+</div>
+<!-- Drag and Drop Zone -->
+<div class="p-space-xl rounded-xl bg-input-surface/80 flex flex-col items-center justify-center text-center cursor-pointer transition-all hover:bg-surface-container-high/60 group" id="dropzone">
+<input class="hidden" id="file-input" multiple="" type="file"/>
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-text-secondary group-hover:text-accent-electric transition-colors mb-space-sm">
+<span class="material-symbols-outlined text-2xl">cloud_upload</span>
+</div>
+<p class="font-body-md text-body-md text-text-primary">
+              Drag and drop manager pre-approval emails, asset defect photos, or budget codes here, or <span class="text-accent-light font-label-md underline underline-offset-2">Browse files</span>
+</p>
+<p class="font-caption text-caption text-text-tertiary mt-1">
+              Supports PDF, PNG, JPG, or MSG up to 25MB each. End-to-end encrypted in transit.
+            </p>
+</div>
+<!-- Attached Files List -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Attached Proof (1 File)</span>
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-high/50 group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-9 h-9 rounded-lg bg-status-danger/15 flex items-center justify-center text-status-danger flex-shrink-0">
+<span class="material-symbols-outlined text-xl">picture_as_pdf</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-text-primary truncate">manager_budget_preapproval_Q4.pdf</span>
+<span class="font-caption text-caption text-status-success flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">verified</span> Verified &amp; Encrypted
+                    </span>
+</div>
+<span class="font-caption text-caption text-text-tertiary">420 KB • Uploaded today at 09:14 JST</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="p-1.5 text-text-tertiary hover:text-text-primary rounded-lg transition-colors" title="Preview file" type="button">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1.5 text-text-tertiary hover:text-status-danger rounded-lg transition-colors" title="Remove attachment" type="button">
+<span class="material-symbols-outlined text-lg">delete</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Form Actions Bar -->
+<div class="bg-card-surface rounded-2xl p-space-lg shadow-md flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm text-text-tertiary font-body-sm text-body-sm order-2 sm:order-1">
+<span class="material-symbols-outlined text-base text-status-success">lock</span>
+<span>Signed with hardware token ID: <code class="font-code-meta text-code-meta text-text-secondary">YUBI-8841-SEC</code></span>
+</div>
+<div class="flex items-center gap-space-md w-full sm:w-auto justify-end order-1 sm:order-2">
+<button class="font-label-md text-label-md text-text-tertiary hover:text-text-primary transition-colors px-2 py-1" type="button">
+              Save as Draft
+            </button>
+<button class="h-10 px-space-lg rounded-xl bg-surface-container-high text-text-secondary hover:text-text-primary hover:bg-surface-bright font-label-md text-label-md transition-all shadow-sm" type="button">
+              Cancel
+            </button>
+<button class="h-10 px-space-xl rounded-xl bg-gradient-to-r from-primary-container to-accent-light text-on-primary font-label-md text-label-md hover:brightness-110 active:brightness-95 transition-all shadow-[0_0_30px_rgba(37,99,235,0.25)] flex items-center gap-2" type="submit">
+<span>Submit Request</span>
+<span class="material-symbols-outlined text-base">send</span>
+</button>
+</div>
+</div>
+</form>
+<!-- RIGHT COLUMN (~32% span = 4 cols) - Supporting Context & Policy Widgets -->
+<aside class="lg:col-span-4 flex flex-col gap-space-xl">
+<!-- WIDGET 1: Service Details & Specifications -->
+<div class="bg-card-surface rounded-2xl p-space-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Asset Configuration</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-accent-light font-code-meta text-code-meta">TIER 1 PRO</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-text-primary">Apple MacBook Pro 16"</h3>
+<p class="font-caption text-caption text-text-secondary">Space Black • Model Identifier: Mac15,7</p>
+</div>
+<!-- Product Image Representation -->
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container-lowest flex items-center justify-center p-2">
+<img class="object-cover w-full h-full rounded-lg opacity-90 hover:opacity-100 transition-opacity" data-alt="Dark aesthetic product shot of an Apple MacBook Pro 16 inch in space black sitting on a minimal dark slate desk with subtle electric blue underglow reflection and clean studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2kBGkonZGmlcP65kNtEfy2gfdpWjD9J8KH8hcKx_YUuzpJoqU2HjS4stsfYidGOxwAP3E9JF9XtoZ_cl0g7CNOg5rtpmKm2C0N6_NmJMckTrxu0dNxcli1hc0hKivww81HNrmH2bxkIlpakw0M3VYM6hzP_lu3xIjx9P5FHgargwwvNi4y5LK3ZKECfw-fhlxMIyDO3ne3DruDF18oXq36C8Ikt3uxyRQCHxBAUs"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur text-text-primary font-code-meta text-code-meta">
+              M3 Pro • 36GB RAM
+            </div>
+</div>
+<!-- Technical Spec List -->
+<div class="flex flex-col gap-space-sm pt-space-xs font-body-sm text-body-sm">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-high/40">
+<span class="text-text-tertiary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">memory</span> Processor
+              </span>
+<span class="text-text-primary font-label-md text-label-md">12-core CPU / 18-core GPU</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-high/40">
+<span class="text-text-tertiary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">speed</span> Memory
+              </span>
+<span class="text-text-primary font-label-md text-label-md">36GB Unified RAM</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-high/40">
+<span class="text-text-tertiary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">hard_drive</span> Storage
+              </span>
+<span class="text-text-primary font-label-md text-label-md">1TB NVMe Flash</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-high/40">
+<span class="text-text-tertiary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">enhanced_encryption</span> Security
+              </span>
+<span class="text-text-primary font-label-md text-label-md">Kandji MDM + FileVault</span>
+</div>
+</div>
+<!-- Return Policy Alert Notice -->
+<div class="p-space-md rounded-xl bg-status-warning/10 text-on-surface flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-status-warning text-lg flex-shrink-0 mt-0.5">assignment_return</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-status-warning">Hardware Surrender Policy</span>
+<p class="font-caption text-caption text-text-secondary mt-0.5">
+                Existing laptop (<code class="text-text-primary font-code-meta">#TYO-LT-204</code>) must be surrendered within 7 days of new device deployment for cryptographic sanitization.
+              </p>
+</div>
+</div>
+</div>
+<!-- WIDGET 2: Fulfillment SLA & Timeline -->
+<div class="bg-card-surface rounded-2xl p-space-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-accent-electric text-lg">conversion_path</span>
+              Fulfillment SLA
+            </h3>
+<span class="font-label-sm text-label-sm text-status-success font-semibold">100% On-Track</span>
+</div>
+<!-- SLA Progress Gauge Bar -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between font-caption text-caption">
+<span class="text-text-secondary">Expected Turnaround</span>
+<span class="text-text-primary font-label-sm">2–3 Business Days</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-status-success rounded-full w-4/5 animate-pulse"></div>
+</div>
+</div>
+<!-- Chronological Step Visualizer -->
+<div class="relative pl-6 flex flex-col gap-space-md before:content-[''] before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-outline-variant/30 pt-space-xs">
+<div class="relative flex flex-col">
+<span class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-accent-electric ring-4 ring-card-surface"></span>
+<span class="font-label-md text-label-md text-text-primary">Day 0: Submission &amp; Manager Sign-off</span>
+<span class="font-caption text-caption text-text-tertiary">Immediate notification dispatch to Sarah Jenkins</span>
+</div>
+<div class="relative flex flex-col">
+<span class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-text-disabled ring-4 ring-card-surface"></span>
+<span class="font-label-md text-label-md text-text-secondary">Day 1: Asset Allocation</span>
+<span class="font-caption text-caption text-text-tertiary">Serial matching &amp; Tokyo HQ depot tag bind</span>
+</div>
+<div class="relative flex flex-col">
+<span class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-text-disabled ring-4 ring-card-surface"></span>
+<span class="font-label-md text-label-md text-text-secondary">Day 2: Zero-Touch MDM Enrollment</span>
+<span class="font-caption text-caption text-text-tertiary">Automated OS flash, Docker, VPN &amp; keys injection</span>
+</div>
+<div class="relative flex flex-col">
+<span class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-text-disabled ring-4 ring-card-surface"></span>
+<span class="font-label-md text-label-md text-text-secondary">Day 3: Concierge Desk Delivery</span>
+<span class="font-caption text-caption text-text-tertiary">Pickup Tokyo HQ Fl 14 or internal desk dispatch</span>
+</div>
+</div>
+</div>
+<!-- WIDGET 3: Need Assistance / IT Concierge -->
+<div class="bg-card-surface rounded-2xl p-space-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Hardware Concierge</span>
+<span class="flex items-center gap-1 font-caption text-caption text-status-success">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span> Available Now
+            </span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="relative flex-shrink-0">
+<img class="w-11 h-11 rounded-full object-cover ring-2 ring-primary-container/40" data-alt="Portrait photo of an IT support logistics lead wearing glasses with professional dark blue corporate attire in an enterprise technology hub" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCupVpwfL62gozWrhHIrMFGC7MTQMgRqwdNCBU05yPC5z7a94ci3CLHz2vdzqBvrq_tGeN0ggxC8WiwVVkCIqkYzh90Xbb0YprJu5t3-oAhYXCplnfO7742hvFTju02p5NneJRt4fJDiwf2hQjHznvNHLvSTPO0BwIKhp4ac8smo3ZktVdXCjgbuVsgNelS9mg-K22Vbkm_OuXWOmBu3KO63CBOnX-PUbSfjvQPQVM"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-status-success ring-2 ring-card-surface"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-text-primary truncate">Budi Prasetyo</span>
+<span class="font-caption text-caption text-text-secondary truncate">Hardware Logistics Lead • Pod 4</span>
+<span class="font-code-meta text-code-meta text-accent-electric mt-0.5">Desk Ext. 4400 / War Room B</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<button class="h-9 px-space-sm rounded-xl bg-surface-container-high hover:bg-surface-bright text-text-primary font-label-sm text-label-sm transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-base text-accent-electric">chat</span>
+              Live Chat
+            </button>
+<button class="h-9 px-space-sm rounded-xl bg-surface-container-high hover:bg-surface-bright text-text-primary font-label-sm text-label-sm transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-base text-text-tertiary">call</span>
+              Quick Call
+            </button>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<!-- Micro-interaction Toast Notification (Hidden by default, triggered on submit) -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toast-success">
+<div class="bg-card-elevated text-text-primary p-space-md rounded-2xl shadow-xl flex items-center gap-space-md max-w-md">
+<div class="w-9 h-9 rounded-xl bg-status-success/20 text-status-success flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-xl">check_circle</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary">Request #REQ-2026-9402 Created</span>
+<span class="font-body-sm text-body-sm text-text-secondary">Line manager notification dispatched to Sarah Jenkins.</span>
+</div>
+</div>
+</div>
+<script>
+    function showSubmissionToast() {
+      const toast = document.getElementById('toast-success');
+      if (toast) {
+        toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+          toast.classList.remove('translate-y-0', 'opacity-100');
+        }, 4000);
+      }
+    }
+
+    // Interactive Dropzone click hook
+    const dropzone = document.getElementById('dropzone');
+    const fileInput = document.getElementById('file-input');
+    if (dropzone && fileInput) {
+      dropzone.addEventListener('click', () => fileInput.click());
+      dropzone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        dropzone.classList.add('bg-surface-container-high');
+      });
+      dropzone.addEventListener('dragleave', () => {
+        dropzone.classList.remove('bg-surface-container-high');
+      });
+      dropzone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        dropzone.classList.remove('bg-surface-container-high');
+      });
+    }
+  </script>
+</div></main></div></body></html>

@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"border-hover":"rgba(59, 130, 246, 0.40)","secondary-container":"#045ecf","on-secondary-fixed-variant":"#004398","on-tertiary-fixed":"#001a42","on-secondary-container":"#d5e0ff","on-secondary-fixed":"#001a43","background":"#0c1321","on-primary-fixed-variant":"#003ea8","outline":"#8d90a0","tertiary-container":"#0f69dc","primary-dark":"#1D4ED8","on-primary-fixed":"#00174b","on-tertiary":"#002e6a","on-secondary":"#002d6c","on-surface":"#dce2f6","inverse-on-surface":"#2a3040","on-surface-variant":"#c3c6d7","tertiary-fixed":"#d8e2ff","inverse-surface":"#dce2f6","text-tertiary":"#64748B","text-disabled":"#475569","sidebar-surface":"#10182A","surface":"#0c1321","overlay-backdrop":"rgba(0, 0, 0, 0.60)","tertiary-fixed-dim":"#adc6ff","surface-variant":"#2e3544","card-elevated":"#16233F","surface-bright":"#323949","border-glass":"rgba(255, 255, 255, 0.08)","on-error-container":"#ffdad6","surface-container":"#19202e","accent-electric":"#4F8CFF","surface-tint":"#b4c5ff","status-info":"#38BDF8","text-primary":"#F8FAFC","primary-fixed-dim":"#b4c5ff","card-surface":"#121C31","status-warning":"#F59E0B","input-surface":"#0F1930","surface-container-high":"#232a39","on-tertiary-container":"#edf0ff","primary-fixed":"#dbe1ff","primary-container":"#2563eb","secondary-fixed-dim":"#afc6ff","border-subtle":"rgba(148, 163, 184, 0.14)","error":"#ffb4ab","status-danger":"#EF4444","error-container":"#93000a","surface-container-highest":"#2e3544","primary":"#b4c5ff","surface-container-low":"#151b2a","on-background":"#dce2f6","text-secondary":"#94A3B8","surface-container-lowest":"#070e1c","secondary":"#afc6ff","inverse-primary":"#0053db","outline-variant":"#434655","on-tertiary-fixed-variant":"#004395","app-bg":"#0B1220","surface-dim":"#0c1321","on-error":"#690005","on-primary-container":"#eeefff","status-success":"#22C55E","status-pending":"#A78BFA","on-primary":"#002a78","border-input":"rgba(148, 163, 184, 0.16)","accent-light":"#60A5FA","interactive-active-bg":"rgba(37, 99, 235, 0.18)","tertiary":"#adc6ff","secondary-fixed":"#d9e2ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-lg":"1rem","space-xs":"0.25rem","margin-desktop":"2rem","space-xl":"1.5rem","gutter":"1rem","space-2xl":"2rem","margin":"1rem","space-md":"0.75rem","gutter-desktop":"1.5rem","space-sm":"0.5rem"},fontFamily:{"headline-xl":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"caption":["Inter"],"headline-sm":["Inter"],"headline-xl-mobile":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"label-sm":["Inter"],"code-meta":["Inter"],"headline-lg":["Inter"],"body-sm":["Inter"]},fontSize:{"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"16px","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"caption":["11px",{"lineHeight":"14px","fontWeight":"400"}],"headline-sm":["15px",{"lineHeight":"20px","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"code-meta":["12px",{"lineHeight":"16px","fontWeight":"600"}],"headline-lg":["22px",{"lineHeight":"28px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}]}}}};</script></head><body class="bg-app-bg text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-sidebar-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-xl flex items-center gap-space-sm"><img alt="Apex Desk Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VKUVTXqCpH-FXGmoK-2kF4Tt2Dm-ELJWNCFuhJRqxpucrf4IryWidKtv_Q0i67U1DztVk9VzJC0EsZC-a1xPMoyWWek-zeUmUQrolyMIxGtdrX_HloMIiTdV0dL-dQC5QOeFeXOaoHF4wjDBw80_QhVfa9HVVIO2AcIxk-DSzSILIDugmjsidWD6D0DWWMHSP0kOcZ83Y-Tgw13zy8zqj4TqsCM5GHesvHzCzQa9YO"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight">Apex Desk</span><span class="font-caption text-caption text-text-tertiary">Enterprise IT Ops</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Main</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-on-primary-container shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-xl">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="my-tickets" href="#"><span class="material-symbols-outlined text-xl">inbox</span><span>My Tickets</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="all-tickets" href="#"><span class="material-symbols-outlined text-xl">confirmation_number</span><span>All Tickets</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="create-ticket" href="#"><span class="material-symbols-outlined text-xl">add_circle</span><span>Create Ticket</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="service-catalog" href="#"><span class="material-symbols-outlined text-xl">category</span><span>Service Catalog</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="assets" href="#"><span class="material-symbols-outlined text-xl">devices</span><span>Assets</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-xl">menu_book</span><span>Knowledge Base</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="reports" href="#"><span class="material-symbols-outlined text-xl">bar_chart</span><span>Reports</span></a></nav></div><div class="px-space-md py-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Administration</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-on-primary-container shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="users" href="#"><span class="material-symbols-outlined text-xl">group</span><span>Users</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="categories" href="#"><span class="material-symbols-outlined text-xl">folder</span><span>Categories</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="sla-management" href="#"><span class="material-symbols-outlined text-xl">timer</span><span>SLA</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="settings" href="#"><span class="material-symbols-outlined text-xl">settings</span><span>Settings</span></a></nav></div></div><div class="p-space-md bg-surface-container-lowest m-space-md rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-status-success"></span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-text-primary truncate">Azka</span><span class="font-caption text-caption text-text-secondary truncate">Incident Lead</span></div></div><a class="text-on-surface-variant hover:text-status-danger p-space-xs rounded-lg transition-colors flex items-center justify-center" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-xl">logout</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 px-margin-desktop flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><nav class="hidden sm:flex items-center gap-space-sm font-body-sm text-body-sm text-text-secondary"><span class="hover:text-text-primary cursor-pointer transition-colors">Home</span><span class="text-outline-variant font-caption text-caption">/</span><span class="hover:text-text-primary cursor-pointer transition-colors">Dashboard</span><span class="text-outline-variant font-caption text-caption">/</span><span class="text-text-primary font-label-md text-label-md">Today</span></nav></div><div class="flex items-center gap-space-lg"><div class="relative hidden md:flex items-center"><div class="absolute left-space-md flex items-center pointer-events-none text-text-tertiary"><span class="material-symbols-outlined text-lg">search</span></div><input class="w-72 h-10 bg-input-surface text-text-primary placeholder:text-text-tertiary pl-10 pr-16 rounded-xl font-body-md text-body-md focus:bg-surface-container focus:text-text-primary transition-all outline-none" placeholder="Search incidents, tickets, KB..." type="text"/><div class="absolute right-space-sm flex items-center gap-space-xs pointer-events-none"><kbd class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-high text-text-secondary">⌘K</kbd></div></div><div class="flex items-center gap-space-sm"><button class="relative p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-danger"></span></button><button class="p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-colors" type="button"><span class="material-symbols-outlined text-xl">help</span></button><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-full"><span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span><span class="font-label-sm text-label-sm text-status-success hidden lg:inline">Operational</span></div></div><div class="flex items-center gap-space-md"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/></div></div></header><main class="w-full pt-16 bg-app-bg px-margin-desktop min-h-screen"><div class="flex flex-col w-full">
+<!-- Sub-Header / Breadcrumb & Status Navigation Strip -->
+<div class="flex flex-wrap items-center justify-between gap-space-md py-space-sm mb-space-md">
+<div class="flex items-center gap-space-md flex-wrap min-w-0">
+<a class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-xl bg-surface-container text-text-secondary hover:text-text-primary hover:bg-surface-container-high transition-all font-body-sm text-body-sm shadow-sm" href="#">
+<span class="material-symbols-outlined text-base">arrow_back</span>
+<span>Back to Queue</span>
+</a>
+<div class="h-4 w-px bg-outline-variant/30 hidden sm:block"></div>
+<nav class="flex items-center gap-space-xs font-body-sm text-body-sm text-text-secondary">
+<span class="hover:text-text-primary transition-colors cursor-pointer">Service Desk</span>
+<span class="text-outline-variant font-caption text-caption">/</span>
+<span class="hover:text-text-primary transition-colors cursor-pointer">All Tickets</span>
+<span class="text-outline-variant font-caption text-caption">/</span>
+<span class="text-accent-light font-code-meta text-code-meta tracking-wider">#INC-00124</span>
+</nav>
+</div>
+<!-- Live Telemetry Status & Quick Metrics -->
+<div class="flex items-center gap-space-md">
+<div class="hidden xl:flex items-center gap-space-sm px-space-md py-1 bg-surface-container rounded-full shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-danger opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-status-danger"></span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface">P1 Incident Telemetry Active</span>
+<span class="font-caption text-caption text-text-tertiary">| 41.2 Mbps Loss</span>
+</div>
+<div class="flex items-center gap-space-xs text-text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-lg">sync</span>
+<span class="hidden md:inline">Auto-sync: 10s</span>
+</div>
+</div>
+</div>
+<!-- Incident Primary Header Card -->
+<section class="bg-card-surface rounded-2xl p-space-xl shadow-xl relative overflow-hidden mb-space-xl">
+<div class="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-status-danger/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-lg">
+<!-- Tag Row & Status Indicators -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="group flex items-center gap-space-xs px-space-md py-1 bg-input-surface hover:bg-surface-container-high rounded-lg text-accent-light font-code-meta text-code-meta transition-all cursor-pointer shadow-sm" id="copyTicketBtn" onclick="navigator.clipboard.writeText('INC-00124'); const el=this.querySelector('.feedback'); el.classList.remove('hidden'); setTimeout(()=&gt;el.classList.add('hidden'), 1500);">
+<span class="material-symbols-outlined text-sm group-hover:scale-110 transition-transform">content_copy</span>
+<span>#INC-00124</span>
+<span class="feedback hidden text-status-success font-caption text-caption ml-1 font-normal">Copied!</span>
+</button>
+<!-- Status Pill -->
+<span class="inline-flex items-center gap-1.5 px-space-md py-1 rounded-full bg-status-info/15 text-status-info font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-status-info"></span>
+            In Progress
+          </span>
+<!-- Priority Pill (Pulse Highlight) -->
+<span class="relative inline-flex items-center gap-1.5 px-space-md py-1 rounded-full bg-status-danger/15 text-status-danger font-label-sm text-label-sm shadow-[0_0_12px_rgba(239,68,68,0.25)]">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-danger opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-status-danger"></span>
+</span>
+            Critical (P1)
+          </span>
+<span class="inline-flex items-center gap-1 px- space-sm py-1 rounded-full bg-surface-container text-text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs">lan</span>
+            Network &amp; Connectivity
+          </span>
+</div>
+<!-- Requester mini signature -->
+<div class="flex items-center gap-space-sm text-text-secondary font-body-sm text-body-sm">
+<span>Created Oct 31, 2024, 14:10 JST</span>
+<span class="text-outline-variant font-caption text-caption">•</span>
+<span class="text-text-primary font-label-sm text-label-sm">Alex Morgan (DevOps APAC)</span>
+</div>
+</div>
+<!-- Ticket Title -->
+<div class="flex flex-col gap-space-xs">
+<h1 class="font-headline-lg text-headline-lg text-text-primary tracking-tight font-bold">
+          Tokyo Gateway WireGuard Tunnel High Packet Loss &amp; Gateway Unresponsiveness
+        </h1>
+<p class="font-body-md text-body-md text-text-secondary">
+          Impact: <span class="text-status-danger font-label-md text-label-md">142 remote engineers</span> across Tokyo, Osaka, and Seoul offices unable to sustain SSH sessions to Tokyo stage and production Kubernetes pods.
+        </p>
+</div>
+<!-- Action Button Toolbar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-sm bg-surface-container-lowest/40 -mx-space-xl px-space-xl py-space-md mt-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface hover:text-text-primary transition-all font-body-sm text-body-sm shadow-sm">
+<span class="material-symbols-outlined text-base">person_add</span>
+<span>Assign / Reassign</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface hover:text-text-primary transition-all font-body-sm text-body-sm shadow-sm">
+<span class="material-symbols-outlined text-base">swap_horiz</span>
+<span>Change Status</span>
+<span class="material-symbols-outlined text-sm text-text-tertiary">expand_more</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface hover:text-text-primary transition-all font-body-sm text-body-sm shadow-sm">
+<span class="material-symbols-outlined text-base text-status-warning">priority_high</span>
+<span>Escalate Priority</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface hover:text-text-primary transition-all font-body-sm text-body-sm shadow-sm" onclick="document.getElementById('composerArea').scrollIntoView({behavior: 'smooth'})">
+<span class="material-symbols-outlined text-base">edit_note</span>
+<span>Add Note</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm">
+<!-- Primary CTA Button with Glow -->
+<button class="inline-flex items-center gap-space-xs px-space-xl py-2 rounded-xl bg-primary-container hover:bg-primary-dark text-on-primary-container font-label-md text-label-md shadow-[0_0_24px_rgba(37,99,235,0.35)] transition-all">
+<span class="material-symbols-outlined text-lg">task_alt</span>
+<span>Resolve Ticket</span>
+</button>
+<div class="relative">
+<button class="p-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface hover:text-text-primary transition-all flex items-center justify-center" id="moreActionsBtn" onclick="const m=document.getElementById('moreDropdown'); m.classList.toggle('hidden');">
+<span class="material-symbols-outlined text-xl">more_vert</span>
+</button>
+<div class="hidden absolute right-0 mt-2 w-52 bg-card-elevated rounded-xl shadow-2xl p-1.5 z-30 flex flex-col gap-1" id="moreDropdown">
+<button class="flex items-center gap-space-sm w-full px-space-md py-2 rounded-lg text-left text-body-sm font-body-sm text-on-surface hover:bg-surface-container hover:text-text-primary transition-colors">
+<span class="material-symbols-outlined text-base">archive</span>
+<span>Export Audit Log</span>
+</button>
+<button class="flex items-center gap-space-sm w-full px-space-md py-2 rounded-lg text-left text-body-sm font-body-sm text-on-surface hover:bg-surface-container hover:text-text-primary transition-colors">
+<span class="material-symbols-outlined text-base">link</span>
+<span>Link Parent Incident</span>
+</button>
+<button class="flex items-center gap-space-sm w-full px-space-md py-2 rounded-lg text-left text-body-sm font-body-sm text-status-danger hover:bg-status-danger/10 transition-colors">
+<span class="material-symbols-outlined text-base">cancel</span>
+<span>Cancel / Close Ticket</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Two Column Main Workspace -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter-desktop items-start">
+<!-- LEFT MAIN COLUMN: Incident Narrative, Timeline & Composer (8 Cols ~ 68%) -->
+<div class="xl:col-span-8 flex flex-col gap-space-xl">
+<!-- 1. Incident Description Card -->
+<article class="bg-card-surface rounded-2xl p-space-xl shadow-lg relative flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="A close-up corporate portrait photograph of Alex Morgan, a male systems engineer with glasses, looking directly at the camera with sharp studio lighting in a dark modern operations command center." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-XITxBASncXdYu3EQDaT_5xbNiHZuN4n50Zljh_1BQd_PDcuGmHOIl86pW2b3RVwqvskVGCUW-nwfv9r7X6Aunefp6NaX_j8oHu9OAkc2pMl_hc04UZOHUFlM78a4QowOJvrL6vUqNLjfb317QHCxuzP6oL_MQDg5n-8HVpYv1_48Ro46PHCuutP5hM-poCcMMQQ8KI-YCWP6ge2B4jBNovJKzeABk7ZWZYlHo2w"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-text-primary">Alex Morgan</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-text-secondary font-caption text-caption">Requester</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-tertiary">Senior Site Reliability Engineer • APAC Infrastructure</span>
+</div>
+</div>
+<span class="font-caption text-caption text-text-tertiary">Reported Oct 31, 14:10:44 JST</span>
+</div>
+<div class="font-body-md text-body-md text-on-surface space-y-space-md leading-relaxed bg-surface-container-lowest/40 p-space-lg rounded-xl">
+<p>
+            At 14:02 JST, engineers in the Roppongi and Shibuya offices reported acute latency spikes (&gt;350ms) and subsequent connection drops when routing traffic through the primary WireGuard edge cluster (<code class="bg-surface-container-high px-1.5 py-0.5 rounded text-accent-light font-code-meta text-code-meta">TYO-EDG-02</code>).
+          </p>
+<p>
+            ICMP probes to internal gateway IPs reveal sustained packet degradation hovering at <strong>28.4%</strong>. Kubernetes API requests against cluster <code class="bg-surface-container-high px-1.5 py-0.5 rounded text-accent-light font-code-meta text-code-meta">stg-k8s-apne1</code> are intermittently timing out with broken pipe errors. Failover to peer BGP line has not triggered automatically.
+          </p>
+<div class="bg-input-surface p-space-md rounded-lg font-code-meta text-code-meta text-text-secondary space-y-1 overflow-x-auto">
+<div class="text-status-warning">$ ping -c 50 10.240.0.1 -i 0.2</div>
+<div>--- 10.240.0.1 ping statistics ---</div>
+<div>50 packets transmitted, 36 received, 28.0% packet loss, time 9812ms</div>
+<div class="text-status-danger">rtt min/avg/max/mdev = 14.112/189.442/684.108/142.115 ms, pipe 4</div>
+</div>
+</div>
+<!-- Diagnostics & File Attachments -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-text-secondary uppercase tracking-wider">Diagnostic Artifacts &amp; Attachments (2)</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md mt-1">
+<div class="flex items-center justify-between p-space-md bg-surface-container rounded-xl hover:bg-surface-container-high transition-colors group">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="p-2 rounded-lg bg-surface-container-highest text-accent-light flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">description</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-text-primary truncate">vpn_traceroute_output.log</span>
+<span class="font-caption text-caption text-text-tertiary">184 KB • Plaintext Log</span>
+</div>
+</div>
+<button class="p-2 text-text-secondary hover:text-text-primary hover:bg-card-surface rounded-lg transition-colors" title="Download Log">
+<span class="material-symbols-outlined text-lg">download</span>
+</button>
+</div>
+<div class="flex items-center justify-between p-space-md bg-surface-container rounded-xl hover:bg-surface-container-high transition-colors group">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="p-2 rounded-lg bg-surface-container-highest text-status-pending flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">data_object</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-text-primary truncate">packet_drop_telemetry.pcap</span>
+<span class="font-caption text-caption text-text-tertiary">4.2 MB • Wireshark Capture</span>
+</div>
+</div>
+<button class="p-2 text-text-secondary hover:text-text-primary hover:bg-card-surface rounded-lg transition-colors" title="Download Pcap">
+<span class="material-symbols-outlined text-lg">download</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- 2. Integrated Activity Timeline & Incident Log -->
+<section class="bg-card-surface rounded-2xl p-space-xl shadow-lg flex flex-col gap-space-lg">
+<!-- Filter Tabs Header -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pb-space-sm">
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1">
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md shadow-sm">
+              All Activity (8)
+            </button>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container text-text-secondary hover:text-text-primary hover:bg-surface-container-high font-label-md text-label-md transition-colors">
+              Comments (4)
+            </button>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container text-text-secondary hover:text-text-primary hover:bg-surface-container-high font-label-md text-label-md transition-colors">
+              Internal Notes (2)
+            </button>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container text-text-secondary hover:text-text-primary hover:bg-surface-container-high font-label-md text-label-md transition-colors">
+              System Events (2)
+            </button>
+</div>
+<div class="flex items-center gap-space-xs text-text-tertiary font-body-sm text-body-sm">
+<span>Sort:</span>
+<span class="text-text-primary font-label-sm text-label-sm flex items-center cursor-pointer">
+              Oldest First <span class="material-symbols-outlined text-sm">arrow_drop_down</span>
+</span>
+</div>
+</div>
+<!-- Vertical Timeline Feed -->
+<div class="relative pl-6 space-y-space-xl before:absolute before:left-2 before:top-3 before:bottom-3 before:w-0.5 before:bg-surface-container-high">
+<!-- Event 1: Creation (System) -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-text-secondary"></span>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-space-xs flex-wrap font-body-sm text-body-sm">
+<span class="font-label-md text-label-md text-text-primary">Alex Morgan</span>
+<span class="text-text-secondary">created ticket via</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-accent-light font-code-meta text-code-meta">Slack OpsBot #infra-alerts</span>
+<span class="text-text-tertiary font-caption text-caption ml-auto">14:10 JST</span>
+</div>
+</div>
+</div>
+<!-- Event 2: Auto Assignment (System Rule) -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-light"></span>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-space-xs flex-wrap font-body-sm text-body-sm">
+<span class="text-text-secondary">Automated Dispatch: Routed to</span>
+<span class="font-label-md text-label-md text-text-primary">Tier 2 Network Queue</span>
+<span class="text-text-tertiary">via triage rule #4 (WireGuard/BGP match)</span>
+<span class="text-text-tertiary font-caption text-caption ml-auto">14:12 JST</span>
+</div>
+</div>
+</div>
+<!-- Event 3: Human Assignee Claim -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-status-info"></span>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-space-xs flex-wrap font-body-sm text-body-sm">
+<span class="font-label-md text-label-md text-text-primary">Siti Rahma</span>
+<span class="text-text-secondary">claimed ownership (Infra SRE Pod 2)</span>
+<span class="text-text-tertiary font-caption text-caption ml-auto">14:15 JST</span>
+</div>
+</div>
+</div>
+<!-- Event 4: Status Transition -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-status-info"></span>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-space-xs flex-wrap font-body-sm text-body-sm">
+<span class="text-text-secondary">Status transitioned from</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-text-tertiary font-caption text-caption">New</span>
+<span class="text-text-secondary">to</span>
+<span class="px-2 py-0.5 rounded bg-status-info/20 text-status-info font-caption text-caption font-semibold">In Progress</span>
+<span class="text-text-tertiary font-caption text-caption ml-auto">14:16 JST</span>
+</div>
+</div>
+</div>
+<!-- Event 5: Internal Note (Distinctive Amber Gold Styling with Lock Icon) -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-status-warning/20 flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-status-warning"></span>
+</div>
+<div class="w-full bg-status-warning/10 p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-sm">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="A portrait of Siti Rahma, a Southeast Asian female network reliability engineer, with focused expression and professional demeanor in an ambient blue tech operations room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrIecFAZC5b7-jGRzpkbtCePNmjnm5krbbqUIOZ93rruuRnFxMQJnhq9Zjlz_Jb0YkKzJi8s5Hrt6iBkla6o5HSYbifpw04C-8KcSE01-I8bKlMug1xndXfkSfI_OJLGHTmYiFeHYWxU6DWuqRQ8YJop6iEL-GDI-_jBbVyA3yUJUKpLKm2ExcW1vxPT0U3mbFHtM76z1yHmJzhEQy61JPMiffx5UrIN9BuKQxepQ"/>
+<span class="font-label-md text-label-md text-text-primary">Siti Rahma</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-status-warning/20 text-status-warning font-caption text-caption font-medium">
+<span class="material-symbols-outlined text-xs">lock</span>
+                    Internal Note (Staff Only)
+                  </span>
+</div>
+<span class="font-caption text-caption text-text-tertiary">14:20 JST</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+                Found route flapping on secondary upstream BGP peer <code class="bg-surface-container-high px-1 rounded text-status-warning font-code-meta text-code-meta">ASN 64512</code>. Keepalive timers were resetting every 45s. I am applying an MTU clamp to 1380 bytes while initiating a diagnostic session with Tokyo Datacenter Equinix NOC.
+              </p>
+</div>
+</div>
+<!-- Event 6: Priority Escalation -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-status-danger/20 flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-status-danger"></span>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-space-xs flex-wrap font-body-sm text-body-sm">
+<span class="text-text-secondary">Incident Priority escalated from</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-text-secondary font-caption text-caption">High (P2)</span>
+<span class="text-text-secondary">to</span>
+<span class="px-2 py-0.5 rounded bg-status-danger/20 text-status-danger font-caption text-caption font-semibold">Critical (P1)</span>
+<span class="text-text-tertiary">• Impacting &gt;140 regional personnel</span>
+<span class="text-text-tertiary font-caption text-caption ml-auto">14:22 JST</span>
+</div>
+</div>
+</div>
+<!-- Event 7: Public Requester Message -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-text-secondary"></span>
+</div>
+<div class="w-full bg-surface-container-lowest/60 p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-sm">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Small round avatar portrait of Alex Morgan in natural lighting with glasses and headset in a tech workplace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUJ32qShZRYHYBIWAKHxg38tc9ll4QPSpnC8-xi8SYbcpKl6S_Ou5F2WjElXCqPbaPKZQOvWU9wtX8Ta3n1lN8bztlj8J9PaRay5B12iaBR-xc17UmDojOLBisWkNGwHKZ8S6wl1gS9JKNRe0Rh_XM_odKPKs9U7l0tETue1ikkuSzD_Qe9B0ZGoQjhJ51ilbrj9aWjmc_pE11BpLhifwVA6YMy3nOemQuNfBsB_c"/>
+<span class="font-label-md text-label-md text-text-primary">Alex Morgan</span>
+<span class="text-text-tertiary font-body-sm text-body-sm">(Requester)</span>
+</div>
+<span class="font-caption text-caption text-text-tertiary">14:28 JST</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+                Confirmed ping degradation is dropping active SSH tunnels to the <code class="bg-surface-container-high px-1 rounded text-accent-light font-code-meta text-code-meta">stg-k8s</code> cluster as well. The release deployment pipeline is now blocked on APAC builds.
+              </p>
+</div>
+</div>
+<!-- Event 8: Resolution Progress in Flight -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-status-success/20 flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+</div>
+<div class="w-full bg-surface-container p-space-md rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-status-success text-xl">alt_route</span>
+<span class="font-body-md text-body-md text-text-primary">
+<strong>Siti Rahma</strong> deployed dynamic traffic reroute via Osaka fallback gateway (<code class="font-code-meta text-code-meta text-accent-light">OSA-EDG-01</code>) at 14:38 JST.
+                </span>
+</div>
+<span class="font-caption text-caption text-text-tertiary shrink-0">Awaiting 10m telemetry cycle</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Ticket Reply & Internal Note Composer -->
+<section class="bg-card-surface rounded-2xl p-space-xl shadow-lg flex flex-col gap-space-md" id="composerArea">
+<!-- Tab Bar Switcher -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs bg-surface-container-lowest p-1 rounded-xl">
+<button class="px-space-lg py-2 rounded-lg bg-surface-container-high text-text-primary font-label-md text-label-md transition-all flex items-center gap-space-xs shadow-sm" id="tabReply" onclick="setComposerMode('reply')">
+<span class="material-symbols-outlined text-base">chat</span>
+<span>Public Reply to Requester</span>
+</button>
+<button class="px-space-lg py-2 rounded-lg text-text-secondary hover:text-text-primary font-label-md text-label-md transition-all flex items-center gap-space-xs" id="tabNote" onclick="setComposerMode('note')">
+<span class="material-symbols-outlined text-base">lock</span>
+<span>Internal Note (IT Staff Only)</span>
+</button>
+</div>
+<!-- Canned Responses Quick Picker -->
+<div class="hidden sm:flex items-center gap-space-xs">
+<span class="font-caption text-caption text-text-tertiary">Quick macro:</span>
+<select class="bg-input-surface text-text-secondary hover:text-text-primary text-body-sm font-body-sm py-1.5 px-space-md rounded-lg outline-none cursor-pointer">
+<option>Select Canned Response...</option>
+<option>Request Diagnostics / PCAP</option>
+<option>Provide Regional ETA (15m)</option>
+<option>Resolution Validation Notice</option>
+</select>
+</div>
+</div>
+<!-- Rich Text Toolbar & Input Shell -->
+<div class="bg-input-surface rounded-xl overflow-hidden focus-within:shadow-[0_0_0_2px_rgba(37,99,235,0.35)] transition-all">
+<!-- Toolbar -->
+<div class="flex items-center justify-between px-space-md py-2 bg-surface-container-lowest/70">
+<div class="flex items-center gap-1 text-text-secondary">
+<button class="p-1.5 hover:text-text-primary hover:bg-surface-container rounded transition-colors" title="Bold">
+<span class="material-symbols-outlined text-lg">format_bold</span>
+</button>
+<button class="p-1.5 hover:text-text-primary hover:bg-surface-container rounded transition-colors" title="Italic">
+<span class="material-symbols-outlined text-lg">format_italic</span>
+</button>
+<button class="p-1.5 hover:text-text-primary hover:bg-surface-container rounded transition-colors" title="Code Block">
+<span class="material-symbols-outlined text-lg">code</span>
+</button>
+<button class="p-1.5 hover:text-text-primary hover:bg-surface-container rounded transition-colors" title="Unordered List">
+<span class="material-symbols-outlined text-lg">format_list_bulleted</span>
+</button>
+<button class="p-1.5 hover:text-text-primary hover:bg-surface-container rounded transition-colors" title="Blockquote">
+<span class="material-symbols-outlined text-lg">format_quote</span>
+</button>
+<div class="h-4 w-px bg-outline-variant/30 mx-1"></div>
+<button class="p-1.5 hover:text-text-primary hover:bg-surface-container rounded transition-colors" title="Attach file">
+<span class="material-symbols-outlined text-lg">attach_file</span>
+</button>
+</div>
+<span class="font-caption text-caption text-text-tertiary">Markdown supported</span>
+</div>
+<!-- Text Area -->
+<textarea class="w-full bg-transparent px-space-md py-space-md text-text-primary font-body-md text-body-md placeholder:text-text-disabled outline-none resize-y min-h-[110px]" id="composerText" placeholder="Type your reply to Alex Morgan and CC'd engineers... Press ⌘+Enter to submit." rows="4"></textarea>
+</div>
+<!-- Composer Footer Actions -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-1">
+<div class="flex items-center gap-space-md">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded bg-input-surface text-primary-container outline-none" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-text-secondary">Notify requester via email &amp; Slack</span>
+</label>
+<label class="hidden sm:flex items-center gap-space-xs cursor-pointer select-none">
+<input class="w-4 h-4 rounded bg-input-surface text-primary-container outline-none" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-text-secondary">Keep on current status</span>
+</label>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2 rounded-xl bg-surface-container text-text-secondary hover:text-text-primary hover:bg-surface-container-high transition-colors font-body-sm text-body-sm">
+              Save as Draft
+            </button>
+<button class="inline-flex items-center gap-space-xs px-space-xl py-2 rounded-xl bg-primary-container hover:bg-primary-dark text-on-primary-container font-label-md text-label-md shadow-[0_0_20px_rgba(37,99,235,0.3)] transition-all" id="composerSubmitBtn">
+<span class="material-symbols-outlined text-base">send</span>
+<span id="composerSubmitText">Submit Public Reply</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT INFORMATION & CONTEXT RAIL (~32% width) -->
+<div class="xl:col-span-4 flex flex-col gap-space-xl">
+<!-- 1. SLA Performance & Timer Widget -->
+<section class="bg-card-surface rounded-2xl p-space-xl shadow-lg relative overflow-hidden flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-status-warning text-xl">timer</span>
+<h2 class="font-headline-sm text-headline-sm text-text-primary font-semibold">SLA Targets &amp; Compliance</h2>
+</div>
+<span class="font-code-meta text-code-meta px-2 py-0.5 rounded bg-surface-container text-text-secondary">P1 Enterprise Policy</span>
+</div>
+<!-- Warning / Near Breach Notification Banner -->
+<div class="bg-status-warning/15 p-space-md rounded-xl flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-status-warning text-xl shrink-0 mt-0.5">warning</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-status-warning">14m 22s Remaining</span>
+<span class="font-caption text-caption text-text-secondary">Resolution SLA threshold approaching breach state.</span>
+</div>
+</div>
+<!-- SLA Metric Rows -->
+<div class="flex flex-col gap-space-md bg-surface-container-lowest/50 p-space-md rounded-xl">
+<!-- First Response SLA -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-status-success text-base">check_circle</span>
+                Response SLA: <strong class="text-status-success font-label-md text-label-md">Met</strong>
+</span>
+<span class="text-text-tertiary font-code-meta text-code-meta">6m / 15m max</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-status-success h-full rounded-full" style="width: 40%"></div>
+</div>
+</div>
+<!-- Incident Resolution SLA -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-status-danger text-base animate-pulse">crisis_alert</span>
+                Resolution SLA: <strong class="text-status-danger font-label-md text-label-md">At Risk (94%)</strong>
+</span>
+<span class="text-status-danger font-code-meta text-code-meta font-bold">14m 22s left</span>
+</div>
+<!-- Progress Bar with Gradient and Pulse Indicator -->
+<div class="relative w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-status-warning via-status-danger to-status-danger h-full rounded-full transition-all duration-500" style="width: 94%"></div>
+</div>
+<div class="flex justify-between items-center text-text-tertiary font-caption text-caption">
+<span>Elapsed: 3h 45m 38s</span>
+<span>Target: 4h 00m</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Ticket Properties & Attributes Card -->
+<section class="bg-card-surface rounded-2xl p-space-xl shadow-lg flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-text-primary font-semibold">Incident Properties</h2>
+<button class="text-accent-light hover:text-text-primary font-label-sm text-label-sm transition-colors">Edit All</button>
+</div>
+<div class="space-y-space-md text-body-sm font-body-sm">
+<!-- Requester -->
+<div class="flex items-center justify-between gap-space-sm">
+<span class="text-text-tertiary">Requester</span>
+<div class="flex items-center gap-space-xs text-right">
+<img class="w-5 h-5 rounded-full object-cover" data-alt="Portrait thumbnail of Alex Morgan in natural studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMwqVhwWKhWbdL66mpFlvgqXbLnIfHY5-O4tu_XsX-sCfe0Ie38PQfG3Sfpo-QryzkF8U0_KCmL-cLaDtI-fnwZBN_KPQZKN9v6ugj2Kmm1UQyOz4_ufFCGBEw1GV7BctZAjbgPwbI2qIe-10xN_Pbe-4znyvcaqvEHJG7rRnIfdjqd6eQRkt_JEU-VWZ1qvjgIJAhqFy0NG_h47326-cR7ISWIJPplW-rGlTsTSc"/>
+<span class="text-text-primary font-label-md text-label-md">Alex Morgan</span>
+</div>
+</div>
+<!-- Assignee -->
+<div class="flex items-center justify-between gap-space-sm">
+<span class="text-text-tertiary">Assignee</span>
+<div class="flex items-center gap-space-xs text-right">
+<img class="w-5 h-5 rounded-full object-cover" data-alt="Portrait thumbnail of Siti Rahma in front of high tech control screens." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDqDOZoKomodNIBLGiwIvoramYeW6aLnsep333cY9P8FUBfN5ynS6tIHjndPd74dIhRqUWOT-q7GAdtJZMLBPEc4hPe_94tfVzWPM5HTEkkGK2omnAhKFeNcnp8i-ujVW1A6q90IDs1VHr-PfRxOzlkDhbfowtTFnJ3aohhFepRSpC5u6H6Jg4GJ6d8QwjKK83oePQG0xZbjOr06szDvLBnZZttBeOGLqukKk51kg"/>
+<span class="text-text-primary font-label-md text-label-md">Siti Rahma</span>
+<a class="text-accent-light font-caption text-caption hover:underline ml-1" href="#">Change</a>
+</div>
+</div>
+<!-- Category Tree -->
+<div class="flex items-center justify-between gap-space-sm">
+<span class="text-text-tertiary">Category</span>
+<span class="text-text-primary font-label-md text-label-md text-right">Network → VPN / WireGuard</span>
+</div>
+<!-- Department -->
+<div class="flex items-center justify-between gap-space-sm">
+<span class="text-text-tertiary">Department</span>
+<span class="text-text-primary font-label-md text-label-md text-right">DevOps &amp; Cloud Infra</span>
+</div>
+<!-- Impact Location -->
+<div class="flex items-center justify-between gap-space-sm">
+<span class="text-text-tertiary">Location</span>
+<span class="text-text-primary font-label-md text-label-md text-right flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-accent-light">location_on</span>
+              Tokyo HQ (Roppongi Fl 14)
+            </span>
+</div>
+<!-- Impacted Asset -->
+<div class="flex items-center justify-between gap-space-sm">
+<span class="text-text-tertiary">Target Asset</span>
+<div class="text-right">
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-meta text-code-meta text-accent-light">#TYO-GW-04</span>
+<div class="font-caption text-caption text-text-tertiary">Ubuntu 22.04 LTS (Kernel 6.2)</div>
+</div>
+</div>
+<!-- Timestamps -->
+<div class="pt-space-xs space-y-1">
+<div class="flex items-center justify-between text-caption font-caption text-text-tertiary">
+<span>Created Timestamp</span>
+<span>Oct 31, 2024, 14:10:44 JST</span>
+</div>
+<div class="flex items-center justify-between text-caption font-caption text-text-tertiary">
+<span>Last Heartbeat Update</span>
+<span class="text-status-success font-medium">3 minutes ago</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. War Room & Incident Action Controls -->
+<section class="bg-card-surface rounded-2xl p-space-xl shadow-lg flex flex-col gap-space-md">
+<h2 class="font-headline-sm text-headline-sm text-text-primary font-semibold">Incident Command &amp; War Room</h2>
+<!-- Active Voice Bridge Banner -->
+<a class="group p-space-md rounded-xl bg-primary-container/15 hover:bg-primary-container/25 transition-all flex items-center justify-between shadow-sm" href="#">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">mic</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary group-hover:text-accent-light transition-colors">Join Bridge #4 (APAC SRE)</span>
+<span class="font-caption text-caption text-status-success flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success animate-ping"></span>
+                6 engineers currently connected
+              </span>
+</div>
+</div>
+<span class="material-symbols-outlined text-text-secondary group-hover:text-text-primary transition-colors">arrow_forward</span>
+</a>
+<!-- Quick Workflow Actions -->
+<div class="flex flex-col gap-space-xs pt-1">
+<button class="w-full py-2.5 px-space-md rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface hover:text-text-primary transition-all text-left flex items-center justify-between font-body-sm text-body-sm">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-base text-status-success">check_circle_outline</span>
+<span>Mark as Pending User Confirmation</span>
+</span>
+<span class="material-symbols-outlined text-sm text-text-tertiary">chevron_right</span>
+</button>
+<button class="w-full py-2.5 px-space-md rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface hover:text-text-primary transition-all text-left flex items-center justify-between font-body-sm text-body-sm">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-base text-accent-light">support_agent</span>
+<span>Page On-Call Escalation Manager</span>
+</span>
+<span class="material-symbols-outlined text-sm text-text-tertiary">chevron_right</span>
+</button>
+</div>
+</section>
+<!-- 4. Related Incidents & Verified KB Runbooks -->
+<section class="bg-card-surface rounded-2xl p-space-xl shadow-lg flex flex-col gap-space-md">
+<h2 class="font-headline-sm text-headline-sm text-text-primary font-semibold">Related Records &amp; Runbooks</h2>
+<div class="space-y-space-sm">
+<!-- Related Resolved Incident -->
+<div class="p-space-md bg-surface-container rounded-xl flex flex-col gap-1 hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center justify-between">
+<span class="font-code-meta text-code-meta text-accent-light">#INC-00098</span>
+<span class="px-2 py-0.5 rounded-full bg-status-success/15 text-status-success font-caption text-caption">Resolved</span>
+</div>
+<span class="font-label-md text-label-md text-text-primary">Core Switch TYO-SW-01 BGP Flap Incident</span>
+<span class="font-caption text-caption text-text-tertiary">Closed 12 days ago • Fixed via BGP timer tuning</span>
+</div>
+<!-- Verified Knowledge Base Runbook -->
+<div class="p-space-md bg-surface-container rounded-xl flex flex-col gap-1 hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center justify-between">
+<span class="font-code-meta text-code-meta text-status-pending">KB-2041</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-text-secondary font-caption text-caption">Runbook</span>
+</div>
+<span class="font-label-md text-label-md text-text-primary">WireGuard Tunnel Handshake &amp; MTU Troubleshooting</span>
+<span class="font-caption text-caption text-text-tertiary">Updated Oct 2024 • Verified Solution Guide</span>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<script>
+  function setComposerMode(mode) {
+    const tabReply = document.getElementById('tabReply');
+    const tabNote = document.getElementById('tabNote');
+    const textarea = document.getElementById('composerText');
+    const submitBtn = document.getElementById('composerSubmitBtn');
+    const submitText = document.getElementById('composerSubmitText');
+
+    if (mode === 'note') {
+      tabNote.classList.add('bg-status-warning/20', 'text-status-warning', 'shadow-sm');
+      tabNote.classList.remove('text-text-secondary');
+      tabReply.classList.remove('bg-surface-container-high', 'text-text-primary', 'shadow-sm');
+      tabReply.classList.add('text-text-secondary');
+
+      textarea.placeholder = 'Type private internal notes for IT and SRE staff only (hidden from requester)... Markdown supported';
+      submitBtn.classList.remove('bg-primary-container', 'hover:bg-primary-dark', 'shadow-[0_0_20px_rgba(37,99,235,0.3)]');
+      submitBtn.classList.add('bg-status-warning', 'hover:bg-amber-600', 'text-slate-950', 'shadow-[0_0_20px_rgba(245,158,11,0.3)]');
+      submitText.textContent = 'Save Internal Note';
+    } else {
+      tabReply.classList.add('bg-surface-container-high', 'text-text-primary', 'shadow-sm');
+      tabReply.classList.remove('text-text-secondary');
+      tabNote.classList.remove('bg-status-warning/20', 'text-status-warning', 'shadow-sm');
+      tabNote.classList.add('text-text-secondary');
+
+      textarea.placeholder = 'Type your reply to Alex Morgan and CC\'d engineers... Press ⌘+Enter to submit.';
+      submitBtn.classList.add('bg-primary-container', 'hover:bg-primary-dark', 'shadow-[0_0_20px_rgba(37,99,235,0.3)]');
+      submitBtn.classList.remove('bg-status-warning', 'hover:bg-amber-600', 'text-slate-950', 'shadow-[0_0_20px_rgba(245,158,11,0.3)]');
+      submitText.textContent = 'Submit Public Reply';
+    }
+  }
+</script></main></div></body></html>

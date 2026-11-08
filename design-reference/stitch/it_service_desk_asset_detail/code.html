@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"border-hover":"rgba(59, 130, 246, 0.40)","secondary-container":"#045ecf","on-secondary-fixed-variant":"#004398","on-tertiary-fixed":"#001a42","on-secondary-container":"#d5e0ff","on-secondary-fixed":"#001a43","background":"#0c1321","on-primary-fixed-variant":"#003ea8","outline":"#8d90a0","tertiary-container":"#0f69dc","primary-dark":"#1D4ED8","on-primary-fixed":"#00174b","on-tertiary":"#002e6a","on-secondary":"#002d6c","on-surface":"#dce2f6","inverse-on-surface":"#2a3040","on-surface-variant":"#c3c6d7","tertiary-fixed":"#d8e2ff","inverse-surface":"#dce2f6","text-tertiary":"#64748B","text-disabled":"#475569","sidebar-surface":"#10182A","surface":"#0c1321","overlay-backdrop":"rgba(0, 0, 0, 0.60)","tertiary-fixed-dim":"#adc6ff","surface-variant":"#2e3544","card-elevated":"#16233F","surface-bright":"#323949","border-glass":"rgba(255, 255, 255, 0.08)","on-error-container":"#ffdad6","surface-container":"#19202e","accent-electric":"#4F8CFF","surface-tint":"#b4c5ff","status-info":"#38BDF8","text-primary":"#F8FAFC","primary-fixed-dim":"#b4c5ff","card-surface":"#121C31","status-warning":"#F59E0B","input-surface":"#0F1930","surface-container-high":"#232a39","on-tertiary-container":"#edf0ff","primary-fixed":"#dbe1ff","primary-container":"#2563eb","secondary-fixed-dim":"#afc6ff","border-subtle":"rgba(148, 163, 184, 0.14)","error":"#ffb4ab","status-danger":"#EF4444","error-container":"#93000a","surface-container-highest":"#2e3544","primary":"#b4c5ff","surface-container-low":"#151b2a","on-background":"#dce2f6","text-secondary":"#94A3B8","surface-container-lowest":"#070e1c","secondary":"#afc6ff","inverse-primary":"#0053db","outline-variant":"#434655","on-tertiary-fixed-variant":"#004395","app-bg":"#0B1220","surface-dim":"#0c1321","on-error":"#690005","on-primary-container":"#eeefff","status-success":"#22C55E","status-pending":"#A78BFA","on-primary":"#002a78","border-input":"rgba(148, 163, 184, 0.16)","accent-light":"#60A5FA","interactive-active-bg":"rgba(37, 99, 235, 0.18)","tertiary":"#adc6ff","secondary-fixed":"#d9e2ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-lg":"1rem","space-xs":"0.25rem","margin-desktop":"2rem","space-xl":"1.5rem","gutter":"1rem","space-2xl":"2rem","margin":"1rem","space-md":"0.75rem","gutter-desktop":"1.5rem","space-sm":"0.5rem"},fontFamily:{"headline-xl":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"caption":["Inter"],"headline-sm":["Inter"],"headline-xl-mobile":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"label-sm":["Inter"],"code-meta":["Inter"],"headline-lg":["Inter"],"body-sm":["Inter"]},fontSize:{"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"16px","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"caption":["11px",{"lineHeight":"14px","fontWeight":"400"}],"headline-sm":["15px",{"lineHeight":"20px","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"code-meta":["12px",{"lineHeight":"16px","fontWeight":"600"}],"headline-lg":["22px",{"lineHeight":"28px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}]}}}};</script></head><body class="bg-app-bg text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-sidebar-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-xl flex items-center gap-space-sm"><img alt="Apex Desk Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VKUVTXqCpH-FXGmoK-2kF4Tt2Dm-ELJWNCFuhJRqxpucrf4IryWidKtv_Q0i67U1DztVk9VzJC0EsZC-a1xPMoyWWek-zeUmUQrolyMIxGtdrX_HloMIiTdV0dL-dQC5QOeFeXOaoHF4wjDBw80_QhVfa9HVVIO2AcIxk-DSzSILIDugmjsidWD6D0DWWMHSP0kOcZ83Y-Tgw13zy8zqj4TqsCM5GHesvHzCzQa9YO"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight">Apex Desk</span><span class="font-caption text-caption text-text-tertiary">Enterprise IT Ops</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Main</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-white shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl"><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="dashboard" href="#"><span>Dashboard</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="my-tickets" href="#"><span>My Tickets</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="all-tickets" href="#"><span>All Tickets</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="create-ticket" href="#"><span>Create Ticket</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="service-catalog" href="#"><span>Service Catalog</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="assets" href="#"><span>Assets</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="knowledge-base" href="#"><span>Knowledge Base</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="reports" href="#"><span>Reports</span></a></nav></div><div class="px-space-md py-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Administration</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-white shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl"><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="users" href="#"><span>Users</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="categories" href="#"><span>Categories</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="sla" href="#"><span>SLA</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="settings" href="#"><span>Settings</span></a></nav></div></div><div class="p-space-md bg-surface-container-lowest m-space-md rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><div class="relative flex-shrink-0"><img alt="Azka Avatar" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-status-success"></span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-text-primary truncate">Azka</span><span class="font-caption text-caption text-text-secondary truncate">Incident Lead</span></div></div><a class="text-on-surface-variant hover:text-status-danger p-space-xs rounded-lg transition-colors flex items-center justify-center" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-xl">logout</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 px-margin-desktop flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><nav class="hidden sm:flex items-center gap-space-sm font-body-sm text-body-sm text-text-secondary"><span class="hover:text-text-primary cursor-pointer transition-colors">Home</span><span class="text-outline-variant font-caption text-caption">/</span><span class="hover:text-text-primary cursor-pointer transition-colors">Assets</span><span class="text-outline-variant font-caption text-caption">/</span><span class="text-text-primary font-label-md text-label-md">IT Asset Management</span></nav></div><div class="flex items-center gap-space-lg"><div class="relative hidden md:flex items-center"><div class="absolute left-space-md flex items-center pointer-events-none text-text-tertiary"><span class="material-symbols-outlined text-lg">search</span></div><input class="w-72 h-10 bg-input-surface text-text-primary placeholder:text-text-tertiary pl-10 pr-16 rounded-xl font-body-md text-body-md focus:bg-surface-container focus:text-text-primary transition-all outline-none" placeholder="Search incidents, tickets, KB..." type="text"/><div class="absolute right-space-sm flex items-center gap-space-xs pointer-events-none"><kbd class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-high text-text-secondary">⌘K</kbd></div></div><div class="flex items-center gap-space-sm"><button class="relative p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-danger"></span></button><button class="p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-colors" type="button"><span class="material-symbols-outlined text-xl">help</span></button><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-full"><span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span><span class="font-label-sm text-label-sm text-status-success hidden lg:inline">Operational</span></div></div><div class="flex items-center gap-space-md"><img alt="Azka Avatar" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/></div></div></header><main class="w-full pt-16 bg-app-bg px-margin-desktop min-h-screen"><div class="flex flex-col w-full pb-space-2xl">
+<!-- Top Command Bar: Title, Context Badges & Global Actions -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg mb-space-xl">
+<div class="flex flex-col gap-space-xs min-w-0">
+<div class="flex items-center flex-wrap gap-space-sm mb-1">
+<!-- Asset ID Copy Pill -->
+<button class="group flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-interactive-active-bg text-accent-light hover:bg-primary-container hover:text-white transition-all text-caption font-code-meta tracking-wider" onclick="navigator.clipboard.writeText('AST-09142')" title="Click to copy Asset ID">
+<span>#AST-09142</span>
+<span class="material-symbols-outlined text-sm group-hover:scale-110 transition-transform">content_copy</span>
+</button>
+<!-- Semantic Status Badge -->
+<span class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-status-success/15 text-status-success font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span>
+          In Use
+        </span>
+<!-- Hardware State -->
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs text-status-success">verified</span>
+          SecOps Verified
+        </span>
+</div>
+<div class="flex items-center gap-space-md">
+<h1 class="font-headline-lg text-headline-lg text-text-primary tracking-tight">Apple MacBook Pro 16″ <span class="text-text-tertiary font-body-lg font-normal">(M3 Pro, Space Black)</span></h1>
+</div>
+<!-- Quick Telemetry Chips Bar -->
+<div class="flex items-center flex-wrap gap-x-space-md gap-y-1 text-text-tertiary font-body-sm text-body-sm pt-1">
+<span class="flex items-center gap-1.5 text-text-secondary">
+<span class="material-symbols-outlined text-sm text-accent-electric">laptop_mac</span>
+          Workstation Laptop
+        </span>
+<span class="text-text-disabled">/</span>
+<span class="flex items-center gap-1.5 text-text-secondary">
+<span class="material-symbols-outlined text-sm text-text-tertiary">person</span>
+          Custodian: <strong class="text-text-primary font-label-md">Azka</strong>
+</span>
+<span class="text-text-disabled">/</span>
+<span class="flex items-center gap-1.5 text-text-secondary">
+<span class="material-symbols-outlined text-sm text-text-tertiary">account_tree</span>
+          Cost Center: <code class="text-text-primary font-code-meta text-code-meta px-1 py-0.5 rounded bg-surface-container-high">CC-ENG-904</code>
+</span>
+<span class="text-text-disabled">/</span>
+<span class="flex items-center gap-1.5 text-status-success font-label-sm">
+<span class="material-symbols-outlined text-sm">health_metrics</span>
+          Health Score: 98% Optimal
+        </span>
+</div>
+</div>
+<!-- Action Buttons Group -->
+<div class="flex items-center flex-wrap gap-space-sm shrink-0">
+<button class="h-10 px-space-md rounded-xl bg-card-surface text-text-primary hover:bg-card-elevated hover:text-accent-electric transition-all font-label-md text-label-md flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-lg">edit</span>
+<span>Edit Asset</span>
+</button>
+<button class="h-10 px-space-md rounded-xl bg-card-surface text-text-primary hover:bg-card-elevated hover:text-accent-electric transition-all font-label-md text-label-md flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-lg">qr_code_2</span>
+<span>Print Barcode / QR</span>
+</button>
+<button class="h-10 px-space-md rounded-xl bg-primary-container text-white hover:bg-primary-dark transition-all font-label-md text-label-md flex items-center gap-2 shadow-[0_0_30px_rgba(37,99,235,0.25)]">
+<span class="material-symbols-outlined text-lg">warning</span>
+<span>Report Issue</span>
+</button>
+<button class="h-10 w-10 flex items-center justify-center rounded-xl bg-card-surface text-text-secondary hover:text-text-primary hover:bg-card-elevated transition-colors" title="Additional actions">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Primary Tab Navigation Bar -->
+<div class="flex items-center justify-between bg-card-surface px-space-md rounded-xl mb-space-xl shadow-sm overflow-x-auto">
+<div class="flex items-center gap-space-lg min-w-max">
+<button class="relative py-space-md font-label-md text-label-md text-accent-electric flex items-center gap-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-accent-electric after:shadow-[0_0_12px_rgba(79,140,255,0.8)]">
+<span class="material-symbols-outlined text-lg">info</span>
+<span>Overview</span>
+</button>
+<button class="py-space-md font-label-md text-label-md text-text-secondary hover:text-text-primary transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">confirmation_number</span>
+<span>Related Tickets</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-caption font-label-sm text-text-primary">3</span>
+</button>
+<button class="py-space-md font-label-md text-label-md text-text-secondary hover:text-text-primary transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">build_circle</span>
+<span>Maintenance &amp; Servicing</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-caption font-label-sm text-text-primary">4</span>
+</button>
+<button class="py-space-md font-label-md text-label-md text-text-secondary hover:text-text-primary transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">history_toggle_off</span>
+<span>Assignment History</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-caption font-label-sm text-text-primary">5</span>
+</button>
+</div>
+<div class="hidden md:flex items-center gap-space-sm py-2">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-2.5 text-sm text-text-tertiary">search</span>
+<input class="h-8 pl-8 pr-3 rounded-lg bg-input-surface text-text-primary placeholder:text-text-tertiary font-body-sm text-body-sm focus:bg-surface-container outline-none transition-colors w-44" placeholder="Filter specs &amp; events..." type="text"/>
+</div>
+<button class="h-8 px-2.5 rounded-lg bg-surface-container-high text-text-secondary hover:text-text-primary transition-colors font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-base">file_download</span>
+        Export Spec
+      </button>
+</div>
+</div>
+<!-- Two-Column Cockpit Layout (Main ~68% / Context Rail ~32%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT COLUMN: Main Spec, Tickets, Diagnostic Audit & Custody -->
+<div class="lg:col-span-8 flex flex-col gap-space-xl min-w-0">
+<!-- SECTION 1: Hardware Core Specifications & Procurement Card -->
+<div class="bg-card-surface rounded-xl p-space-xl shadow-md flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-interactive-active-bg text-accent-electric flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">memory</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-text-primary">Asset Specifications &amp; Procurement</h2>
+<p class="font-caption text-caption text-text-tertiary">Hardware configuration and purchase ledger</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-caption font-code-meta text-accent-light">MDM: ENROLLED</span>
+</div>
+<!-- Spec Data Bento Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-caption text-caption text-text-tertiary uppercase tracking-wider">Manufacturer / Brand</span>
+<span class="font-label-md text-label-md text-text-primary flex items-center gap-1.5">
+<span class="text-text-secondary">Apple Inc.</span>
+</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-caption text-caption text-text-tertiary uppercase tracking-wider">Model Variant</span>
+<span class="font-label-md text-label-md text-text-primary truncate">MacBook Pro 16″ (Nov 2023)</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-caption text-caption text-text-tertiary uppercase tracking-wider">Serial Number</span>
+<div class="flex items-center justify-between">
+<code class="font-code-meta text-code-meta text-accent-electric">C02G6024MD6R</code>
+<button class="text-text-tertiary hover:text-text-primary transition-colors" onclick="navigator.clipboard.writeText('C02G6024MD6R')" title="Copy Serial">
+<span class="material-symbols-outlined text-base">copy_all</span>
+</button>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1 sm:col-span-2 md:col-span-3">
+<span class="font-caption text-caption text-text-tertiary uppercase tracking-wider">Hardware Compute &amp; Display Spec</span>
+<span class="font-body-md text-body-md text-text-primary">
+              Apple M3 Pro (12-core CPU, 18-core GPU, 16-core Neural Engine) • 36GB Unified Memory (150GB/s) • 512GB NVMe SSD Storage • 16.2″ Liquid Retina XDR (3456×2234 @ 120Hz ProMotion)
+            </span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-caption text-caption text-text-tertiary uppercase tracking-wider">Wi-Fi MAC Address</span>
+<code class="font-code-meta text-code-meta text-text-primary">3c:22:fb:49:10:aa</code>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-caption text-caption text-text-tertiary uppercase tracking-wider">Kandji MDM UUID</span>
+<code class="font-code-meta text-code-meta text-text-secondary truncate">#MDM-KND-88219</code>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-caption text-caption text-text-tertiary uppercase tracking-wider">Purchase Date</span>
+<span class="font-label-md text-label-md text-text-primary">January 15, 2024</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-caption text-caption text-text-tertiary uppercase tracking-wider">PO / Acquisition Cost</span>
+<span class="font-label-md text-label-md text-text-primary">PO-2024-0891 ($3,299.00 USD)</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-caption text-caption text-text-tertiary uppercase tracking-wider">Vendor / Channel</span>
+<span class="font-label-md text-label-md text-text-primary">Apple Enterprise Direct</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-caption text-caption text-text-tertiary uppercase tracking-wider">Physical Deployment</span>
+<span class="font-label-md text-label-md text-text-primary truncate">Tokyo HQ • Bldg A, Desk #A-04-12</span>
+</div>
+</div>
+<!-- Warranty Coverage Banner -->
+<div class="p-space-md rounded-xl bg-gradient-to-r from-surface-container-low via-surface-container to-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-status-success/15 text-status-success flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary">AppleCare+ for Enterprise (Extended Depot &amp; On-Site)</span>
+<span class="font-body-sm text-body-sm text-text-secondary">Direct SLA Coverage Expiring January 14, 2027</span>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start md:self-auto">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-status-success/15 text-status-success font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+              Active • 682 Days Remaining
+            </span>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Related Tickets & Incidents (Section 13 Ticket Card Components) -->
+<div class="bg-card-surface rounded-xl p-space-xl shadow-md flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-interactive-active-bg text-accent-electric flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">confirmation_number</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-text-primary">Related Incidents &amp; Service Requests</h2>
+<p class="font-caption text-caption text-text-tertiary">3 tickets linked to hardware serial #C02G6024MD6R</p>
+</div>
+</div>
+<button class="h-8 px-space-md rounded-xl bg-card-elevated text-accent-electric hover:bg-surface-container-high transition-colors font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">link</span>
+            Link Existing Ticket
+          </button>
+</div>
+<!-- Ticket 1: Critical Incident -->
+<div class="p-space-lg rounded-xl bg-surface-container-low hover:bg-card-elevated transition-all flex flex-col gap-space-sm group shadow-sm">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-code-meta text-code-meta text-accent-electric">#INC-00124</span>
+<span class="text-text-disabled">•</span>
+<span class="px-2 py-0.5 rounded-full bg-status-danger/15 text-status-danger font-label-sm text-caption">Critical P1</span>
+<span class="px-2 py-0.5 rounded-full bg-status-info/15 text-status-info font-label-sm text-caption">In Progress</span>
+</div>
+<a class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-electric transition-colors line-clamp-1" href="#">
+                Tokyo Gateway WireGuard Tunnel High Packet Loss &amp; Latency
+              </a>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-caption text-caption text-status-danger flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">timer</span>
+                SLA: 14m left
+              </span>
+<span class="font-caption text-caption text-text-tertiary">Reported 2h ago</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 border-t-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded bg-surface-container text-caption text-text-secondary font-label-sm">Network</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-caption text-text-secondary font-label-sm">WireGuard VPN</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-caption text-text-secondary font-code-meta">en0</span>
+</div>
+<div class="flex items-center gap-2">
+<img alt="Azka" class="w-5 h-5 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/>
+<span class="font-body-sm text-body-sm text-text-secondary">Assigned: <span class="text-text-primary font-medium">Azka</span></span>
+</div>
+</div>
+</div>
+<!-- Ticket 2: Resolved Provisioning Request -->
+<div class="p-space-lg rounded-xl bg-surface-container-low hover:bg-card-elevated transition-all flex flex-col gap-space-sm group shadow-sm">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-code-meta text-code-meta text-accent-electric">#REQ-8902</span>
+<span class="text-text-disabled">•</span>
+<span class="px-2 py-0.5 rounded-full bg-status-warning/15 text-status-warning font-label-sm text-caption">P2 High</span>
+<span class="px-2 py-0.5 rounded-full bg-status-success/15 text-status-success font-label-sm text-caption">Resolved</span>
+</div>
+<a class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-electric transition-colors line-clamp-1" href="#">
+                Developer Laptop Provisioning (MacBook Pro 16″ M3 Pro)
+              </a>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-caption text-caption text-status-success flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">check_circle</span>
+                SLA Met (100%)
+              </span>
+<span class="font-caption text-caption text-text-tertiary">Completed Jan 18, 2024</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded bg-surface-container text-caption text-text-secondary font-label-sm">Hardware Request</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-caption text-text-secondary font-label-sm">Staging &amp; Deployment</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-secondary-container text-white font-label-sm text-[10px] flex items-center justify-center">BP</span>
+<span class="font-body-sm text-body-sm text-text-secondary">Assignee: <span class="text-text-primary font-medium">Budi Prasetyo</span></span>
+</div>
+</div>
+</div>
+<!-- Ticket 3: Closed Peripheral Ticket -->
+<div class="p-space-lg rounded-xl bg-surface-container-low hover:bg-card-elevated transition-all flex flex-col gap-space-sm group shadow-sm opacity-90">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-code-meta text-code-meta text-accent-electric">#INC-00088</span>
+<span class="text-text-disabled">•</span>
+<span class="px-2 py-0.5 rounded-full bg-status-info/15 text-status-info font-label-sm text-caption">Medium P3</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-text-secondary font-label-sm text-caption">Closed</span>
+</div>
+<a class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-electric transition-colors line-clamp-1" href="#">
+                USB-C DisplayPort Alternate Mode Flapping on Studio Display
+              </a>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-caption text-caption text-text-secondary">Resolved Mar 04, 2024</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded bg-surface-container text-caption text-text-secondary font-label-sm">Peripherals</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-caption text-text-secondary font-label-sm">ThunderBolt 4</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container-high text-text-primary font-label-sm text-[10px] flex items-center justify-center">ER</span>
+<span class="font-body-sm text-body-sm text-text-secondary">Assignee: <span class="text-text-primary font-medium">Elena Rostova</span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 3: Maintenance & Diagnostic History (Timeline Pattern) -->
+<div class="bg-card-surface rounded-xl p-space-xl shadow-md flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-interactive-active-bg text-accent-electric flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">build</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-text-primary">Maintenance &amp; Diagnostic History</h2>
+<p class="font-caption text-caption text-text-tertiary">Verified preventative servicing and zero-trust telemetry</p>
+</div>
+</div>
+<button class="h-8 px-space-md rounded-xl bg-card-elevated text-text-primary hover:bg-surface-container-high hover:text-accent-electric transition-colors font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">add</span>
+            Log Maintenance Activity
+          </button>
+</div>
+<!-- Vertical Timeline Stream -->
+<div class="relative pl-6 flex flex-col gap-space-lg before:content-[''] before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-high">
+<!-- Timeline Event 1 -->
+<div class="relative flex flex-col gap-1.5">
+<span class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-card-surface border-2 border-status-success flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+</span>
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-text-primary">Thermal paste inspection &amp; high-pressure internal air dusting</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-status-success/15 text-status-success font-label-sm text-caption">● Completed / Passed</span>
+</div>
+<span class="font-caption text-caption text-text-tertiary">Oct 12, 2024</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+              Thermals stable at 42°C idle, fan RPM optimal. Battery health tested at 96% retention, no enclosure warping.
+            </p>
+<div class="flex items-center gap-2 text-caption text-text-tertiary">
+<span class="material-symbols-outlined text-xs">engineering</span>
+<span>Technician: <strong class="text-text-secondary">Budi Prasetyo (Depot Specialist)</strong></span>
+</div>
+</div>
+<!-- Timeline Event 2 -->
+<div class="relative flex flex-col gap-1.5">
+<span class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-card-surface border-2 border-status-success flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+</span>
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-text-primary">Zero-Trust MDM compliance check &amp; FileVault 2 key rotation</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-status-success/15 text-status-success font-label-sm text-caption">● Completed / Compliant</span>
+</div>
+<span class="font-caption text-caption text-text-tertiary">Jul 05, 2024</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+              Firmware password updated, automated patch baseline macOS 15.1 verified, escrow recovery keys regenerated securely.
+            </p>
+<div class="flex items-center gap-2 text-caption text-text-tertiary">
+<span class="material-symbols-outlined text-xs">security</span>
+<span>Technician: <strong class="text-text-secondary">Marcus Vance (SecOps Lead)</strong></span>
+</div>
+</div>
+<!-- Timeline Event 3 -->
+<div class="relative flex flex-col gap-1.5">
+<span class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-card-surface border-2 border-status-success flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+</span>
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-text-primary">Initial hardware staging, asset barcode tagging &amp; profile provisioning</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-status-success/15 text-status-success font-label-sm text-caption">● Completed</span>
+</div>
+<span class="font-caption text-caption text-text-tertiary">Jan 16, 2024</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+              Enrolled in Kandji MDM, applied enterprise root certificates, and signed physical inventory custody ledger.
+            </p>
+<div class="flex items-center gap-2 text-caption text-text-tertiary">
+<span class="material-symbols-outlined text-xs">assignment_turned_in</span>
+<span>Technician: <strong class="text-text-secondary">Siti Rahma (IT Operations)</strong></span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 4: Assignment History (Custody Lifecycle) -->
+<div class="bg-card-surface rounded-xl p-space-xl shadow-md flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-interactive-active-bg text-accent-electric flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">badge</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-text-primary">Custody Lifecycle &amp; Custodian Audit</h2>
+<p class="font-caption text-caption text-text-tertiary">Historical record of all physical possession transfers</p>
+</div>
+</div>
+<span class="font-caption text-caption text-text-tertiary">2 Total Transfers</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Current Custodian Entry -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img alt="Azka" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-status-success"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-text-primary">Azka</span>
+<span class="px-2 py-0.5 rounded-full bg-interactive-active-bg text-accent-light font-label-sm text-caption">Current Custodian</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-secondary truncate">Senior SRE / Incident Lead • Tokyo HQ Building A</span>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-sm text-label-sm text-text-primary block">Jan 18, 2024 – Present</span>
+<span class="font-caption text-caption text-text-tertiary">294 days in custody</span>
+</div>
+</div>
+<!-- Previous Staging Entry -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between gap-space-md opacity-80">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">inventory_2</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-text-primary">IT Depot Staging (Bay 3)</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-text-tertiary font-label-sm text-caption">Intake &amp; Staging</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-secondary truncate">Procurement Receiving • Intake by Budi Prasetyo</span>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-sm text-label-sm text-text-secondary block">Jan 15, 2024 – Jan 18, 2024</span>
+<span class="font-caption text-caption text-text-tertiary">3 days (provisioning window)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Telemetry, Hardware Canvas, Custodian Profile & Remote MDM Actions -->
+<div class="lg:col-span-4 flex flex-col gap-space-xl min-w-0">
+<!-- WIDGET 1: Visual Identity & Telemetry Dashboard -->
+<div class="bg-card-surface rounded-xl p-space-xl shadow-md flex flex-col gap-space-lg">
+<!-- Workstation Visual Presentation Canvas -->
+<div class="relative w-full h-44 rounded-xl bg-gradient-to-b from-card-elevated to-surface-container-lowest overflow-hidden flex items-center justify-center p-space-md group">
+<!-- Background Atmospheric Radial Glow -->
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,rgba(37,99,235,0.22),transparent_70%)] pointer-events-none"></div>
+<!-- Device Mockup SVG Illustration -->
+<svg class="w-48 h-auto relative drop-shadow-[0_12px_24px_rgba(0,0,0,0.6)]" fill="none" viewbox="0 0 280 170" xmlns="http://www.w3.org/2000/svg">
+<!-- Screen Lid -->
+<rect fill="#1E293B" height="130" rx="8" stroke="#334155" stroke-width="2" width="230" x="25" y="10"></rect>
+<!-- Display Panel Inner -->
+<rect fill="#0B1220" height="114" rx="4" width="214" x="33" y="18"></rect>
+<!-- Display Content Wallpaper Glow -->
+<path d="M33 90 C 70 60, 140 130, 247 70 L 247 132 L 33 132 Z" fill="url(#screenGrad)" opacity="0.6"></path>
+<!-- Active Terminal Prompt -->
+<text fill="#38BDF8" font-family="monospace" font-size="9" font-weight="600" x="45" y="40">ast-09142:~ azka$</text>
+<text fill="#22C55E" font-family="monospace" font-size="8" x="45" y="55">● MDM Active • Seq 15.1</text>
+<circle cx="140" cy="14" fill="#22C55E" r="1.5"></circle>
+<!-- Laptop Chassis Base -->
+<path d="M10 144 H270 L255 156 H25 L10 144 Z" fill="#334155"></path>
+<path d="M115 145 H165 L162 149 H118 L115 145 Z" fill="#1E293B"></path>
+<defs>
+<lineargradient gradientunits="userSpaceOnUse" id="screenGrad" x1="33" x2="247" y1="90" y2="132">
+<stop stop-color="#2563EB"></stop>
+<stop offset="1" stop-color="#4F8CFF" stop-opacity="0.1"></stop>
+</lineargradient>
+</defs>
+</svg>
+<!-- Top Status Floating Chip -->
+<div class="absolute top-3 right-3 flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md font-code-meta text-[11px] text-status-success">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success animate-ping"></span>
+            Online • MDM Heartbeat
+          </div>
+</div>
+<!-- Real-Time Hardware Telemetry Grid -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between text-caption text-text-tertiary">
+<span>Battery Health</span>
+<span class="material-symbols-outlined text-sm text-status-success">battery_charging_full</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-text-primary">96% <span class="font-label-sm text-label-sm text-text-secondary font-normal">Normal</span></span>
+<span class="font-caption text-caption text-text-tertiary">Cycle count: 84</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between text-caption text-text-tertiary">
+<span>OS Release</span>
+<span class="material-symbols-outlined text-sm text-accent-electric">terminal</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-text-primary">macOS 15.1</span>
+<span class="font-caption text-caption text-text-tertiary">Sequoia (Build 24B83)</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between text-caption text-text-tertiary">
+<span>MDM Compliance</span>
+<span class="material-symbols-outlined text-sm text-status-success">shield</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-status-success">Compliant</span>
+<span class="font-caption text-caption text-text-tertiary">Kandji Agent v3.8</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between text-caption text-text-tertiary">
+<span>Storage Used</span>
+<span class="material-symbols-outlined text-sm text-text-secondary">hard_drive</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-text-primary">214 GB <span class="font-label-sm text-label-sm text-text-secondary font-normal">/ 512</span></span>
+<span class="font-caption text-caption text-text-tertiary">41.8% capacity</span>
+</div>
+</div>
+<!-- Storage Bar Visualization -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-caption text-caption text-text-secondary">
+<span>Encrypted APFS Volume</span>
+<span>298 GB Available</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden flex">
+<div class="h-full bg-accent-electric rounded-full" style="width: 41.8%"></div>
+</div>
+</div>
+</div>
+<!-- WIDGET 2: Assigned Custodian Context Card -->
+<div class="bg-card-surface rounded-xl p-space-xl shadow-md flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-accent-electric text-lg">person_pin</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">Current Custodian</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-status-success/15 text-status-success font-label-sm text-caption">Active</span>
+</div>
+<div class="flex items-start gap-space-md">
+<img alt="Azka" class="w-12 h-12 rounded-xl object-cover shadow-sm shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/>
+<div class="flex flex-col min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-text-primary leading-tight">Azka</h4>
+<span class="font-body-sm text-body-sm text-accent-light">Senior SRE &amp; Incident Lead</span>
+<span class="font-caption text-caption text-text-tertiary mt-0.5">Global Infrastructure Operations</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 p-space-md rounded-xl bg-surface-container-low font-body-sm text-body-sm">
+<div class="flex items-center justify-between">
+<span class="text-text-tertiary">Work Email:</span>
+<a class="text-text-primary hover:text-accent-electric font-code-meta text-caption transition-colors" href="mailto:azka@apexdesk.internal">azka@apexdesk.internal</a>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-text-tertiary">Internal Phone:</span>
+<span class="text-text-primary font-code-meta text-caption">Ext. 4091</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-text-tertiary">Reporting Manager:</span>
+<span class="text-text-primary font-medium">Sarah Jenkins (VP Infra)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-text-tertiary">Custody Duration:</span>
+<span class="text-text-primary">Jan 18, 2024 (294 days)</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="h-9 px-space-sm rounded-xl bg-card-elevated text-text-primary hover:bg-surface-container-high transition-colors font-label-sm text-label-sm flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-base">swap_horiz</span>
+            Reassign
+          </button>
+<button class="h-9 px-space-sm rounded-xl bg-interactive-active-bg text-accent-electric hover:bg-primary-container hover:text-white transition-colors font-label-sm text-label-sm flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-base">chat</span>
+            Slack Azka
+          </button>
+</div>
+</div>
+<!-- WIDGET 3: Lifecycle & Refresh Progress Tracker -->
+<div class="bg-card-surface rounded-xl p-space-xl shadow-md flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-accent-electric text-lg">timelapse</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">Lifecycle &amp; Warranty</h3>
+</div>
+<span class="font-caption text-caption text-status-success font-code-meta">36M POLICY</span>
+</div>
+<!-- Horizontal Timeline Progress Bar -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between font-caption text-caption">
+<span class="text-text-secondary">Procured (Jan '24)</span>
+<span class="text-accent-electric font-medium">10 Mo Elapsed</span>
+<span class="text-text-secondary">Refresh (Jan '27)</span>
+</div>
+<!-- Progress Track -->
+<div class="relative w-full h-2.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-container to-accent-electric rounded-full" style="width: 27.7%"></div>
+</div>
+<div class="flex items-center justify-between font-caption text-caption text-text-tertiary">
+<span>26 Months Warranty Remaining</span>
+<span>Refresh Cycle: 3 Years</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-status-success text-base">handshake</span>
+<span class="font-label-md text-label-md text-text-primary">AppleCare+ Enterprise Service Contract</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">
+            Guaranteed 4-hour on-site dispatch, next-business-day depot turnaround, and unlimited accidental damage protection per seat.
+          </p>
+</div>
+</div>
+<!-- WIDGET 4: High-Priority Operational Actions -->
+<div class="bg-card-surface rounded-xl p-space-xl shadow-md flex flex-col gap-space-md">
+<h3 class="font-headline-sm text-headline-sm text-text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-status-warning text-lg">bolt</span>
+          Operational Quick Controls
+        </h3>
+<!-- Lock Device Remotely (Amber) -->
+<button class="w-full h-10 px-space-md rounded-xl bg-status-warning/15 hover:bg-status-warning/25 text-status-warning transition-colors font-label-md text-label-md flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg">lock_reset</span>
+          Lock Device Remotely (MDM)
+        </button>
+<!-- Schedule Depot Maintenance -->
+<button class="w-full h-10 px-space-md rounded-xl bg-card-elevated hover:bg-surface-container-high text-text-primary transition-colors font-label-md text-label-md flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg">calendar_month</span>
+          Schedule Depot Maintenance
+        </button>
+<!-- Transfer / Decommission (Muted Danger) -->
+<button class="w-full py-2 text-center text-status-danger hover:text-red-400 font-label-sm text-label-sm transition-colors flex items-center justify-center gap-1.5 opacity-90 hover:opacity-100">
+<span class="material-symbols-outlined text-base">archive</span>
+          Transfer to Depot / Decommission Asset
+        </button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

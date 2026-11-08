@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"border-hover":"rgba(59, 130, 246, 0.40)","secondary-container":"#045ecf","on-secondary-fixed-variant":"#004398","on-tertiary-fixed":"#001a42","on-secondary-container":"#d5e0ff","on-secondary-fixed":"#001a43","background":"#0c1321","on-primary-fixed-variant":"#003ea8","outline":"#8d90a0","tertiary-container":"#0f69dc","primary-dark":"#1D4ED8","on-primary-fixed":"#00174b","on-tertiary":"#002e6a","on-secondary":"#002d6c","on-surface":"#dce2f6","inverse-on-surface":"#2a3040","on-surface-variant":"#c3c6d7","tertiary-fixed":"#d8e2ff","inverse-surface":"#dce2f6","text-tertiary":"#64748B","text-disabled":"#475569","sidebar-surface":"#10182A","surface":"#0c1321","overlay-backdrop":"rgba(0, 0, 0, 0.60)","tertiary-fixed-dim":"#adc6ff","surface-variant":"#2e3544","card-elevated":"#16233F","surface-bright":"#323949","border-glass":"rgba(255, 255, 255, 0.08)","on-error-container":"#ffdad6","surface-container":"#19202e","accent-electric":"#4F8CFF","surface-tint":"#b4c5ff","status-info":"#38BDF8","text-primary":"#F8FAFC","primary-fixed-dim":"#b4c5ff","card-surface":"#121C31","status-warning":"#F59E0B","input-surface":"#0F1930","surface-container-high":"#232a39","on-tertiary-container":"#edf0ff","primary-fixed":"#dbe1ff","primary-container":"#2563eb","secondary-fixed-dim":"#afc6ff","border-subtle":"rgba(148, 163, 184, 0.14)","error":"#ffb4ab","status-danger":"#EF4444","error-container":"#93000a","surface-container-highest":"#2e3544","primary":"#b4c5ff","surface-container-low":"#151b2a","on-background":"#dce2f6","text-secondary":"#94A3B8","surface-container-lowest":"#070e1c","secondary":"#afc6ff","inverse-primary":"#0053db","outline-variant":"#434655","on-tertiary-fixed-variant":"#004395","app-bg":"#0B1220","surface-dim":"#0c1321","on-error":"#690005","on-primary-container":"#eeefff","status-success":"#22C55E","status-pending":"#A78BFA","on-primary":"#002a78","border-input":"rgba(148, 163, 184, 0.16)","accent-light":"#60A5FA","interactive-active-bg":"rgba(37, 99, 235, 0.18)","tertiary":"#adc6ff","secondary-fixed":"#d9e2ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-lg":"1rem","space-xs":"0.25rem","margin-desktop":"2rem","space-xl":"1.5rem","gutter":"1rem","space-2xl":"2rem","margin":"1rem","space-md":"0.75rem","gutter-desktop":"1.5rem","space-sm":"0.5rem"},fontFamily:{"headline-xl":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"caption":["Inter"],"headline-sm":["Inter"],"headline-xl-mobile":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"label-sm":["Inter"],"code-meta":["Inter"],"headline-lg":["Inter"],"body-sm":["Inter"]},fontSize:{"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"16px","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"caption":["11px",{"lineHeight":"14px","fontWeight":"400"}],"headline-sm":["15px",{"lineHeight":"20px","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"code-meta":["12px",{"lineHeight":"16px","fontWeight":"600"}],"headline-lg":["22px",{"lineHeight":"28px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}]}}}};</script></head><body class="bg-app-bg text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-sidebar-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-xl flex items-center gap-space-sm"><img alt="Apex Desk Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VKUVTXqCpH-FXGmoK-2kF4Tt2Dm-ELJWNCFuhJRqxpucrf4IryWidKtv_Q0i67U1DztVk9VzJC0EsZC-a1xPMoyWWek-zeUmUQrolyMIxGtdrX_HloMIiTdV0dL-dQC5QOeFeXOaoHF4wjDBw80_QhVfa9HVVIO2AcIxk-DSzSILIDugmjsidWD6D0DWWMHSP0kOcZ83Y-Tgw13zy8zqj4TqsCM5GHesvHzCzQa9YO"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight">Apex Desk</span><span class="font-caption text-caption text-text-tertiary">Enterprise IT Ops</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Main</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-on-primary-container shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-xl">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="my-tickets" href="#"><span class="material-symbols-outlined text-xl">inbox</span><span>My Tickets</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="all-tickets" href="#"><span class="material-symbols-outlined text-xl">confirmation_number</span><span>All Tickets</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="create-ticket" href="#"><span class="material-symbols-outlined text-xl">add_circle</span><span>Create Ticket</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="service-catalog" href="#"><span class="material-symbols-outlined text-xl">category</span><span>Service Catalog</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="assets" href="#"><span class="material-symbols-outlined text-xl">devices</span><span>Assets</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-xl">menu_book</span><span>Knowledge Base</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="reports" href="#"><span class="material-symbols-outlined text-xl">bar_chart</span><span>Reports</span></a></nav></div><div class="px-space-md py-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Administration</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-on-primary-container shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="users" href="#"><span class="material-symbols-outlined text-xl">group</span><span>Users</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="categories" href="#"><span class="material-symbols-outlined text-xl">folder</span><span>Categories</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="sla-management" href="#"><span class="material-symbols-outlined text-xl">timer</span><span>SLA</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="settings" href="#"><span class="material-symbols-outlined text-xl">settings</span><span>Settings</span></a></nav></div></div><div class="p-space-md bg-surface-container-lowest m-space-md rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-status-success"></span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-text-primary truncate">Azka</span><span class="font-caption text-caption text-text-secondary truncate">Incident Lead</span></div></div><a class="text-on-surface-variant hover:text-status-danger p-space-xs rounded-lg transition-colors flex items-center justify-center" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-xl">logout</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 px-margin-desktop flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><nav class="hidden sm:flex items-center gap-space-sm font-body-sm text-body-sm text-text-secondary"><span class="hover:text-text-primary cursor-pointer transition-colors">Home</span><span class="text-outline-variant font-caption text-caption">/</span><span class="hover:text-text-primary cursor-pointer transition-colors">Dashboard</span><span class="text-outline-variant font-caption text-caption">/</span><span class="text-text-primary font-label-md text-label-md">Today</span></nav></div><div class="flex items-center gap-space-lg"><div class="relative hidden md:flex items-center"><div class="absolute left-space-md flex items-center pointer-events-none text-text-tertiary"><span class="material-symbols-outlined text-lg">search</span></div><input class="w-72 h-10 bg-input-surface text-text-primary placeholder:text-text-tertiary pl-10 pr-16 rounded-xl font-body-md text-body-md focus:bg-surface-container focus:text-text-primary transition-all outline-none" placeholder="Search incidents, tickets, KB..." type="text"/><div class="absolute right-space-sm flex items-center gap-space-xs pointer-events-none"><kbd class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-high text-text-secondary">⌘K</kbd></div></div><div class="flex items-center gap-space-sm"><button class="relative p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-danger"></span></button><button class="p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-colors" type="button"><span class="material-symbols-outlined text-xl">help</span></button><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-full"><span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span><span class="font-label-sm text-label-sm text-status-success hidden lg:inline">Operational</span></div></div><div class="flex items-center gap-space-md"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/></div></div></header><main class="w-full pt-16 bg-app-bg px-margin-desktop min-h-screen"><div class="flex flex-col w-full pb-16">
+<!-- Topbar / Breadcrumb & Header Section -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg mb-8">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs font-caption text-caption text-text-tertiary">
+<span class="hover:text-text-primary transition-colors cursor-pointer">Home</span>
+<span>/</span>
+<span class="hover:text-text-primary transition-colors cursor-pointer">Service Desk</span>
+<span>/</span>
+<span class="text-text-primary font-label-sm text-label-sm">My Tickets</span>
+</div>
+<div class="flex items-center gap-space-md mt-1">
+<h1 class="font-headline-xl text-headline-xl text-text-primary tracking-tight">My Tickets</h1>
+<span class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container font-code-meta text-code-meta text-status-info">
+<span class="w-1.5 h-1.5 rounded-full bg-status-info animate-pulse"></span>
+          Live Sync
+        </span>
+</div>
+<p class="font-body-md text-body-md text-text-secondary">Manage and track your active IT support requests, hardware requisitions, and incident SLAs.</p>
+</div>
+<!-- Actions Group -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-3.5 h-10 rounded-xl bg-card-surface text-text-primary font-label-md text-label-md hover:text-status-info hover:bg-card-elevated shadow-sm transition-all duration-200" type="button">
+<span class="material-symbols-outlined text-lg">tune</span>
+<span>Saved Views</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-3.5 h-10 rounded-xl bg-card-surface text-text-primary font-label-md text-label-md hover:text-status-info hover:bg-card-elevated shadow-sm transition-all duration-200" type="button">
+<span class="material-symbols-outlined text-lg">download</span>
+<span>Export CSV</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-5 h-10 rounded-xl bg-gradient-to-r from-primary-container to-accent-light text-text-primary font-label-md text-label-md hover:shadow-[0_0_30px_rgba(37,99,235,0.35)] hover:scale-[1.01] active:scale-[0.99] transition-all duration-200 shadow-md" type="button">
+<span class="material-symbols-outlined text-lg font-bold">add</span>
+<span>Create Ticket</span>
+</button>
+</div>
+</div>
+<!-- KPI / Quick Status Counters Bento Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md mb-8">
+<!-- KPI 1: All Tickets -->
+<div class="group relative overflow-hidden rounded-xl bg-card-surface p-space-lg shadow-sm hover:shadow-xl hover:bg-card-elevated transition-all duration-200 cursor-pointer">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Total Filed</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-accent-light">
+<span class="material-symbols-outlined text-lg">receipt_long</span>
+</div>
+</div>
+<div class="mt-3 flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl text-text-primary">14</span>
+<span class="font-label-sm text-label-sm text-text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-status-success">trending_up</span> 100% catalogued
+        </span>
+</div>
+<div class="w-full h-1 bg-surface-container rounded-full mt-3 overflow-hidden">
+<div class="h-full bg-accent-light rounded-full w-full"></div>
+</div>
+</div>
+<!-- KPI 2: Open & Active -->
+<div class="group relative overflow-hidden rounded-xl bg-card-surface p-space-lg shadow-sm hover:shadow-xl hover:bg-card-elevated transition-all duration-200 cursor-pointer">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-status-info uppercase tracking-wider">Open &amp; Active</span>
+<div class="w-8 h-8 rounded-lg bg-interactive-active-bg flex items-center justify-center text-status-info">
+<span class="material-symbols-outlined text-lg">bolt</span>
+</div>
+</div>
+<div class="mt-3 flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl text-text-primary">5</span>
+<span class="font-caption text-caption text-status-warning bg-status-warning/10 px-2 py-0.5 rounded-full font-label-sm">
+          1 near breach
+        </span>
+</div>
+<div class="w-full h-1 bg-surface-container rounded-full mt-3 overflow-hidden">
+<div class="h-full bg-status-info rounded-full w-[35%]"></div>
+</div>
+</div>
+<!-- KPI 3: Awaiting Action -->
+<div class="group relative overflow-hidden rounded-xl bg-card-surface p-space-lg shadow-sm hover:shadow-xl hover:bg-card-elevated transition-all duration-200 cursor-pointer">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-status-pending uppercase tracking-wider">Awaiting My Action</span>
+<div class="w-8 h-8 rounded-lg bg-status-pending/10 flex items-center justify-center text-status-pending">
+<span class="material-symbols-outlined text-lg">pending_actions</span>
+</div>
+</div>
+<div class="mt-3 flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl text-text-primary">2</span>
+<span class="font-caption text-caption text-status-pending">Needs employee response</span>
+</div>
+<div class="w-full h-1 bg-surface-container rounded-full mt-3 overflow-hidden">
+<div class="h-full bg-status-pending rounded-full w-[14%]"></div>
+</div>
+</div>
+<!-- KPI 4: Resolved / Closed -->
+<div class="group relative overflow-hidden rounded-xl bg-card-surface p-space-lg shadow-sm hover:shadow-xl hover:bg-card-elevated transition-all duration-200 cursor-pointer">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-status-success uppercase tracking-wider">Resolved &amp; Closed</span>
+<div class="w-8 h-8 rounded-lg bg-status-success/10 flex items-center justify-center text-status-success">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+</div>
+</div>
+<div class="mt-3 flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl text-text-primary">7</span>
+<span class="font-caption text-caption text-status-success font-label-sm">50% solved</span>
+</div>
+<div class="w-full h-1 bg-surface-container rounded-full mt-3 overflow-hidden">
+<div class="h-full bg-status-success rounded-full w-[50%]"></div>
+</div>
+</div>
+</div>
+<!-- Filter & Utility Control Bar -->
+<div class="flex flex-col gap-space-md p-space-lg rounded-xl bg-card-surface shadow-sm mb-6">
+<div class="flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-md">
+<!-- Search Field with hotkey -->
+<div class="relative flex-1 min-w-[280px]">
+<div class="absolute left-3.5 top-1/2 -translate-y-1/2 text-text-tertiary flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-lg">search</span>
+</div>
+<input class="w-full h-10 pl-10 pr-16 bg-input-surface text-text-primary placeholder:text-text-tertiary rounded-xl font-body-md text-body-md focus:bg-surface-container transition-all outline-none" placeholder="Search tickets by ID, subject, keyword..." type="text"/>
+<div class="absolute right-3 top-1/2 -translate-y-1/2 flex items-center pointer-events-none">
+<kbd class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container text-text-secondary shadow-sm">⌘F</kbd>
+</div>
+</div>
+<!-- Filters Row -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Status Dropdown -->
+<div class="relative">
+<select class="h-10 pl-3 pr-8 bg-input-surface text-text-primary rounded-xl font-body-sm text-body-sm appearance-none outline-none cursor-pointer hover:bg-surface-container transition-colors">
+<option>Status: All Active (5)</option>
+<option>Open</option>
+<option>In Progress</option>
+<option>Pending Approval</option>
+<option>Resolved</option>
+<option>Closed</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none text-text-tertiary text-base">expand_more</span>
+</div>
+<!-- Priority Dropdown -->
+<div class="relative">
+<select class="h-10 pl-3 pr-8 bg-input-surface text-text-primary rounded-xl font-body-sm text-body-sm appearance-none outline-none cursor-pointer hover:bg-surface-container transition-colors">
+<option>Priority: All</option>
+<option>Critical P1</option>
+<option>High P2</option>
+<option>Medium P3</option>
+<option>Low P4</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none text-text-tertiary text-base">expand_more</span>
+</div>
+<!-- Category Dropdown -->
+<div class="relative">
+<select class="h-10 pl-3 pr-8 bg-input-surface text-text-primary rounded-xl font-body-sm text-body-sm appearance-none outline-none cursor-pointer hover:bg-surface-container transition-colors">
+<option>Category: All Categories</option>
+<option>Network &amp; VPN</option>
+<option>Hardware</option>
+<option>Software &amp; ERP</option>
+<option>Identity &amp; Access</option>
+<option>Developer Tooling</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none text-text-tertiary text-base">expand_more</span>
+</div>
+<!-- Date Range -->
+<div class="relative hidden sm:block">
+<button class="h-10 px-3.5 bg-input-surface text-text-primary rounded-xl font-body-sm text-body-sm flex items-center gap-2 hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-base text-text-tertiary">calendar_today</span>
+<span>Last 30 Days</span>
+</button>
+</div>
+<!-- View Mode Toggle -->
+<div class="flex items-center bg-input-surface p-1 rounded-xl ml-auto xl:ml-0">
+<button class="p-1.5 rounded-lg bg-primary-container text-text-primary shadow-sm transition-colors" title="Expanded Hybrid Cards" type="button">
+<span class="material-symbols-outlined text-base">view_agenda</span>
+</button>
+<button class="p-1.5 rounded-lg text-text-tertiary hover:text-text-primary transition-colors" title="Compact Table" type="button">
+<span class="material-symbols-outlined text-base">table_rows</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Active Filter Chips Tag Bar -->
+<div class="flex flex-wrap items-center gap-space-xs pt-1">
+<span class="font-caption text-caption text-text-tertiary mr-1">Active Filters:</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-interactive-active-bg text-accent-light font-label-sm text-label-sm">
+<span>Owner: Assigned to Me</span>
+<button class="hover:text-text-primary" type="button"><span class="material-symbols-outlined text-xs">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-text-secondary font-label-sm text-label-sm">
+<span>Status: Non-Closed</span>
+<button class="hover:text-text-primary" type="button"><span class="material-symbols-outlined text-xs">close</span></button>
+</span>
+<button class="font-caption text-caption text-accent-light hover:underline ml-2" type="button">Reset all filters</button>
+</div>
+</div>
+<!-- Ticket List: Card / Table Hybrid Structure -->
+<div class="flex flex-col gap-3">
+<!-- Row 1: INC-00125 - Critical In-Progress (Near Breach SLA) -->
+<div class="group relative rounded-xl bg-card-surface hover:bg-card-elevated transition-all duration-200 p-space-lg shadow-sm hover:shadow-xl">
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-4">
+<!-- Main Info Stack -->
+<div class="flex items-start gap-4 min-w-0 xl:w-5/12">
+<div class="pt-0.5">
+<input class="w-4 h-4 rounded bg-input-surface accent-primary-container cursor-pointer" type="checkbox"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1.5">
+<span class="font-code-meta text-code-meta text-text-primary font-bold px-2 py-0.5 rounded bg-surface-container">#INC-00125</span>
+<!-- Priority Chip -->
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-status-danger/15 text-status-danger font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-status-danger animate-ping"></span>
+                Critical P1
+              </span>
+<!-- Status Chip -->
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-status-danger/10 text-status-danger font-label-sm text-label-sm">
+                Critical In Progress
+              </span>
+<!-- Category Pill -->
+<span class="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container font-caption text-caption text-text-secondary">
+<span class="material-symbols-outlined text-xs">wifi_off</span> Network • Hardware
+              </span>
+</div>
+<a class="font-headline-sm text-headline-sm text-text-primary hover:text-accent-light transition-colors truncate" href="#">
+              Laptop tidak bisa connect WiFi (5GHz AP Dropping) - Lenovo ThinkPad X1 Carbon Gen 11
+            </a>
+<span class="font-caption text-caption text-text-tertiary mt-1">
+              Building C, Fl 4, Seat 42-B • Reported via Slack OpsBot • Created 35m ago
+            </span>
+</div>
+</div>
+<!-- Technician Assignment -->
+<div class="flex items-center gap-3 xl:w-3/12">
+<div class="relative w-8 h-8 rounded-full overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Corporate headshot of IT technician Budi Prasetyo wearing network operations badge against navy technical server room backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPDYtjgK4uwYvSIWRS8e9n3ZNbTb8V8mMOBVzT-me9PAruJAk9BrzhlK_HuPlAJebQ9kfyu1H5tYjikSsca-9rcYrBDpSAzC-WmVmR1f6O1EAscM0B7ZM1VaoJNJ46sblREhR8dBdW7zop2vQvIUytw6SQQismGJEsUPu9HAEtAHVeVGY3hn_4yLShZVSBziBU2PAUY5lWOlbTTqMkvQAeaeGGavwvXqkQFicqZOg"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-text-primary truncate">Budi Prasetyo</span>
+<span class="font-caption text-caption text-text-tertiary truncate">NetOps L2 Specialist</span>
+</div>
+</div>
+<!-- SLA Progress & Countdown -->
+<div class="flex flex-col xl:w-3/12">
+<div class="flex items-center justify-between text-caption font-caption mb-1">
+<span class="text-status-danger font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">timer</span> 14m remaining
+            </span>
+<span class="text-status-danger uppercase tracking-wider font-label-sm">Near Breach!</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-status-danger rounded-full w-[85%]"></div>
+</div>
+<span class="font-caption text-caption text-text-tertiary mt-1">SLA Target: 45m MTTR response</span>
+</div>
+<!-- Row Actions -->
+<div class="flex items-center justify-end gap-2 xl:w-1/12">
+<button class="p-2 rounded-lg bg-surface-container text-text-secondary hover:text-accent-light hover:bg-interactive-active-bg transition-colors" title="View details" type="button">
+<span class="material-symbols-outlined text-lg">open_in_new</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container text-text-secondary hover:text-text-primary hover:bg-card-elevated transition-colors" title="Quick Options" type="button">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Row 2: INC-00124 - High Priority In Progress -->
+<div class="group relative rounded-xl bg-card-surface hover:bg-card-elevated transition-all duration-200 p-space-lg shadow-sm hover:shadow-xl">
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-4">
+<div class="flex items-start gap-4 min-w-0 xl:w-5/12">
+<div class="pt-0.5">
+<input class="w-4 h-4 rounded bg-input-surface accent-primary-container cursor-pointer" type="checkbox"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1.5">
+<span class="font-code-meta text-code-meta text-text-primary font-bold px-2 py-0.5 rounded bg-surface-container">#INC-00124</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-status-warning/15 text-status-warning font-label-sm text-label-sm">
+                High P2
+              </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-status-info/15 text-status-info font-label-sm text-label-sm">
+                In Progress
+              </span>
+<span class="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container font-caption text-caption text-text-secondary">
+<span class="material-symbols-outlined text-xs">vpn_key</span> Infrastructure • VPN WireGuard
+              </span>
+</div>
+<a class="font-headline-sm text-headline-sm text-text-primary hover:text-accent-light transition-colors truncate" href="#">
+              WireGuard Tunnel Handshake Timeout saat access staging VPC Jakarta-01
+            </a>
+<span class="font-caption text-caption text-text-tertiary mt-1">
+              Remote Developer • Client Gateway v2.4.1 • Updated 12m ago
+            </span>
+</div>
+</div>
+<div class="flex items-center gap-3 xl:w-3/12">
+<div class="relative w-8 h-8 rounded-full overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait of female cloud reliability engineer Siti Rahma smiling in high-tech NOC center with navy ambient light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnTZgjiqnaKJwb93oIIPA6nH9kh5vDsfPBCV0XX66jKJVjNDG2lRtaJy1S4MBEroWnL3diaCv_-qcV7-NjsaNPn6kvuv-swamywMO47LJ4Rtrpt_nhLlnsNI9qYwXnRRywpPDFuaBBm6VEpg8N55wZlKKO_LNEd1lvNJRDIDf-mBdG5nQDH5LeEYJ0LylgKPhmtMzlT6wf6PtgDEQ3g8k_AiAnxr6ghXeK71wgyHU"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-text-primary truncate">Siti Rahma</span>
+<span class="font-caption text-caption text-text-tertiary truncate">Infra SRE Pod 2</span>
+</div>
+</div>
+<div class="flex flex-col xl:w-3/12">
+<div class="flex items-center justify-between text-caption font-caption mb-1">
+<span class="text-status-info font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">timer</span> 1h 20m remaining
+            </span>
+<span class="text-status-info font-label-sm">Healthy SLA</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-status-info rounded-full w-[45%]"></div>
+</div>
+<span class="font-caption text-caption text-text-tertiary mt-1">SLA Target: 2h MTTR</span>
+</div>
+<div class="flex items-center justify-end gap-2 xl:w-1/12">
+<button class="p-2 rounded-lg bg-surface-container text-text-secondary hover:text-accent-light hover:bg-interactive-active-bg transition-colors" title="View details" type="button">
+<span class="material-symbols-outlined text-lg">open_in_new</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container text-text-secondary hover:text-text-primary hover:bg-card-elevated transition-colors" title="Quick Options" type="button">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Row 3: INC-00123 - Pending Approval -->
+<div class="group relative rounded-xl bg-card-surface hover:bg-card-elevated transition-all duration-200 p-space-lg shadow-sm hover:shadow-xl">
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-4">
+<div class="flex items-start gap-4 min-w-0 xl:w-5/12">
+<div class="pt-0.5">
+<input class="w-4 h-4 rounded bg-input-surface accent-primary-container cursor-pointer" type="checkbox"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1.5">
+<span class="font-code-meta text-code-meta text-text-primary font-bold px-2 py-0.5 rounded bg-surface-container">#INC-00123</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-accent-light/15 text-accent-light font-label-sm text-label-sm">
+                Medium P3
+              </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-status-pending/15 text-status-pending font-label-sm text-label-sm">
+                Pending Approval
+              </span>
+<span class="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container font-caption text-caption text-text-secondary">
+<span class="material-symbols-outlined text-xs">database</span> Software • SAP S/4HANA ERP
+              </span>
+</div>
+<a class="font-headline-sm text-headline-sm text-text-primary hover:text-accent-light transition-colors truncate" href="#">
+              Request elevated license for SAP Finance Module (FI-CO) GL Posting
+            </a>
+<span class="font-caption text-caption text-text-tertiary mt-1">
+              Waiting for Finance Director Sign-off • Created 4h ago
+            </span>
+</div>
+</div>
+<div class="flex items-center gap-3 xl:w-3/12">
+<div class="relative w-8 h-8 rounded-full overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait of Asian security administrator Anton Wahyudi dressed in corporate smart shirt in modern cybersecurity operations center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpmQa2UcTCiCMx31GM_N1LSgg7GrtClNAR0ocNmK-L7IRbD5Y4_OgrGqCTcRXXjIP573WX1e6L0uUaBM5C_V2N0SpEwtFvzk1HEhCYeYAfPKK4i6RDQao8fVBZdUwzNe-kHZpnbp3aG-NtwpAgTynuIOeVY98n3LC_SxIX0U6rpUYxg6I7P1K23g2us1M6qYMzJmyOSUGOCcx8qkbJtM6cKeunRtkwP_LIMbMq3qk"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-text-primary truncate">Anton Wahyudi</span>
+<span class="font-caption text-caption text-text-tertiary truncate">Identity &amp; Governance</span>
+</div>
+</div>
+<div class="flex flex-col xl:w-3/12">
+<div class="flex items-center justify-between text-caption font-caption mb-1">
+<span class="text-status-pending font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">pause_circle</span> SLA Paused
+            </span>
+<span class="text-text-tertiary font-label-sm">Awaiting Auth</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-status-pending rounded-full w-[20%]"></div>
+</div>
+<span class="font-caption text-caption text-text-tertiary mt-1">Resumes automatically on approval</span>
+</div>
+<div class="flex items-center justify-end gap-2 xl:w-1/12">
+<button class="p-2 rounded-lg bg-surface-container text-text-secondary hover:text-accent-light hover:bg-interactive-active-bg transition-colors" title="View details" type="button">
+<span class="material-symbols-outlined text-lg">open_in_new</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container text-text-secondary hover:text-text-primary hover:bg-card-elevated transition-colors" title="Quick Options" type="button">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Row 4: INC-00122 - Assigned Hardware Replacement -->
+<div class="group relative rounded-xl bg-card-surface hover:bg-card-elevated transition-all duration-200 p-space-lg shadow-sm hover:shadow-xl">
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-4">
+<div class="flex items-start gap-4 min-w-0 xl:w-5/12">
+<div class="pt-0.5">
+<input class="w-4 h-4 rounded bg-input-surface accent-primary-container cursor-pointer" type="checkbox"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1.5">
+<span class="font-code-meta text-code-meta text-text-primary font-bold px-2 py-0.5 rounded bg-surface-container">#INC-00122</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-accent-light/15 text-accent-light font-label-sm text-label-sm">
+                Medium P3
+              </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-status-info/15 text-status-info font-label-sm text-label-sm">
+                Assigned
+              </span>
+<span class="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container font-caption text-caption text-text-secondary">
+<span class="material-symbols-outlined text-xs">devices</span> Hardware • Workstation
+              </span>
+</div>
+<a class="font-headline-sm text-headline-sm text-text-primary hover:text-accent-light transition-colors truncate" href="#">
+              Replacement USB-C Docking Station (Dell WD19TBS dual 4K display flickering)
+            </a>
+<span class="font-caption text-caption text-text-tertiary mt-1">
+              Asset Tag: #AST-88910 • Pick-up at IT Kiosk B • Updated 1h ago
+            </span>
+</div>
+</div>
+<div class="flex items-center gap-3 xl:w-3/12">
+<div class="relative w-8 h-8 rounded-full overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="IT field technician Kevin Chen wearing blue tech polo holding diagnostic hardware tablet in front of hardware asset lockers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqMrALfvHEeBjJS2O1F1Z8NZIJjRzlQdow-q1LJaALeNCgDR-BihMN19Lkb0eL96lXm0O_p7728W908DW5rWYyNzhkrA8X7vXPuoujUeKRPlpmBqwpt4CJpcV3hV5ERiCZzK_SFo-TnPuAyptdO81rnApje-6rbLqOz3DxBkReKbaY1Lpq-DDINZ3TG3DzSWyjpphC2qmQa7Y7Tu5m4BSIygM_myjc22QUGWRFO0Q"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-text-primary truncate">Kevin Chen</span>
+<span class="font-caption text-caption text-text-tertiary truncate">DeskSide Support Tech</span>
+</div>
+</div>
+<div class="flex flex-col xl:w-3/12">
+<div class="flex items-center justify-between text-caption font-caption mb-1">
+<span class="text-status-info font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">timer</span> 4h 15m remaining
+            </span>
+<span class="text-status-info font-label-sm">On Track</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-status-info rounded-full w-[30%]"></div>
+</div>
+<span class="font-caption text-caption text-text-tertiary mt-1">SLA Target: 6h Delivery</span>
+</div>
+<div class="flex items-center justify-end gap-2 xl:w-1/12">
+<button class="p-2 rounded-lg bg-surface-container text-text-secondary hover:text-accent-light hover:bg-interactive-active-bg transition-colors" title="View details" type="button">
+<span class="material-symbols-outlined text-lg">open_in_new</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container text-text-secondary hover:text-text-primary hover:bg-card-elevated transition-colors" title="Quick Options" type="button">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Row 5: INC-00120 - Open (Awaiting First Triage) -->
+<div class="group relative rounded-xl bg-card-surface hover:bg-card-elevated transition-all duration-200 p-space-lg shadow-sm hover:shadow-xl">
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-4">
+<div class="flex items-start gap-4 min-w-0 xl:w-5/12">
+<div class="pt-0.5">
+<input class="w-4 h-4 rounded bg-input-surface accent-primary-container cursor-pointer" type="checkbox"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1.5">
+<span class="font-code-meta text-code-meta text-text-primary font-bold px-2 py-0.5 rounded bg-surface-container">#INC-00120</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-text-secondary font-label-sm text-label-sm">
+                Low P4
+              </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-status-info/10 text-status-info font-label-sm text-label-sm">
+                Open
+              </span>
+<span class="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container font-caption text-caption text-text-secondary">
+<span class="material-symbols-outlined text-xs">terminal</span> Dev Tools • WSL2
+              </span>
+</div>
+<a class="font-headline-sm text-headline-sm text-text-primary hover:text-accent-light transition-colors truncate" href="#">
+              WSL2 Ubuntu 22.04 Docker socket permission denied after enterprise crowdstrike update
+            </a>
+<span class="font-caption text-caption text-text-tertiary mt-1">
+              Engineering Workstation • Reported 2h ago
+            </span>
+</div>
+</div>
+<div class="flex items-center gap-3 xl:w-3/12">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-text-tertiary">
+<span class="material-symbols-outlined text-base">person_search</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-text-tertiary italic truncate">Unassigned</span>
+<span class="font-caption text-caption text-text-tertiary truncate">In L1 Dispatch Queue</span>
+</div>
+</div>
+<div class="flex flex-col xl:w-3/12">
+<div class="flex items-center justify-between text-caption font-caption mb-1">
+<span class="text-status-info font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">timer</span> 22h remaining
+            </span>
+<span class="text-status-info font-label-sm">Initial Response</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-accent-light rounded-full w-[10%]"></div>
+</div>
+<span class="font-caption text-caption text-text-tertiary mt-1">SLA Target: 24h</span>
+</div>
+<div class="flex items-center justify-end gap-2 xl:w-1/12">
+<button class="p-2 rounded-lg bg-surface-container text-text-secondary hover:text-accent-light hover:bg-interactive-active-bg transition-colors" title="View details" type="button">
+<span class="material-symbols-outlined text-lg">open_in_new</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container text-text-secondary hover:text-text-primary hover:bg-card-elevated transition-colors" title="Quick Options" type="button">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Row 6: INC-00115 - Resolved -->
+<div class="group relative rounded-xl bg-card-surface hover:bg-card-elevated transition-all duration-200 p-space-lg shadow-sm hover:shadow-xl opacity-90 hover:opacity-100">
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-4">
+<div class="flex items-start gap-4 min-w-0 xl:w-5/12">
+<div class="pt-0.5">
+<input class="w-4 h-4 rounded bg-input-surface accent-primary-container cursor-pointer" type="checkbox"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1.5">
+<span class="font-code-meta text-code-meta text-text-secondary px-2 py-0.5 rounded bg-surface-container">#INC-00115</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-accent-light/15 text-accent-light font-label-sm text-label-sm">
+                Medium P3
+              </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-status-success/15 text-status-success font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs">done</span> Resolved
+              </span>
+<span class="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container font-caption text-caption text-text-secondary">
+<span class="material-symbols-outlined text-xs">security</span> Security • MFA
+              </span>
+</div>
+<a class="font-headline-sm text-headline-sm text-text-secondary line-through hover:text-text-primary transition-colors truncate" href="#">
+              MFA Hardware YubiKey 5C NFC re-registration &amp; backup key enrollment
+            </a>
+<span class="font-caption text-caption text-text-tertiary mt-1">
+              Closed Yesterday by IT SecOps • Satisfaction rated 5/5 ⭐
+            </span>
+</div>
+</div>
+<div class="flex items-center gap-3 xl:w-3/12">
+<div class="relative w-8 h-8 rounded-full overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait of security operations engineer Anton Wahyudi in modern datacenter lighting with cyber blue screen reflected" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2zVy8Ge6GTi7bIHeXRvJV3s7wAAYTvgy9sCSCevwdp3pl35y1qTYmy_wr-K9Ye0gdNj9LH7L2pUmZaHs2xJziafWFTs7P2dltT3dbcxlfsGmDuCisjVUE3NxTgCnMuYrg0g4kmK3r__cmkGvuOZTeBUbLAUYUrjlvCvKMPFmMaCvl8L0dl9XtXwuntnc5F57srSXevwrAR7dcicl0TVYz8_iNJnaI6VLM2Vz2HJY"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-text-secondary truncate">Anton Wahyudi</span>
+<span class="font-caption text-caption text-text-tertiary truncate">Identity Ops</span>
+</div>
+</div>
+<div class="flex flex-col xl:w-3/12">
+<div class="flex items-center justify-between text-caption font-caption mb-1">
+<span class="text-status-success font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">check_circle</span> Met SLA
+            </span>
+<span class="text-status-success font-label-sm">18m MTTR</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-status-success rounded-full w-full"></div>
+</div>
+<span class="font-caption text-caption text-text-tertiary mt-1">Resolved well under 2h target</span>
+</div>
+<div class="flex items-center justify-end gap-2 xl:w-1/12">
+<button class="p-2 rounded-lg bg-surface-container text-text-secondary hover:text-accent-light hover:bg-interactive-active-bg transition-colors" title="View details" type="button">
+<span class="material-symbols-outlined text-lg">open_in_new</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container text-text-secondary hover:text-text-primary hover:bg-card-elevated transition-colors" title="Quick Options" type="button">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Row 7: INC-00109 - Closed -->
+<div class="group relative rounded-xl bg-card-surface hover:bg-card-elevated transition-all duration-200 p-space-lg shadow-sm hover:shadow-xl opacity-80 hover:opacity-100">
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-4">
+<div class="flex items-start gap-4 min-w-0 xl:w-5/12">
+<div class="pt-0.5">
+<input class="w-4 h-4 rounded bg-input-surface accent-primary-container cursor-pointer" type="checkbox"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1.5">
+<span class="font-code-meta text-code-meta text-text-secondary px-2 py-0.5 rounded bg-surface-container">#INC-00109</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-text-tertiary font-label-sm text-label-sm">
+                Low P4
+              </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-text-tertiary font-label-sm text-label-sm">
+                Closed
+              </span>
+<span class="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container font-caption text-caption text-text-secondary">
+<span class="material-symbols-outlined text-xs">print</span> Peripheral • Office Print
+              </span>
+</div>
+<a class="font-headline-sm text-headline-sm text-text-secondary line-through hover:text-text-primary transition-colors truncate" href="#">
+              Setup FollowMe secure badge printer driver for macOS Sonoma
+            </a>
+<span class="font-caption text-caption text-text-tertiary mt-1">
+              Floor 3 Canon ImageRunner • Resolved 4 days ago
+            </span>
+</div>
+</div>
+<div class="flex items-center gap-3 xl:w-3/12">
+<div class="relative w-8 h-8 rounded-full overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Headshot of IT hardware tech Kevin Chen wearing lanyard in enterprise IT work center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1AmLwPpOh4M1i7iRcqlMmxhPfFGLotYkO0XokRx-k4uum4Qwbx6JnLXVLZdgBLGsCYxTqe2lTDhgvKTvhqrfn3D_F9rvJvfzNLoufUfTn0n4yW_DbOINtrRyItDyd4kM0ttZMTpOY-MB0AJTRlk1fks4CzXwN9X-371O097MHlKwtLI5u88i2YPODN1tkKS-cCxUWi0xOlnQA7zBEsL0IAxdYuVbDxMyu9kbV14U"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-text-secondary truncate">Kevin Chen</span>
+<span class="font-caption text-caption text-text-tertiary truncate">DeskSide Support Tech</span>
+</div>
+</div>
+<div class="flex flex-col xl:w-3/12">
+<div class="flex items-center justify-between text-caption font-caption mb-1">
+<span class="text-text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">check</span> Completed
+            </span>
+<span class="text-text-tertiary font-label-sm">Closed</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-text-disabled rounded-full w-full"></div>
+</div>
+<span class="font-caption text-caption text-text-tertiary mt-1">Archived in compliance logs</span>
+</div>
+<div class="flex items-center justify-end gap-2 xl:w-1/12">
+<button class="p-2 rounded-lg bg-surface-container text-text-secondary hover:text-accent-light hover:bg-interactive-active-bg transition-colors" title="View details" type="button">
+<span class="material-symbols-outlined text-lg">open_in_new</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container text-text-secondary hover:text-text-primary hover:bg-card-elevated transition-colors" title="Quick Options" type="button">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination & Footer Metadata Summary -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 mt-6 pt-2">
+<div class="flex items-center gap-space-sm font-body-sm text-body-sm text-text-secondary">
+<span>Showing <strong class="text-text-primary">1–7</strong> of <strong class="text-text-primary">14</strong> support requests</span>
+<span class="text-surface-variant">•</span>
+<div class="flex items-center gap-1">
+<span>Show:</span>
+<select class="bg-card-surface text-text-primary rounded-lg px-2 py-1 outline-none text-xs">
+<option>10</option>
+<option>25</option>
+<option>50</option>
+</select>
+</div>
+</div>
+<!-- Dark Pagination Controls -->
+<div class="flex items-center gap-1.5">
+<button class="h-9 px-3 rounded-lg bg-card-surface text-text-disabled flex items-center gap-1 text-xs cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+<span>Previous</span>
+</button>
+<button class="h-9 w-9 rounded-lg bg-primary-container text-text-primary font-label-md text-label-md flex items-center justify-center shadow-sm" type="button">
+        1
+      </button>
+<button class="h-9 w-9 rounded-lg bg-card-surface text-text-secondary hover:text-text-primary hover:bg-card-elevated font-label-md text-label-md flex items-center justify-center transition-colors" type="button">
+        2
+      </button>
+<button class="h-9 px-3 rounded-lg bg-card-surface text-text-secondary hover:text-text-primary hover:bg-card-elevated flex items-center gap-1 text-xs transition-colors" type="button">
+<span>Next</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Floating Multi-Select Bulk Actions Bar (Reveals on selection) -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 hidden items-center gap-4 px-5 py-3 rounded-xl bg-card-elevated/95 backdrop-blur-xl shadow-2xl text-text-primary" id="bulkActionBar">
+<div class="flex items-center gap-2 font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span><span id="selectedCount">2</span> tickets selected</span>
+</div>
+<div class="h-4 w-px bg-surface-container"></div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-text-primary hover:bg-interactive-active-bg hover:text-accent-light text-xs transition-colors font-label-sm" type="button">
+        Add Note
+      </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-text-primary hover:bg-interactive-active-bg hover:text-accent-light text-xs transition-colors font-label-sm" type="button">
+        Request SLA Update
+      </button>
+<button class="px-3 py-1.5 rounded-lg bg-status-danger/20 text-status-danger hover:bg-status-danger hover:text-text-primary text-xs transition-colors font-label-sm" type="button">
+        Cancel Tickets
+      </button>
+</div>
+<button class="text-text-tertiary hover:text-text-primary ml-2" id="closeBulkBar" type="button">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+</div>
+</div>
+<script>
+  (function initTicketInteractions() {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const bulkBar = document.getElementById('bulkActionBar');
+    const selectedCountSpan = document.getElementById('selectedCount');
+    const closeBulkBtn = document.getElementById('closeBulkBar');
+
+    function updateBulkState() {
+      const checkedBoxes = Array.from(checkboxes).filter(cb => cb.checked);
+      if (checkedBoxes.length > 0) {
+        bulkBar.classList.remove('hidden');
+        bulkBar.classList.add('flex');
+        selectedCountSpan.textContent = checkedBoxes.length;
+      } else {
+        bulkBar.classList.add('hidden');
+        bulkBar.classList.remove('flex');
+      }
+    }
+
+    checkboxes.forEach(cb => {
+      cb.addEventListener('change', updateBulkState);
+    });
+
+    if (closeBulkBtn) {
+      closeBulkBtn.addEventListener('click', () => {
+        checkboxes.forEach(cb => cb.checked = false);
+        updateBulkState();
+      });
+    }
+
+    // Keyboard shortcut CMD+F / CTRL+F focus search
+    window.addEventListener('keydown', (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'f') {
+        const searchInput = document.querySelector('input[type="text"]');
+        if (searchInput) {
+          e.preventDefault();
+          searchInput.focus();
+        }
+      }
+    });
+  })();
+</script></main></div></body></html>

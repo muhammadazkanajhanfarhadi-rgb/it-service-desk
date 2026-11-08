@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"border-hover":"rgba(59, 130, 246, 0.40)","secondary-container":"#045ecf","on-secondary-fixed-variant":"#004398","on-tertiary-fixed":"#001a42","on-secondary-container":"#d5e0ff","on-secondary-fixed":"#001a43","background":"#0c1321","on-primary-fixed-variant":"#003ea8","outline":"#8d90a0","tertiary-container":"#0f69dc","primary-dark":"#1D4ED8","on-primary-fixed":"#00174b","on-tertiary":"#002e6a","on-secondary":"#002d6c","on-surface":"#dce2f6","inverse-on-surface":"#2a3040","on-surface-variant":"#c3c6d7","tertiary-fixed":"#d8e2ff","inverse-surface":"#dce2f6","text-tertiary":"#64748B","text-disabled":"#475569","sidebar-surface":"#10182A","surface":"#0c1321","overlay-backdrop":"rgba(0, 0, 0, 0.60)","tertiary-fixed-dim":"#adc6ff","surface-variant":"#2e3544","card-elevated":"#16233F","surface-bright":"#323949","border-glass":"rgba(255, 255, 255, 0.08)","on-error-container":"#ffdad6","surface-container":"#19202e","accent-electric":"#4F8CFF","surface-tint":"#b4c5ff","status-info":"#38BDF8","text-primary":"#F8FAFC","primary-fixed-dim":"#b4c5ff","card-surface":"#121C31","status-warning":"#F59E0B","input-surface":"#0F1930","surface-container-high":"#232a39","on-tertiary-container":"#edf0ff","primary-fixed":"#dbe1ff","primary-container":"#2563eb","secondary-fixed-dim":"#afc6ff","border-subtle":"rgba(148, 163, 184, 0.14)","error":"#ffb4ab","status-danger":"#EF4444","error-container":"#93000a","surface-container-highest":"#2e3544","primary":"#b4c5ff","surface-container-low":"#151b2a","on-background":"#dce2f6","text-secondary":"#94A3B8","surface-container-lowest":"#070e1c","secondary":"#afc6ff","inverse-primary":"#0053db","outline-variant":"#434655","on-tertiary-fixed-variant":"#004395","app-bg":"#0B1220","surface-dim":"#0c1321","on-error":"#690005","on-primary-container":"#eeefff","status-success":"#22C55E","status-pending":"#A78BFA","on-primary":"#002a78","border-input":"rgba(148, 163, 184, 0.16)","accent-light":"#60A5FA","interactive-active-bg":"rgba(37, 99, 235, 0.18)","tertiary":"#adc6ff","secondary-fixed":"#d9e2ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-lg":"1rem","space-xs":"0.25rem","margin-desktop":"2rem","space-xl":"1.5rem","gutter":"1rem","space-2xl":"2rem","margin":"1rem","space-md":"0.75rem","gutter-desktop":"1.5rem","space-sm":"0.5rem"},fontFamily:{"headline-xl":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"caption":["Inter"],"headline-sm":["Inter"],"headline-xl-mobile":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"label-sm":["Inter"],"code-meta":["Inter"],"headline-lg":["Inter"],"body-sm":["Inter"]},fontSize:{"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"16px","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"caption":["11px",{"lineHeight":"14px","fontWeight":"400"}],"headline-sm":["15px",{"lineHeight":"20px","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"code-meta":["12px",{"lineHeight":"16px","fontWeight":"600"}],"headline-lg":["22px",{"lineHeight":"28px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}]}}}};</script></head><body class="bg-app-bg text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-sidebar-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-xl flex items-center gap-space-sm"><img alt="Apex Desk Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VKUVTXqCpH-FXGmoK-2kF4Tt2Dm-ELJWNCFuhJRqxpucrf4IryWidKtv_Q0i67U1DztVk9VzJC0EsZC-a1xPMoyWWek-zeUmUQrolyMIxGtdrX_HloMIiTdV0dL-dQC5QOeFeXOaoHF4wjDBw80_QhVfa9HVVIO2AcIxk-DSzSILIDugmjsidWD6D0DWWMHSP0kOcZ83Y-Tgw13zy8zqj4TqsCM5GHesvHzCzQa9YO"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight">Apex Desk</span><span class="font-caption text-caption text-text-tertiary">Enterprise IT Ops</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Main</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-on-primary-container shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl"><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-all font-body-md bg-primary-container text-on-primary-container shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl" data-path="dashboard" href="#"><span class="material-symbols-outlined text-xl">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="my-tickets" href="#"><span class="material-symbols-outlined text-xl">inbox</span><span>My Tickets</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="all-tickets" href="#"><span class="material-symbols-outlined text-xl">confirmation_number</span><span>All Tickets</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="create-ticket" href="#"><span class="material-symbols-outlined text-xl">add_circle</span><span>Create Ticket</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="service-catalog" href="#"><span class="material-symbols-outlined text-xl">category</span><span>Service Catalog</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="assets" href="#"><span class="material-symbols-outlined text-xl">devices</span><span>Assets</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-xl">menu_book</span><span>Knowledge Base</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="reports" href="#"><span class="material-symbols-outlined text-xl">bar_chart</span><span>Reports</span></a></nav></div><div class="px-space-md py-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Administration</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-on-primary-container shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="users" href="#"><span class="material-symbols-outlined text-xl">group</span><span>Users</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="categories" href="#"><span class="material-symbols-outlined text-xl">folder</span><span>Categories</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="sla-management" href="#"><span class="material-symbols-outlined text-xl">timer</span><span>SLA</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="settings" href="#"><span class="material-symbols-outlined text-xl">settings</span><span>Settings</span></a></nav></div></div><div class="p-space-md bg-surface-container-lowest m-space-md rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-status-success"></span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-text-primary truncate">Azka</span><span class="font-caption text-caption text-text-secondary truncate">Incident Lead</span></div></div><a class="text-on-surface-variant hover:text-status-danger p-space-xs rounded-lg transition-colors flex items-center justify-center" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-xl">logout</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 px-margin-desktop flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><nav class="hidden sm:flex items-center gap-space-sm font-body-sm text-body-sm text-text-secondary"><span class="hover:text-text-primary cursor-pointer transition-colors">Home</span><span class="text-outline-variant font-caption text-caption">/</span><span class="hover:text-text-primary cursor-pointer transition-colors">Dashboard</span><span class="text-outline-variant font-caption text-caption">/</span><span class="text-text-primary font-label-md text-label-md">Today</span></nav></div><div class="flex items-center gap-space-lg"><div class="relative hidden md:flex items-center"><div class="absolute left-space-md flex items-center pointer-events-none text-text-tertiary"><span class="material-symbols-outlined text-lg">search</span></div><input class="w-72 h-10 bg-input-surface text-text-primary placeholder:text-text-tertiary pl-10 pr-16 rounded-xl font-body-md text-body-md focus:bg-surface-container focus:text-text-primary transition-all outline-none" placeholder="Search incidents, tickets, KB..." type="text"/><div class="absolute right-space-sm flex items-center gap-space-xs pointer-events-none"><kbd class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-high text-text-secondary">⌘K</kbd></div></div><div class="flex items-center gap-space-sm"><button class="relative p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-danger"></span></button><button class="p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-colors" type="button"><span class="material-symbols-outlined text-xl">help</span></button><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-full"><span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span><span class="font-label-sm text-label-sm text-status-success hidden lg:inline">Operational</span></div></div><div class="flex items-center gap-space-md"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/></div></div></header><main class="w-full pt-16 bg-app-bg px-margin-desktop min-h-screen"><div class="flex flex-col w-full pb-16">
+<!-- Top Command Header -->
+<header class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg mb-space-2xl">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-primary-container/20 text-accent-light tracking-wide uppercase">Tier 1–3 Ops Spec</span>
+<span class="font-caption text-caption text-text-tertiary">v2.4.0 Engine</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-text-primary tracking-tight">IT Service Desk — Design System & Visual Foundation</h1>
+<p class="font-body-md text-body-md text-text-secondary max-w-3xl">Baseline operational UI specification, cockpit ergonomics, layout ratios, and live pattern architecture for mission-critical command centers.</p>
+</div>
+<!-- Actions & Segmented Control -->
+<div class="flex flex-wrap items-center gap-space-md">
+<!-- Interactive Segmented View Switcher -->
+<div class="flex items-center p-1 bg-input-surface rounded-xl border border-border-subtle shadow-inner">
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md bg-primary-container text-text-primary shadow-[0_0_20px_rgba(37,99,235,0.35)] transition-all flex items-center gap-1.5" id="tab-live-btn" onclick="switchView('live')">
+<span class="material-symbols-outlined text-base">dashboard_customize</span>
+<span>Live Operations</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-text-secondary hover:text-text-primary hover:bg-surface-container-high transition-all flex items-center gap-1.5" id="tab-patterns-btn" onclick="switchView('patterns')">
+<span class="material-symbols-outlined text-base">token</span>
+<span>Design Tokens</span>
+</button>
+</div>
+<!-- Export Specs Secondary CTA -->
+<button class="h-10 px-space-lg rounded-xl bg-card-surface hover:bg-card-elevated text-text-primary border border-border-subtle hover:border-border-hover transition-all font-label-md text-label-md flex items-center gap-space-sm" type="button">
+<span class="material-symbols-outlined text-lg text-accent-light">file_download</span>
+<span>Export Specs</span>
+</button>
+<!-- Primary Action with Electric Radiance -->
+<button class="h-10 px-space-lg rounded-xl bg-primary-container hover:bg-primary-dark text-text-primary shadow-[0_0_30px_rgba(37,99,235,0.35)] transition-all font-label-md text-label-md flex items-center gap-space-sm" type="button">
+<span class="material-symbols-outlined text-lg">add_circle</span>
+<span>Create Ticket</span>
+</button>
+</div>
+</header>
+<!-- Main Grid Layout: Primary Canvas + Right Context Rail (300px) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter-desktop items-start">
+<!-- Primary Main Content Column (9 Cols on XL) -->
+<div class="xl:col-span-8 2xl:col-span-9 flex flex-col gap-space-2xl min-w-0">
+<!-- Section: KPI Operational Metrics -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1: Open Incidents -->
+<div class="bg-card-surface rounded-2xl p-space-xl border border-border-subtle hover:border-border-hover transition-all group relative overflow-hidden shadow-sm">
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-all pointer-events-none"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-text-secondary uppercase tracking-wider">Open Tickets</span>
+<span class="p-1.5 rounded-lg bg-surface-container-high text-accent-light">
+<span class="material-symbols-outlined text-lg">inbox</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-xl text-headline-xl text-text-primary font-bold">24</span>
+<span class="flex items-center text-status-danger font-label-sm text-label-sm font-semibold bg-status-danger/10 px-1.5 py-0.5 rounded-md">
+<span class="material-symbols-outlined text-xs mr-0.5">trending_up</span>+12%
+            </span>
+</div>
+<div class="mt-space-md flex items-center justify-between font-caption text-caption text-text-tertiary">
+<span>Critical triage cue</span>
+<span class="text-status-danger font-medium">4 require assign</span>
+</div>
+<!-- Micro-accent line -->
+<div class="mt-3 w-full bg-surface-container h-1 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 68%;"></div>
+</div>
+</div>
+<!-- Card 2: In Progress -->
+<div class="bg-card-surface rounded-2xl p-space-xl border border-border-subtle hover:border-border-hover transition-all group relative overflow-hidden shadow-sm">
+<div class="absolute top-0 right-0 w-24 h-24 bg-status-info/5 rounded-full blur-2xl group-hover:bg-status-info/10 transition-all pointer-events-none"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-text-secondary uppercase tracking-wider">In Progress</span>
+<span class="p-1.5 rounded-lg bg-surface-container-high text-status-info">
+<span class="material-symbols-outlined text-lg">sync</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-xl text-headline-xl text-text-primary font-bold">14</span>
+<span class="flex items-center text-status-success font-label-sm text-label-sm font-semibold bg-status-success/10 px-1.5 py-0.5 rounded-md">
+<span class="material-symbols-outlined text-xs mr-0.5">check</span>On Track
+            </span>
+</div>
+<div class="mt-space-md flex items-center justify-between font-caption text-caption text-text-tertiary">
+<span>Tier-2 allocation</span>
+<span class="text-text-secondary">8 Engineers</span>
+</div>
+<div class="mt-3 w-full bg-surface-container h-1 rounded-full overflow-hidden">
+<div class="bg-status-info h-full rounded-full" style="width: 52%;"></div>
+</div>
+</div>
+<!-- Card 3: Pending User -->
+<div class="bg-card-surface rounded-2xl p-space-xl border border-border-subtle hover:border-border-hover transition-all group relative overflow-hidden shadow-sm">
+<div class="absolute top-0 right-0 w-24 h-24 bg-status-pending/5 rounded-full blur-2xl group-hover:bg-status-pending/10 transition-all pointer-events-none"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-text-secondary uppercase tracking-wider">Pending Review</span>
+<span class="p-1.5 rounded-lg bg-surface-container-high text-status-pending">
+<span class="material-symbols-outlined text-lg">schedule</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-xl text-headline-xl text-text-primary font-bold">6</span>
+<span class="flex items-center text-status-warning font-label-sm text-label-sm font-semibold bg-status-warning/10 px-1.5 py-0.5 rounded-md">
+              2 user block
+            </span>
+</div>
+<div class="mt-space-md flex items-center justify-between font-caption text-caption text-text-tertiary">
+<span>Awaiting telemetry</span>
+<span class="text-status-warning font-medium">Avg 3.2h wait</span>
+</div>
+<div class="mt-3 w-full bg-surface-container h-1 rounded-full overflow-hidden">
+<div class="bg-status-pending h-full rounded-full" style="width: 30%;"></div>
+</div>
+</div>
+<!-- Card 4: Resolved Today -->
+<div class="bg-card-surface rounded-2xl p-space-xl border border-border-subtle hover:border-border-hover transition-all group relative overflow-hidden shadow-sm">
+<div class="absolute top-0 right-0 w-24 h-24 bg-status-success/5 rounded-full blur-2xl group-hover:bg-status-success/10 transition-all pointer-events-none"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-text-secondary uppercase tracking-wider">Resolved Today</span>
+<span class="p-1.5 rounded-lg bg-surface-container-high text-status-success">
+<span class="material-symbols-outlined text-lg">task_alt</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-xl text-headline-xl text-text-primary font-bold">38</span>
+<span class="flex items-center text-status-success font-label-sm text-label-sm font-semibold bg-status-success/10 px-1.5 py-0.5 rounded-md">
+              98.4% SLA
+            </span>
+</div>
+<div class="mt-space-md flex items-center justify-between font-caption text-caption text-text-tertiary">
+<span>MTTR: 18m 42s</span>
+<span class="text-status-success font-medium">CSAT 4.95★</span>
+</div>
+<div class="mt-3 w-full bg-surface-container h-1 rounded-full overflow-hidden">
+<div class="bg-status-success h-full rounded-full" style="width: 94%;"></div>
+</div>
+</div>
+</section>
+<!-- Section: Live Ticket Stream (Card / Table Hybrid Architecture) -->
+<section class="bg-card-surface rounded-2xl border border-border-subtle p-space-xl shadow-lg relative">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pb-space-lg mb-space-lg border-b border-border-glass">
+<div>
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-status-success animate-pulse"></span>
+<h2 class="font-headline-md text-headline-md text-text-primary font-bold">Active Incidents & Requests</h2>
+</div>
+<p class="font-body-sm text-body-sm text-text-tertiary mt-0.5">High-frequency triage stream synchronized with APM and ITSM webhook agents.</p>
+</div>
+<!-- Filters & Quick Controls -->
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-text-tertiary text-lg">filter_alt</span>
+<select class="h-9 pl-9 pr-8 bg-input-surface text-text-primary border border-border-input rounded-xl font-label-sm text-label-sm outline-none focus:border-accent-electric">
+<option>All Severities</option>
+<option>Critical (P1)</option>
+<option>High (P2)</option>
+<option>Medium (P3)</option>
+</select>
+</div>
+<button class="h-9 px-space-md bg-surface-container text-text-secondary hover:text-text-primary hover:bg-surface-container-high rounded-xl font-label-sm text-label-sm border border-border-subtle flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-base">tune</span>
+<span>Filter</span>
+</button>
+</div>
+</div>
+<!-- Ticket Hybrid List -->
+<div class="flex flex-col gap-space-md">
+<!-- Row 1: Laptop WiFi Issue -->
+<div class="p-space-lg rounded-xl bg-card-elevated hover:bg-card-elevated/80 border border-border-subtle hover:border-border-hover transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md group">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="pt-0.5 flex-shrink-0">
+<span class="font-code-meta text-code-meta px-2 py-1 rounded bg-surface-container-high text-accent-light font-mono">INC-00125</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs mb-1">
+<span class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-light transition-colors truncate">Laptop tidak bisa connect WiFi</span>
+<!-- Priority badge -->
+<span class="px-2 py-0.5 rounded-full font-caption text-caption font-semibold bg-status-warning/15 text-status-warning border border-status-warning/30">P2 • High</span>
+<!-- Status badge -->
+<span class="px-2 py-0.5 rounded-full font-caption text-caption font-semibold bg-primary-container/20 text-accent-light border border-primary-container/40 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-light animate-ping"></span>
+                    In Progress
+                  </span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 font-body-sm text-body-sm text-text-tertiary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">lan</span> Network • Lenovo ThinkPad X1</span>
+<span>•</span>
+<span>Reported by <strong>Dewi Lestari</strong> (FinOps)</span>
+<span>•</span>
+<span>Jakarta HQ 14F</span>
+</div>
+</div>
+</div>
+<!-- Meta Right: Assignee & SLA Countdown -->
+<div class="flex items-center gap-space-xl flex-shrink-0 md:pl-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-7 h-7 rounded-full object-cover border border-border-subtle" data-alt="Portrait of Budi Prasetyo, Tier 2 network engineer at IT desk, focused, neutral dark blue background lighting, modern corporate avatar portrait style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDURt5bkQCUrdWq1Tjr3BlgpnwgnhJokKLTot5gWPjTnh17QbtxJk7NVBuZ9clbfGzRQIAYomDaU5sJ-wd2vFeyXySqylc3Fj806Koljqr3vHLG1CujfChe3A_LLMlL4zT4wQhbAFJVBQi7lX0VA9jn4YUbfpEMxLPBuorAtfpSCuSVayz--BU6UYT7408FKvRWTJKc-nzXO0srAlNd7BNsHg5QrnYlyVgVe9I9kdI"/>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-primary leading-tight">Budi Prasetyo</span>
+<span class="font-caption text-caption text-text-tertiary">Network Ops Lead</span>
+</div>
+</div>
+<!-- SLA Countdown Tracker -->
+<div class="flex flex-col w-32">
+<div class="flex items-center justify-between font-caption text-caption mb-1">
+<span class="text-text-tertiary">SLA Target</span>
+<span class="text-status-warning font-semibold font-mono">28m rem</span>
+</div>
+<div class="h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-status-warning h-full rounded-full transition-all duration-500" style="width: 78%;"></div>
+</div>
+</div>
+<button class="p-1.5 rounded-lg text-text-tertiary hover:text-text-primary hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Row 2: VPN Gateway Critical Sync -->
+<div class="p-space-lg rounded-xl bg-card-elevated hover:bg-card-elevated/80 border border-status-danger/30 hover:border-status-danger/50 transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md group">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="pt-0.5 flex-shrink-0">
+<span class="font-code-meta text-code-meta px-2 py-1 rounded bg-status-danger/10 text-status-danger font-mono font-bold">INC-00124</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs mb-1">
+<span class="font-headline-sm text-headline-sm text-text-primary group-hover:text-status-danger transition-colors truncate">VPN Gateway timeout during Tokyo sync</span>
+<span class="px-2 py-0.5 rounded-full font-caption text-caption font-bold bg-status-danger/20 text-status-danger border border-status-danger/40 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-danger animate-pulse"></span>
+                    P1 • Critical
+                  </span>
+<span class="px-2 py-0.5 rounded-full font-caption text-caption font-semibold bg-primary-container/20 text-accent-light border border-primary-container/40">In Progress</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 font-body-sm text-body-sm text-text-tertiary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">cloud_sync</span> Infrastructure • Edge WireGuard-04</span>
+<span>•</span>
+<span>Auto-alert: Datadog APM Agent</span>
+<span>•</span>
+<span>Region: AP-Northeast</span>
+</div>
+</div>
+</div>
+<!-- Meta Right -->
+<div class="flex items-center gap-space-xl flex-shrink-0 md:pl-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-7 h-7 rounded-full object-cover border border-border-subtle" data-alt="Portrait of Siti Rahma, SecOps site reliability engineer, wearing headsets, dark enterprise server room backdrop with subtle blue reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0-Tqumdy-6HVwM0QsXQAaUUS3P0MZKhHGXFcXoCGxzoP0DGYr9zPJytQxYEdX4uW8DVKOE_p5DxxxlB8z39-SSCG2jCwhWfeY1Qsu_s56aOjfYe_FAF17k2eRMHfzToQDMeTmjVIOGM70fkMMh8L3xsMGhnhmHajzKpCK97ycOC4nKzP9pwNzLK8VR63kKb7qg_npPxLdq3Zpin0FmqHbAaUgzG_dA52lbd2Nwz8"/>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-primary leading-tight">Siti Rahma</span>
+<span class="font-caption text-caption text-text-tertiary">Infra SRE</span>
+</div>
+</div>
+<!-- SLA Countdown Breached Warning -->
+<div class="flex flex-col w-32">
+<div class="flex items-center justify-between font-caption text-caption mb-1">
+<span class="text-status-danger font-semibold">Near Breach!</span>
+<span class="text-status-danger font-bold font-mono">14m rem</span>
+</div>
+<div class="h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-status-danger h-full rounded-full animate-pulse" style="width: 92%;"></div>
+</div>
+</div>
+<button class="p-1.5 rounded-lg text-text-tertiary hover:text-text-primary hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Row 3: SAP ERP License -->
+<div class="p-space-lg rounded-xl bg-card-elevated hover:bg-card-elevated/80 border border-border-subtle hover:border-border-hover transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md group">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="pt-0.5 flex-shrink-0">
+<span class="font-code-meta text-code-meta px-2 py-1 rounded bg-surface-container-high text-accent-light font-mono">INC-00123</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs mb-1">
+<span class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-light transition-colors truncate">SAP ERP License reallocation request</span>
+<span class="px-2 py-0.5 rounded-full font-caption text-caption font-semibold bg-primary-container/20 text-accent-light border border-primary-container/30">P3 • Medium</span>
+<span class="px-2 py-0.5 rounded-full font-caption text-caption font-semibold bg-status-pending/20 text-status-pending border border-status-pending/30">Pending Approval</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 font-body-sm text-body-sm text-text-tertiary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">apps</span> Software • SAP S/4HANA Enterprise</span>
+<span>•</span>
+<span>User: Finance Dept (ID: #FN-402)</span>
+<span>•</span>
+<span>Approval: Head of Controllers</span>
+</div>
+</div>
+</div>
+<!-- Meta Right -->
+<div class="flex items-center gap-space-xl flex-shrink-0 md:pl-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-7 h-7 rounded-full object-cover border border-border-subtle" data-alt="Portrait of Azka, Enterprise incident commander lead, sharp corporate portrait, dark navy tones with electric blue ambient lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg3Hd2vBqMMgGDZhNv52wbYsiVTGM50sqWYuMWEhe4v_73PAONBvXxlK-GoSJ-QW2zCrSu__tXckYc9c6rmULI7E-SaSP9rs7S_5bC0WL0zTqaQqp0nq95w2OghcigLzSEmwcyWiEPmcO76dCtuwLdu-c_FWvGFyXSab5DSsfidmYbEpyTxsGjVGLvagsF-kk5_0VjJI1IhjlmESUZ4YSIUj7aOVq4FlHJHFaGTbI"/>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-primary leading-tight">Azka (You)</span>
+<span class="font-caption text-caption text-text-tertiary">Incident Lead</span>
+</div>
+</div>
+<!-- SLA Countdown Tracker -->
+<div class="flex flex-col w-32">
+<div class="flex items-center justify-between font-caption text-caption mb-1">
+<span class="text-text-tertiary">SLA Target</span>
+<span class="text-accent-light font-semibold font-mono">4h 15m</span>
+</div>
+<div class="h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 25%;"></div>
+</div>
+</div>
+<button class="p-1.5 rounded-lg text-text-tertiary hover:text-text-primary hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Row 4: MacBook Pro Display Flicker -->
+<div class="p-space-lg rounded-xl bg-card-elevated hover:bg-card-elevated/80 border border-border-subtle hover:border-border-hover transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md group">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="pt-0.5 flex-shrink-0">
+<span class="font-code-meta text-code-meta px-2 py-1 rounded bg-surface-container-high text-accent-light font-mono">INC-00122</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs mb-1">
+<span class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-light transition-colors truncate">MacBook Pro M3 display flicker on external 4K</span>
+<span class="px-2 py-0.5 rounded-full font-caption text-caption font-semibold bg-status-warning/15 text-status-warning border border-status-warning/30">P2 • High</span>
+<span class="px-2 py-0.5 rounded-full font-caption text-caption font-semibold bg-status-info/20 text-status-info border border-status-info/30">Assigned</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 font-body-sm text-body-sm text-text-tertiary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">laptop_mac</span> Hardware • Apple Silicon M3 Max</span>
+<span>•</span>
+<span>User: Product Design Team</span>
+<span>•</span>
+<span>Asset: AST-MBP-9882</span>
+</div>
+</div>
+</div>
+<!-- Meta Right -->
+<div class="flex items-center gap-space-xl flex-shrink-0 md:pl-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-semibold text-accent-light border border-border-subtle">KT</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-primary leading-tight">Kevin T.</span>
+<span class="font-caption text-caption text-text-tertiary">Hardware Field Tech</span>
+</div>
+</div>
+<!-- SLA Countdown Tracker -->
+<div class="flex flex-col w-32">
+<div class="flex items-center justify-between font-caption text-caption mb-1">
+<span class="text-text-tertiary">SLA Target</span>
+<span class="text-status-success font-semibold font-mono">1h 48m</span>
+</div>
+<div class="h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-status-info h-full rounded-full" style="width: 44%;"></div>
+</div>
+</div>
+<button class="p-1.5 rounded-lg text-text-tertiary hover:text-text-primary hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Visual Pattern & Component Specs Matrix (Design System Living Documentation) -->
+<section class="bg-card-surface rounded-2xl border border-border-subtle p-space-xl shadow-lg flex flex-col gap-space-2xl" id="pattern-library-container">
+<div class="flex flex-col gap-space-xs pb-space-lg border-b border-border-glass">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-accent-electric text-xl">layers</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary font-bold">Design System & Pattern Specifications</h2>
+</div>
+<p class="font-body-md text-body-md text-text-secondary">Official design tokens, reusable atomic elements, input controls, and ergonomic states for Apex Desk engineers.</p>
+</div>
+<!-- Matrix 1: Status & Priority Badges -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-xl">
+<!-- Status Badges -->
+<div class="bg-card-elevated rounded-xl p-space-lg border border-border-subtle flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary font-semibold">Incident Lifecycle States</span>
+<span class="font-code-meta text-code-meta text-text-tertiary uppercase">Section 43.1</span>
+</div>
+<div class="flex flex-wrap gap-2.5 items-center">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-primary-container/20 text-accent-light border border-primary-container/40 flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-light"></span>New
+              </span>
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-status-info/15 text-status-info border border-status-info/30 flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-status-info"></span>Assigned
+              </span>
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-primary-container/30 text-text-primary border border-primary/40 flex items-center gap-1.5 shadow-[0_0_12px_rgba(37,99,235,0.3)]">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>In Progress
+              </span>
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-status-warning/15 text-status-warning border border-status-warning/30 flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-status-warning"></span>Pending
+              </span>
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-status-success/15 text-status-success border border-status-success/30 flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>Resolved
+              </span>
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-text-tertiary border border-border-subtle flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-text-disabled"></span>Closed
+              </span>
+</div>
+</div>
+<!-- Priority Badges -->
+<div class="bg-card-elevated rounded-xl p-space-lg border border-border-subtle flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary font-semibold">Severity & Impact Scales</span>
+<span class="font-code-meta text-code-meta text-text-tertiary uppercase">Section 43.2</span>
+</div>
+<div class="flex flex-wrap gap-2.5 items-center">
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-text-secondary border border-border-subtle">P4 • Low</span>
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-primary-container/20 text-accent-light border border-primary-container/40">P3 • Medium</span>
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-status-warning/20 text-status-warning border border-status-warning/40 font-semibold">P2 • High</span>
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-status-danger/20 text-status-danger border border-status-danger/40 font-bold flex items-center gap-1 shadow-[0_0_15px_rgba(239,68,68,0.25)]">
+<span class="material-symbols-outlined text-xs">warning</span>
+                P1 • Critical
+              </span>
+</div>
+</div>
+</div>
+<!-- Matrix 2: Action Controls & Buttons Hierarchy -->
+<div class="bg-card-elevated rounded-xl p-space-lg border border-border-subtle flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary font-semibold">Button Hierarchy & Hover Luminescence</span>
+<span class="font-code-meta text-code-meta text-text-tertiary uppercase">Cockpit Controls</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-md">
+<!-- Primary Action with Blue Glow -->
+<button class="h-10 px-space-lg rounded-xl bg-primary-container hover:bg-primary-dark text-text-primary shadow-[0_0_30px_rgba(37,99,235,0.35)] transition-all font-label-md text-label-md flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-lg">bolt</span>
+<span>Primary CTA</span>
+</button>
+<!-- Secondary Outline -->
+<button class="h-10 px-space-lg rounded-xl bg-card-surface hover:bg-surface-container-high text-text-primary border border-border-subtle hover:border-border-hover transition-all font-label-md text-label-md flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-lg text-accent-light">tune</span>
+<span>Secondary Outline</span>
+</button>
+<!-- Danger Action -->
+<button class="h-10 px-space-lg rounded-xl bg-status-danger/15 hover:bg-status-danger text-status-danger hover:text-text-primary border border-status-danger/30 transition-all font-label-md text-label-md flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-lg">delete</span>
+<span>Terminate Ticket</span>
+</button>
+<!-- Ghost Icon Action -->
+<button class="w-10 h-10 rounded-xl bg-card-surface hover:bg-surface-container-high text-text-secondary hover:text-text-primary border border-border-subtle flex items-center justify-center transition-all" title="Refresh Feed">
+<span class="material-symbols-outlined text-lg">refresh</span>
+</button>
+<!-- Ghost with Active Badge -->
+<button class="w-10 h-10 rounded-xl bg-card-surface hover:bg-surface-container-high text-text-secondary hover:text-text-primary border border-border-subtle relative flex items-center justify-center transition-all" title="Activity Logs">
+<span class="material-symbols-outlined text-lg">history</span>
+<span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-accent-light"></span>
+</button>
+</div>
+</div>
+<!-- Matrix 3: Form Controls & Inputs -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Hotkey Search Control -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-text-secondary">Input with Hotkey Accelerator</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-text-tertiary text-lg">search</span>
+<input class="w-full h-10 bg-input-surface text-text-primary placeholder:text-text-tertiary pl-10 pr-14 rounded-xl border border-border-input font-body-sm text-body-sm focus:border-accent-electric focus:shadow-[0_0_0_3px_rgba(37,99,235,0.25)] outline-none transition-all" placeholder="Search ticket # or node..." type="text"/>
+<kbd class="absolute right-space-sm font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-high text-text-tertiary border border-border-subtle">⌘K</kbd>
+</div>
+</div>
+<!-- Select with Dropdown Icon -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-text-secondary">Ergonomic Select Control</label>
+<div class="relative">
+<select class="w-full h-10 bg-input-surface text-text-primary px-space-md rounded-xl border border-border-input font-body-sm text-body-sm focus:border-accent-electric focus:shadow-[0_0_0_3px_rgba(37,99,235,0.25)] outline-none appearance-none cursor-pointer">
+<option>Tier 1 Service Desk (Standard)</option>
+<option>Tier 2 Network Operations</option>
+<option>Tier 3 SecOps Incident Team</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-md top-2.5 text-text-tertiary pointer-events-none text-lg">expand_more</span>
+</div>
+</div>
+<!-- Toggle Switches / Checkboxes -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-text-secondary">State & Incident Toggles</label>
+<div class="h-10 px-space-md bg-input-surface rounded-xl border border-border-input flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-text-secondary">Auto-escalate Breaches</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-text-primary after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-text-primary after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container shadow-[0_0_12px_rgba(37,99,235,0.3)]"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Matrix 4: Skeleton Shimmer & Empty State Layouts -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-xl">
+<!-- Skeleton Shimmer Loader -->
+<div class="bg-card-elevated rounded-xl p-space-lg border border-border-subtle flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary font-semibold">Pulse Shimmer Skeleton</span>
+<span class="font-caption text-caption text-accent-light">Loading Stream View</span>
+</div>
+<div class="flex flex-col gap-space-sm animate-pulse">
+<div class="h-5 bg-surface-container-high rounded-md w-3/4"></div>
+<div class="h-4 bg-surface-container rounded-md w-1/2"></div>
+<div class="flex items-center gap-space-md pt-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high"></div>
+<div class="flex-1 flex flex-col gap-1.5">
+<div class="h-3.5 bg-surface-container rounded-md w-full"></div>
+<div class="h-3 bg-surface-container-high rounded-md w-2/3"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Reusable Clean Empty State -->
+<div class="bg-card-elevated rounded-xl p-space-lg border border-border-subtle flex flex-col items-center justify-center text-center py-8">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-text-tertiary mb-space-sm border border-border-subtle">
+<span class="material-symbols-outlined text-2xl text-accent-light">search_off</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary font-semibold">No unresolved tickets in queue</h4>
+<p class="font-body-sm text-body-sm text-text-secondary max-w-xs mt-1 mb-space-md">All operational thresholds are fully addressed. Switch view filters or create a new request.</p>
+<button class="h-8 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-accent-light font-label-sm text-label-sm border border-border-subtle transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">add</span>
+<span>New Incident Log</span>
+</button>
+</div>
+</div>
+<!-- Matrix 5: Mini Modal Spec Preview (Glassmorphic Assign Technician) -->
+<div class="bg-card-elevated rounded-xl p-space-lg border border-border-subtle flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary font-semibold">Contextual Modal Specification (Backdrop Blur Glassmorphism)</span>
+<span class="font-code-meta text-code-meta text-text-tertiary uppercase">Section 27 Preview</span>
+</div>
+<div class="relative bg-surface-container-lowest/60 rounded-xl p-space-xl border border-border-glass backdrop-blur-md max-w-xl mx-auto w-full shadow-2xl">
+<div class="flex items-center justify-between pb-space-sm border-b border-border-glass mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-accent-light text-xl">person_add</span>
+<span class="font-headline-sm text-headline-sm text-text-primary font-semibold">Assign Technician to #INC-00125</span>
+</div>
+<button class="text-text-tertiary hover:text-text-primary"><span class="material-symbols-outlined text-lg">close</span></button>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-text-secondary">Target On-Call Specialist</label>
+<select class="h-10 bg-input-surface text-text-primary px-space-md rounded-xl border border-border-input font-body-sm text-body-sm focus:border-accent-electric outline-none">
+<option>Budi Prasetyo (Jakarta L2 Network Lead) — Active (2 tickets)</option>
+<option>Siti Rahma (Tokyo Cloud & Infra SRE) — Active (1 ticket)</option>
+<option>Kevin T. (Field Services) — Available</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-text-secondary">Triage Handover Directives</label>
+<textarea class="bg-input-surface text-text-primary placeholder:text-text-tertiary p-space-md rounded-xl border border-border-input font-body-sm text-body-sm focus:border-accent-electric outline-none resize-none" placeholder="Provide quick context, router logs, or physical desk location..." rows="2"></textarea>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-sm">
+<button class="h-9 px-space-md rounded-xl bg-card-surface hover:bg-surface-container text-text-secondary font-label-md text-label-md border border-border-subtle transition-all">Cancel</button>
+<button class="h-9 px-space-md rounded-xl bg-primary-container hover:bg-primary-dark text-text-primary font-label-md text-label-md shadow-[0_0_20px_rgba(37,99,235,0.35)] transition-all">Confirm Assignment</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Side Utility & Context Rail (Strict 300px min/max Cockpit Specification) -->
+<div class="xl:col-span-4 2xl:col-span-3 flex flex-col gap-space-lg w-full">
+<!-- Widget 1: Critical SLA Monitor Alerts -->
+<div class="bg-card-surface rounded-2xl border border-border-subtle p-space-lg shadow-lg relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-status-danger text-lg animate-pulse">timer</span>
+<span class="font-headline-sm text-headline-sm text-text-primary font-bold">SLA Breach Alarms</span>
+</div>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-status-danger/15 text-status-danger font-mono font-bold">2 Critical</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Critical Item 1 -->
+<div class="p-space-md rounded-xl bg-card-elevated border-l-4 border-l-status-danger border-y border-r border-border-subtle flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-code-meta text-code-meta text-status-danger font-mono font-bold">#INC-00124</span>
+<span class="font-caption text-caption text-status-danger font-mono font-bold">14m 12s rem</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-primary font-medium truncate">Tokyo Gateway VPN Sync Timeout</p>
+<div class="flex items-center justify-between font-caption text-caption text-text-tertiary mt-1">
+<span>Assignee: S. Rahma</span>
+<span class="text-status-danger flex items-center"><span class="material-symbols-outlined text-xs mr-0.5">priority_high</span>Tier 1 Escalation</span>
+</div>
+</div>
+<!-- Critical Item 2 -->
+<div class="p-space-md rounded-xl bg-card-elevated border-l-4 border-l-status-warning border-y border-r border-border-subtle flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-code-meta text-code-meta text-status-warning font-mono font-bold">#INC-00118</span>
+<span class="font-caption text-caption text-status-warning font-mono font-bold">28m 45s rem</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-primary font-medium truncate">Finance Core Oracle DB locks</p>
+<div class="flex items-center justify-between font-caption text-caption text-text-tertiary mt-1">
+<span>Assignee: Azka</span>
+<span class="text-status-warning">Approaching breach</span>
+</div>
+</div>
+</div>
+<button class="mt-space-md w-full py-2 bg-surface-container hover:bg-surface-container-high rounded-xl font-label-sm text-label-sm text-text-secondary hover:text-text-primary transition-all flex items-center justify-center gap-1">
+<span>View All 6 Active Counters</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Widget 2: Real-time Event Stream / Notification Panel -->
+<div class="bg-card-surface rounded-2xl border border-border-subtle p-space-lg shadow-lg">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent-electric text-lg">notifications_active</span>
+<span class="font-headline-sm text-headline-sm text-text-primary font-bold">Operations Feed</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-status-success animate-ping"></span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Feed Item 1: Blue -->
+<div class="flex items-start gap-space-sm">
+<div class="p-1.5 rounded-lg bg-primary-container/20 text-accent-light mt-0.5 flex-shrink-0">
+<span class="material-symbols-outlined text-base">assignment_ind</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-body-sm text-body-sm text-text-primary"><strong class="text-accent-light">#INC-00125</strong> assigned to Budi Prasetyo</p>
+<span class="font-caption text-caption text-text-tertiary">2 mins ago • Jakarta Triage Desk</span>
+</div>
+</div>
+<!-- Feed Item 2: Green -->
+<div class="flex items-start gap-space-sm">
+<div class="p-1.5 rounded-lg bg-status-success/15 text-status-success mt-0.5 flex-shrink-0">
+<span class="material-symbols-outlined text-base">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-body-sm text-body-sm text-text-primary"><strong class="text-status-success">#INC-00120</strong> marked as Resolved</p>
+<span class="font-caption text-caption text-text-tertiary">11 mins ago • CSAT verified (5★)</span>
+</div>
+</div>
+<!-- Feed Item 3: Amber -->
+<div class="flex items-start gap-space-sm">
+<div class="p-1.5 rounded-lg bg-status-warning/15 text-status-warning mt-0.5 flex-shrink-0">
+<span class="material-symbols-outlined text-base">warning</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-body-sm text-body-sm text-text-primary"><strong class="text-status-warning">SLA Warning</strong> trigger on #INC-00118</p>
+<span class="font-caption text-caption text-text-tertiary">19 mins ago • Automation Bot</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Widget 3: Today's IT Operations Note / Broadcast Announcement -->
+<div class="bg-card-surface rounded-2xl border-2 border-accent-electric/40 p-space-lg shadow-[0_0_30px_rgba(37,99,235,0.12)] relative overflow-hidden">
+<div class="absolute -top-10 -right-10 w-28 h-28 bg-primary/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="material-symbols-outlined text-accent-light text-lg">campaign</span>
+<span class="font-label-md text-label-md text-accent-light uppercase tracking-wider font-bold">Command Broadcast</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold">Planned DC Migration (APAC-3)</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Maintenance scheduled tonight at 23:00 WIB. All Tier 2 routers will route telemetry over redundant Singapore failovers. Keep ticket queue under 15.</p>
+<div class="mt-space-md pt-space-sm border-t border-border-glass flex items-center justify-between">
+<span class="font-caption text-caption text-text-tertiary">By: Anton W. (VP Infrastructure)</span>
+<span class="font-code-meta text-code-meta text-accent-light font-mono">CHG-8910</span>
+</div>
+</div>
+<!-- Widget 4: Recent Incident Attachments -->
+<div class="bg-card-surface rounded-2xl border border-border-subtle p-space-lg shadow-lg">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-text-secondary text-lg">attachment</span>
+<span class="font-headline-sm text-headline-sm text-text-primary font-bold">Recent Telemetry Files</span>
+</div>
+<span class="font-caption text-caption text-text-tertiary">3 Files</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- File 1 -->
+<a class="p-2.5 rounded-xl bg-card-elevated hover:bg-surface-container-high transition-colors flex items-center justify-between border border-border-subtle group" href="#">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-status-danger text-lg">description</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-text-primary group-hover:text-accent-light transition-colors truncate">error-log.txt</span>
+<span class="font-caption text-caption text-text-tertiary">142 KB • Logstash Dump</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-text-tertiary group-hover:text-text-primary text-base">download</span>
+</a>
+<!-- File 2 -->
+<a class="p-2.5 rounded-xl bg-card-elevated hover:bg-surface-container-high transition-colors flex items-center justify-between border border-border-subtle group" href="#">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-status-info text-lg">hub</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-text-primary group-hover:text-accent-light transition-colors truncate">vpn-trace.pcap</span>
+<span class="font-caption text-caption text-text-tertiary">4.8 MB • Wireshark Packet</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-text-tertiary group-hover:text-text-primary text-base">download</span>
+</a>
+<!-- File 3 -->
+<a class="p-2.5 rounded-xl bg-card-elevated hover:bg-surface-container-high transition-colors flex items-center justify-between border border-border-subtle group" href="#">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-status-warning text-lg">image</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-text-primary group-hover:text-accent-light transition-colors truncate">display-glitch.png</span>
+<span class="font-caption text-caption text-text-tertiary">840 KB • Screenshot</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-text-tertiary group-hover:text-text-primary text-base">download</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function switchView(mode) {
+    const liveBtn = document.getElementById('tab-live-btn');
+    const patternBtn = document.getElementById('tab-patterns-btn');
+    const patternContainer = document.getElementById('pattern-library-container');
+
+    if (mode === 'patterns') {
+      patternBtn.className = "px-space-md py-1.5 rounded-lg font-label-md text-label-md bg-primary-container text-text-primary shadow-[0_0_20px_rgba(37,99,235,0.35)] transition-all flex items-center gap-1.5";
+      liveBtn.className = "px-space-md py-1.5 rounded-lg font-label-md text-label-md text-text-secondary hover:text-text-primary hover:bg-surface-container-high transition-all flex items-center gap-1.5";
+      patternContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      liveBtn.className = "px-space-md py-1.5 rounded-lg font-label-md text-label-md bg-primary-container text-text-primary shadow-[0_0_20px_rgba(37,99,235,0.35)] transition-all flex items-center gap-1.5";
+      patternBtn.className = "px-space-md py-1.5 rounded-lg font-label-md text-label-md text-text-secondary hover:text-text-primary hover:bg-surface-container-high transition-all flex items-center gap-1.5";
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+</script></main></div></body></html>

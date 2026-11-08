@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#002d6c","primary-dark":"#1D4ED8","input-surface":"#0F1930","primary-container":"#2563eb","primary":"#b4c5ff","surface-container":"#19202e","on-secondary-container":"#d5e0ff","text-secondary":"#94A3B8","inverse-surface":"#dce2f6","border-input":"rgba(148, 163, 184, 0.16)","text-primary":"#F8FAFC","tertiary-fixed":"#d8e2ff","on-secondary-fixed":"#001a43","surface-container-low":"#151b2a","on-tertiary":"#002e6a","secondary":"#afc6ff","tertiary-fixed-dim":"#adc6ff","card-surface":"#121C31","surface-container-highest":"#2e3544","on-error":"#690005","on-secondary-fixed-variant":"#004398","surface-container-lowest":"#070e1c","status-danger":"#EF4444","on-primary-fixed-variant":"#003ea8","on-tertiary-fixed-variant":"#004395","tertiary":"#adc6ff","error":"#ffb4ab","on-error-container":"#ffdad6","on-tertiary-container":"#edf0ff","on-background":"#dce2f6","status-info":"#38BDF8","on-primary-fixed":"#00174b","surface-bright":"#323949","secondary-container":"#045ecf","card-elevated":"#16233F","surface-container-high":"#232a39","overlay-backdrop":"rgba(0, 0, 0, 0.60)","outline-variant":"#434655","on-primary-container":"#eeefff","status-warning":"#F59E0B","surface-dim":"#0c1321","inverse-primary":"#0053db","background":"#0c1321","primary-fixed-dim":"#b4c5ff","accent-electric":"#4F8CFF","secondary-fixed-dim":"#afc6ff","tertiary-container":"#0f69dc","surface-variant":"#2e3544","accent-light":"#60A5FA","border-subtle":"rgba(148, 163, 184, 0.14)","inverse-on-surface":"#2a3040","on-tertiary-fixed":"#001a42","border-hover":"rgba(59, 130, 246, 0.40)","error-container":"#93000a","status-success":"#22C55E","on-primary":"#002a78","border-glass":"rgba(255, 255, 255, 0.08)","surface-tint":"#b4c5ff","status-pending":"#A78BFA","app-bg":"#0B1220","sidebar-surface":"#10182A","surface":"#0c1321","text-tertiary":"#64748B","on-surface":"#dce2f6","on-surface-variant":"#c3c6d7","primary-fixed":"#dbe1ff","text-disabled":"#475569","outline":"#8d90a0","interactive-active-bg":"rgba(37, 99, 235, 0.18)","secondary-fixed":"#d9e2ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xs":"0.25rem","margin":"1rem","space-xl":"1.5rem","space-lg":"1rem","space-sm":"0.5rem","gutter":"1rem","gutter-desktop":"1.5rem","margin-desktop":"2rem","space-md":"0.75rem","space-2xl":"2rem"},fontFamily:{"headline-md":["Inter"],"code-meta":["Inter"],"headline-lg":["Inter"],"body-lg":["Inter"],"headline-xl-mobile":["Inter"],"headline-sm":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"body-md":["Inter"],"headline-xl":["Inter"],"caption":["Inter"],"body-sm":["Inter"]},fontSize:{"headline-md":["18px",{"lineHeight":"24px","fontWeight":"600"}],"code-meta":["12px",{"lineHeight":"16px","fontWeight":"600"}],"headline-lg":["22px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"headline-sm":["15px",{"lineHeight":"20px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"label-md":["13px",{"lineHeight":"16px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}],"caption":["11px",{"lineHeight":"14px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}]}}}};</script></head><body class="bg-app-bg text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-sidebar-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-xl flex items-center gap-space-sm"><img alt="Apex Desk Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VKUVTXqCpH-FXGmoK-2kF4Tt2Dm-ELJWNCFuhJRqxpucrf4IryWidKtv_Q0i67U1DztVk9VzJC0EsZC-a1xPMoyWWek-zeUmUQrolyMIxGtdrX_HloMIiTdV0dL-dQC5QOeFeXOaoHF4wjDBw80_QhVfa9HVVIO2AcIxk-DSzSILIDugmjsidWD6D0DWWMHSP0kOcZ83Y-Tgw13zy8zqj4TqsCM5GHesvHzCzQa9YO"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight">Apex Desk</span><span class="font-caption text-caption text-text-tertiary">Enterprise IT Ops</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Main</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-white shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl"><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="dashboard" href="#"><span>Dashboard</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="my-tickets" href="#"><span>My Tickets</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="all-tickets" href="#"><span>All Tickets</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="create-ticket" href="#"><span>Create Ticket</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="notification-center" href="#"><span>Notification Center</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="service-catalog" href="#"><span>Service Catalog</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="assets" href="#"><span>Assets</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="knowledge-base" href="#"><span>Knowledge Base</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="reports" href="#"><span>Reports</span></a></nav></div><div class="px-space-md py-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Administration</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-white shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl"><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="users" href="#"><span>Users</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl font-body-md text-body-md bg-primary-container text-white shadow-[0_0_30px_rgba(37,99,235,0.25)]" data-path="categories" href="#"><span>Categories</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="sla" href="#"><span>SLA</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="settings" href="#"><span>Settings</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="user-profile" href="#"><span>User Profile</span></a></nav></div></div><div class="p-space-md bg-surface-container-lowest m-space-md rounded-xl flex items-center justify-between"><a class="flex items-center gap-space-sm min-w-0 hover:opacity-80 transition-opacity" data-path="user-profile" href="#"><div class="relative flex-shrink-0"><img alt="Azka Avatar" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-status-success"></span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-text-primary truncate">Azka</span><span class="font-caption text-caption text-text-secondary truncate">Incident Lead</span></div></a><a class="text-on-surface-variant hover:text-status-danger p-space-xs rounded-lg transition-colors flex items-center justify-center" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-xl">logout</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 px-margin-desktop flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><nav class="hidden sm:flex items-center gap-space-sm font-body-sm text-body-sm text-text-secondary"><span class="hover:text-text-primary cursor-pointer transition-colors">Home</span><span class="text-outline-variant font-caption text-caption">/</span><span class="hover:text-text-primary cursor-pointer transition-colors">Administration</span><span class="text-outline-variant font-caption text-caption">/</span><span class="text-text-primary font-label-md text-label-md">Categories</span></nav></div><div class="flex items-center gap-space-lg"><div class="relative hidden md:flex items-center"><div class="absolute left-space-md flex items-center pointer-events-none text-text-tertiary"><span class="material-symbols-outlined text-lg">search</span></div><input class="w-72 h-10 bg-input-surface text-text-primary placeholder:text-text-tertiary pl-10 pr-16 rounded-xl font-body-md text-body-md focus:bg-surface-container focus:text-text-primary transition-all outline-none" placeholder="Search incidents, tickets, KB..." type="text"/><div class="absolute right-space-sm flex items-center gap-space-xs pointer-events-none"><kbd class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-high text-text-secondary">⌘K</kbd></div></div><div class="flex items-center gap-space-sm"><a aria-label="Notification Center" class="relative p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-colors inline-flex items-center justify-center" data-path="notification-center" href="#" title="Notification Center"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-danger ring-2 ring-surface-container-lowest animate-pulse"></span></a><button aria-label="Help" class="p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-colors inline-flex items-center justify-center" type="button"><span class="material-symbols-outlined text-xl">help</span></button><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-full"><span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span><span class="font-label-sm text-label-sm text-status-success hidden lg:inline">Operational</span></div></div><div class="flex items-center gap-space-sm pl-space-xs border-l border-border-subtle"><a class="flex items-center gap-space-sm hover:opacity-80 transition-opacity" data-path="user-profile" href="#"><div class="relative"><img alt="Azka Avatar" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-status-success"></span></div><div class="hidden xl:flex flex-col"><span class="font-label-md text-label-md text-text-primary leading-tight">Azka</span><span class="font-caption text-caption text-text-secondary leading-tight">Incident Lead</span></div></a></div></div></header><main class="w-full pt-16 bg-app-bg px-margin-desktop min-h-screen"><div class="flex flex-col w-full pb-16 space-y-6">
+<!-- Top System Badge & Header -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 pt-2">
+<div class="flex flex-col space-y-1.5">
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-accent-light font-code-meta text-code-meta">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success animate-pulse"></span>
+          CAT-SCHEMA-04 • Taxonomy v3.8 • Live Routing Engine Active
+        </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-text-primary tracking-tight">Categories &amp; Request Taxonomies</h1>
+<p class="font-body-md text-body-md text-text-secondary max-w-3xl">
+        Configure incident and service request classifications, subcategories, automated routing rules, and queue dispatch bindings.
+      </p>
+</div>
+<!-- Header Actions -->
+<div class="flex items-center gap-3 self-start lg:self-auto">
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-card-surface text-text-primary hover:bg-card-elevated hover:text-status-info transition-all shadow-sm font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-lg">download</span>
+<span>Export Schema</span>
+</button>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary-container hover:bg-accent-electric text-white font-label-md text-label-md shadow-[0_0_24px_rgba(37,99,235,0.3)] transition-all" id="open-drawer-btn" type="button">
+<span class="material-symbols-outlined text-lg">add</span>
+<span>Create Category</span>
+</button>
+</div>
+</div>
+<!-- Telemetry KPI Metrics Banner -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+<!-- Metric 1 -->
+<div class="bg-card-surface p-4 rounded-xl flex flex-col justify-between shadow-sm hover:bg-card-elevated transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Total Categories</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-status-info">
+<span class="material-symbols-outlined text-base">folder_special</span>
+</div>
+</div>
+<div class="mt-2">
+<span class="font-headline-lg text-headline-lg text-text-primary">12 Categories</span>
+<p class="font-caption text-caption text-text-secondary mt-0.5">48 Subcategories active across all queues</p>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-card-surface p-4 rounded-xl flex flex-col justify-between shadow-sm hover:bg-card-elevated transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Active Inflow</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-status-success">
+<span class="material-symbols-outlined text-base">trending_up</span>
+</div>
+</div>
+<div class="mt-2">
+<span class="font-headline-lg text-headline-lg text-text-primary">3,842 / mo</span>
+<p class="font-caption text-caption text-status-success mt-0.5">98.4% auto-routed via category rules</p>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-card-surface p-4 rounded-xl flex flex-col justify-between shadow-sm hover:bg-card-elevated transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Highest Volume</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-status-warning">
+<span class="material-symbols-outlined text-base">hub</span>
+</div>
+</div>
+<div class="mt-2">
+<span class="font-headline-lg text-headline-lg text-text-primary truncate">Network &amp; Conn.</span>
+<p class="font-caption text-caption text-text-secondary mt-0.5">1,152 tickets (30.0% of total volume)</p>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-card-surface p-4 rounded-xl flex flex-col justify-between shadow-sm hover:bg-card-elevated transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">SLA Mapping</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-status-pending">
+<span class="material-symbols-outlined text-base">verified_user</span>
+</div>
+</div>
+<div class="mt-2">
+<span class="font-headline-lg text-headline-lg text-text-primary">100% Bound</span>
+<p class="font-caption text-caption text-text-secondary mt-0.5">All subcategories mapped to Tier 1-3 SLAs</p>
+</div>
+</div>
+<!-- Metric 5 -->
+<div class="bg-card-surface p-4 rounded-xl flex flex-col justify-between shadow-sm hover:bg-card-elevated transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Uncategorized</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-status-info">
+<span class="material-symbols-outlined text-base">checklist_rtl</span>
+</div>
+</div>
+<div class="mt-2">
+<span class="font-headline-lg text-headline-lg text-text-primary">0 Unsorted</span>
+<p class="font-caption text-caption text-status-success mt-0.5">Zero fallback queue overflow</p>
+</div>
+</div>
+</div>
+<!-- Search, Filter & Bulk Actions Bar -->
+<div class="bg-card-surface p-3.5 rounded-xl flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-3 shadow-sm">
+<!-- Left Filters and Search -->
+<div class="flex flex-1 flex-col md:flex-row items-stretch md:items-center gap-3">
+<!-- Search Input -->
+<div class="relative flex-1 min-w-[280px]">
+<div class="absolute left-3 top-1/2 -translate-y-1/2 flex items-center pointer-events-none text-text-tertiary">
+<span class="material-symbols-outlined text-lg">search</span>
+</div>
+<input class="w-full h-10 bg-input-surface text-text-primary placeholder:text-text-tertiary pl-9 pr-14 rounded-xl font-body-md text-body-md focus:bg-surface-container focus:text-text-primary outline-none transition-all" placeholder="Search categories, subcategories, or keyword triggers..." type="text"/>
+<div class="absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none">
+<kbd class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-high text-text-tertiary">⌘F</kbd>
+</div>
+</div>
+<!-- Type Dropdown -->
+<div class="relative">
+<select class="h-10 pl-3 pr-8 rounded-xl bg-input-surface text-text-primary font-body-sm text-body-sm outline-none appearance-none cursor-pointer focus:bg-surface-container transition-all">
+<option>Type: All (Incidents &amp; Requests)</option>
+<option>Incidents Only</option>
+<option>Service Requests Only</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-text-tertiary pointer-events-none text-base">expand_more</span>
+</div>
+<!-- Department Queue Dropdown -->
+<div class="relative">
+<select class="h-10 pl-3 pr-8 rounded-xl bg-input-surface text-text-primary font-body-sm text-body-sm outline-none appearance-none cursor-pointer focus:bg-surface-container transition-all">
+<option>Department: All Queues</option>
+<option>NetOps Tier-2</option>
+<option>Depot Logistics</option>
+<option>Workplace Software</option>
+<option>SecOps Identity</option>
+<option>Business Systems</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-text-tertiary pointer-events-none text-base">expand_more</span>
+</div>
+<!-- Status Dropdown -->
+<div class="relative">
+<select class="h-10 pl-3 pr-8 rounded-xl bg-input-surface text-text-primary font-body-sm text-body-sm outline-none appearance-none cursor-pointer focus:bg-surface-container transition-all">
+<option>Status: Active &amp; Disabled</option>
+<option>Active Only</option>
+<option>Disabled Only</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-text-tertiary pointer-events-none text-base">expand_more</span>
+</div>
+</div>
+<!-- Right Controls: View Switcher and Bulk Actions -->
+<div class="flex items-center gap-2.5 self-end xl:self-auto">
+<div class="inline-flex p-1 bg-input-surface rounded-xl">
+<button class="px-3 py-1 rounded-lg bg-surface-container-high text-text-primary font-label-sm text-label-sm shadow-sm flex items-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-sm">account_tree</span>
+<span>Grouped</span>
+</button>
+<button class="px-3 py-1 rounded-lg text-text-tertiary hover:text-text-primary font-label-sm text-label-sm flex items-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-sm">format_list_bulleted</span>
+<span>Flat List</span>
+</button>
+</div>
+<div class="relative">
+<button class="h-10 px-3.5 rounded-xl bg-input-surface text-text-secondary hover:text-text-primary hover:bg-surface-container flex items-center gap-1.5 font-label-md text-label-md transition-all" type="button">
+<span>Batch Actions</span>
+<span class="material-symbols-outlined text-base">arrow_drop_down</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Category Management Table Card -->
+<div class="bg-card-surface rounded-xl overflow-hidden shadow-md">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-lowest/50 text-text-tertiary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3.5 px-4 w-12 text-center">
+<input class="w-4 h-4 rounded bg-input-surface accent-primary-container cursor-pointer" type="checkbox"/>
+</th>
+<th class="py-3.5 px-4 min-w-[240px]">Category &amp; Taxonomy Code</th>
+<th class="py-3.5 px-4 min-w-[320px]">Subcategories &amp; Volume Bindings</th>
+<th class="py-3.5 px-4 min-w-[240px]">Default Target Queue</th>
+<th class="py-3.5 px-4 min-w-[140px]">Ticket Volume</th>
+<th class="py-3.5 px-4 min-w-[110px]">Status</th>
+<th class="py-3.5 px-4 text-right min-w-[140px]">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high font-body-sm text-body-sm">
+<!-- Row 1: Network & Connectivity -->
+<tr class="hover:bg-card-elevated/70 transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="w-4 h-4 rounded bg-input-surface accent-primary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-xl bg-primary-container/15 flex items-center justify-center text-status-info flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-lg">lan</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-text-primary truncate">Network &amp; Connectivity</span>
+<span class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-high text-accent-light">CAT-NET-01</span>
+</div>
+<span class="text-text-secondary text-caption line-clamp-1 mt-0.5">Enterprise network switches, wireless APs, VPN tunneling, corporate radius authentication.</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  Wi-Fi &amp; 802.1X <span class="text-text-tertiary">342</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  WireGuard / VPN <span class="text-text-tertiary">412</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  Switch / VLAN <span class="text-text-tertiary">210</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  DNS &amp; Gateway <span class="text-text-tertiary">188</span>
+</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-status-info"></div>
+<span class="text-text-primary font-label-md text-label-md">NetOps Tier-2 Escalation</span>
+</div>
+<span class="text-text-tertiary text-caption">SLA: 2h Response / 6h Resolve</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-caption font-code-meta">
+<span class="text-text-primary font-semibold">1,152</span>
+<span class="text-text-tertiary">30.0%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 30%"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-status-success/15 text-status-success font-code-meta text-code-meta font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span> Active
+                </span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-7 h-4 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="inline-flex items-center gap-1 opacity-80 group-hover:opacity-100 transition-opacity">
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="Add Subcategory" type="button">
+<span class="material-symbols-outlined text-base">add_circle</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="Edit Category" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-base">more_horiz</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Workplace Hardware & Endpoints -->
+<tr class="hover:bg-card-elevated/70 transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="w-4 h-4 rounded bg-input-surface accent-primary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-xl bg-status-info/15 flex items-center justify-center text-status-info flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-lg">laptop_mac</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-text-primary truncate">Workplace Hardware</span>
+<span class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-high text-accent-light">CAT-HW-02</span>
+</div>
+<span class="text-text-secondary text-caption line-clamp-1 mt-0.5">Physical employee hardware provisioning, depot repairs, warranty dispatch, and asset retrieval.</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  MacBook Pro M-Series <span class="text-text-tertiary">420</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  Dell Precision <span class="text-text-tertiary">240</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  4K Displays &amp; Docks <span class="text-text-tertiary">124</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  YubiKeys <span class="text-text-tertiary">100</span>
+</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-status-warning"></div>
+<span class="text-text-primary font-label-md text-label-md">Depot Logistics &amp; Ops</span>
+</div>
+<span class="text-text-tertiary text-caption">SLA: 4h Response / 24h Dispatch</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-caption font-code-meta">
+<span class="text-text-primary font-semibold">884</span>
+<span class="text-text-tertiary">23.0%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-accent-light rounded-full" style="width: 23%"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-status-success/15 text-status-success font-code-meta text-code-meta font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span> Active
+                </span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-7 h-4 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="inline-flex items-center gap-1 opacity-80 group-hover:opacity-100 transition-opacity">
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="Add Subcategory" type="button">
+<span class="material-symbols-outlined text-base">add_circle</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="Edit Category" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-base">more_horiz</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Software, SaaS & Developer Tooling -->
+<tr class="hover:bg-card-elevated/70 transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="w-4 h-4 rounded bg-input-surface accent-primary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-xl bg-status-pending/15 flex items-center justify-center text-status-pending flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-lg">terminal</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-text-primary truncate">Software &amp; Dev Tooling</span>
+<span class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-high text-accent-light">CAT-SW-03</span>
+</div>
+<span class="text-text-secondary text-caption line-clamp-1 mt-0.5">Local runtime configuration, developer licenses, SaaS seats, and desktop application support.</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  JetBrains IDEs <span class="text-text-tertiary">310</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  Docker / K8s <span class="text-text-tertiary">190</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  Slack / Workspace <span class="text-text-tertiary">130</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  Adobe CC <span class="text-text-tertiary">100</span>
+</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-status-pending"></div>
+<span class="text-text-primary font-label-md text-label-md">Workplace Software Team</span>
+</div>
+<span class="text-text-tertiary text-caption">SLA: 2h Response / 8h Resolve</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-caption font-code-meta">
+<span class="text-text-primary font-semibold">730</span>
+<span class="text-text-tertiary">19.0%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-status-pending rounded-full" style="width: 19%"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-status-success/15 text-status-success font-code-meta text-code-meta font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span> Active
+                </span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-7 h-4 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="inline-flex items-center gap-1 opacity-80 group-hover:opacity-100 transition-opacity">
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="Add Subcategory" type="button">
+<span class="material-symbols-outlined text-base">add_circle</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="Edit Category" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-base">more_horiz</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Identity, Access Management & Security -->
+<tr class="hover:bg-card-elevated/70 transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="w-4 h-4 rounded bg-input-surface accent-primary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-xl bg-status-danger/15 flex items-center justify-center text-status-danger flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-lg">security</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-text-primary truncate">Identity &amp; SecOps IAM</span>
+<span class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-high text-accent-light">CAT-SEC-04</span>
+</div>
+<span class="text-text-secondary text-caption line-clamp-1 mt-0.5">Multi-factor authentication resets, PAM elevation, temporary cloud credentials, and threat triage.</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  Okta SSO &amp; MFA <span class="text-text-tertiary">280</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  AWS IAM Roles <span class="text-text-tertiary">184</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  SSH &amp; Git Access <span class="text-text-tertiary">95</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  Phishing Triage <span class="text-text-tertiary">55</span>
+</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-status-danger"></div>
+<span class="text-text-primary font-label-md text-label-md">SecOps Identity &amp; SOC</span>
+</div>
+<span class="text-text-tertiary text-caption">SLA: 30m Response / 2h Resolve</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-caption font-code-meta">
+<span class="text-text-primary font-semibold">614</span>
+<span class="text-text-tertiary">16.0%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-status-danger rounded-full" style="width: 16%"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-status-success/15 text-status-success font-code-meta text-code-meta font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span> Active
+                </span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-7 h-4 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="inline-flex items-center gap-1 opacity-80 group-hover:opacity-100 transition-opacity">
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="Add Subcategory" type="button">
+<span class="material-symbols-outlined text-base">add_circle</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="Edit Category" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-base">more_horiz</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Enterprise Applications & ERP -->
+<tr class="hover:bg-card-elevated/70 transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="w-4 h-4 rounded bg-input-surface accent-primary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-xl bg-surface-container-high flex items-center justify-center text-accent-light flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-lg">domain</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-text-primary truncate">Enterprise Apps &amp; ERP</span>
+<span class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-high text-accent-light">CAT-APP-05</span>
+</div>
+<span class="text-text-secondary text-caption line-clamp-1 mt-0.5">Business system permissions, fiscal year close errors, workflow approvals, and ERP data feeds.</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  Workday HRIS <span class="text-text-tertiary">180</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  NetSuite ERP <span class="text-text-tertiary">162</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  Salesforce CRM <span class="text-text-tertiary">80</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  Internal Portals <span class="text-text-tertiary">40</span>
+</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-status-info"></div>
+<span class="text-text-primary font-label-md text-label-md">Business Systems Eng</span>
+</div>
+<span class="text-text-tertiary text-caption">SLA: 4h Response / 12h Resolve</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-caption font-code-meta">
+<span class="text-text-primary font-semibold">462</span>
+<span class="text-text-tertiary">12.0%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-accent-electric rounded-full" style="width: 12%"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-status-success/15 text-status-success font-code-meta text-code-meta font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span> Active
+                </span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-7 h-4 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="inline-flex items-center gap-1 opacity-80 group-hover:opacity-100 transition-opacity">
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="Add Subcategory" type="button">
+<span class="material-symbols-outlined text-base">add_circle</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="Edit Category" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-base">more_horiz</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Telephony & Audio-Visual Systems -->
+<tr class="hover:bg-card-elevated/70 transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="w-4 h-4 rounded bg-input-surface accent-primary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-xl bg-surface-container-high flex items-center justify-center text-status-warning flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-lg">videocam</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-text-primary truncate">Telephony &amp; A/V Systems</span>
+<span class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-high text-accent-light">CAT-AV-06</span>
+</div>
+<span class="text-text-secondary text-caption line-clamp-1 mt-0.5">Meeting room conference displays, Zoom Room controllers, microphones, and executive boardroom A/V.</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  War Room Zoom <span class="text-text-tertiary">82</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  SIP Softphones <span class="text-text-tertiary">28</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high text-text-secondary text-caption font-code-meta">
+                  Town Hall Broadcast <span class="text-text-tertiary">14</span>
+</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-status-warning"></div>
+<span class="text-text-primary font-label-md text-label-md">Media &amp; Facilities IT</span>
+</div>
+<span class="text-text-tertiary text-caption">SLA: 1h Response / 4h Resolve</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-caption font-code-meta">
+<span class="text-text-primary font-semibold">124</span>
+<span class="text-text-tertiary">3.2%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-status-warning rounded-full" style="width: 3.2%"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-status-success/15 text-status-success font-code-meta text-code-meta font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span> Active
+                </span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-7 h-4 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="inline-flex items-center gap-1 opacity-80 group-hover:opacity-100 transition-opacity">
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="Add Subcategory" type="button">
+<span class="material-symbols-outlined text-base">add_circle</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="Edit Category" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-base">more_horiz</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 7: Legacy On-Premise Printing & Fax (Disabled state) -->
+<tr class="hover:bg-card-elevated/40 transition-colors group opacity-65">
+<td class="py-4 px-4 text-center">
+<input class="w-4 h-4 rounded bg-input-surface accent-primary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-text-tertiary flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-lg">print_disabled</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-text-secondary line-through truncate">Legacy On-Premise Printing</span>
+<span class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container text-text-tertiary">CAT-LEG-07</span>
+</div>
+<span class="text-text-tertiary text-caption line-clamp-1 mt-0.5">Physical floor print stations, paper badge authentication, and legacy print spooler servers.</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container text-text-tertiary text-caption font-code-meta">
+                  Badge-Release Printers <span class="text-text-disabled">18</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container text-text-tertiary text-caption font-code-meta">
+                  Network Plotters <span class="text-text-disabled">6</span>
+</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-text-disabled"></div>
+<span class="text-text-secondary font-label-md text-label-md">Facilities General IT</span>
+</div>
+<span class="text-text-disabled text-caption">SLA: Sunsetting / Low Priority</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-caption font-code-meta">
+<span class="text-text-tertiary font-semibold">24</span>
+<span class="text-text-disabled">0.6%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-text-disabled rounded-full" style="width: 0.6%"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-text-tertiary font-code-meta text-code-meta">
+<span class="w-1.5 h-1.5 rounded-full bg-text-tertiary"></span> Disabled
+                </span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-7 h-4 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="inline-flex items-center gap-1 opacity-60 group-hover:opacity-100 transition-opacity">
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="Add Subcategory" type="button">
+<span class="material-symbols-outlined text-base">add_circle</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="Edit Category" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-text-secondary hover:text-text-primary transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-base">more_horiz</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Summary Footer -->
+<div class="p-4 bg-card-surface border-t border-surface-container-high flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="font-body-sm text-body-sm text-text-secondary">
+          Showing <span class="font-medium text-text-primary">1–7</span> of <span class="font-medium text-text-primary">12</span> enterprise categories (48 subcategories total)
+        </span>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2">
+<span class="font-body-sm text-body-sm text-text-tertiary">Rows per page:</span>
+<select class="h-8 pl-2 pr-6 rounded-lg bg-input-surface text-text-primary font-body-sm text-body-sm outline-none cursor-pointer">
+<option>10</option>
+<option>25</option>
+<option>50</option>
+</select>
+</div>
+<div class="inline-flex items-center gap-1 font-body-sm text-body-sm">
+<button class="px-2.5 py-1 rounded-lg text-text-tertiary hover:text-text-primary hover:bg-surface-container transition-colors disabled:opacity-40" disabled="" type="button">
+            &lt; Prev
+          </button>
+<button class="w-8 h-8 rounded-lg bg-primary-container text-white font-semibold flex items-center justify-center" type="button">
+            1
+          </button>
+<button class="w-8 h-8 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-container transition-colors flex items-center justify-center" type="button">
+            2
+          </button>
+<button class="px-2.5 py-1 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-container transition-colors" type="button">
+            Next &gt;
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Create / Edit Category Modal / Drawer Overlay -->
+<div aria-labelledby="slide-over-title" aria-modal="true" class="fixed inset-0 z-50 overflow-hidden hidden" id="category-drawer" role="dialog">
+<!-- Backdrop Blur Overlay -->
+<div class="fixed inset-0 bg-overlay-backdrop backdrop-blur-sm transition-opacity" id="drawer-backdrop"></div>
+<div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+<div class="w-screen max-w-xl bg-card-surface shadow-2xl flex flex-col justify-between">
+<!-- Drawer Header -->
+<div class="p-6 bg-card-elevated flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-container/20 flex items-center justify-center text-accent-electric">
+<span class="material-symbols-outlined text-xl">folder_managed</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-text-primary" id="slide-over-title">Create / Edit Category</h2>
+<p class="font-body-sm text-body-sm text-text-secondary">Configure taxonomy settings and queue routing rules</p>
+</div>
+</div>
+<button class="p-2 text-text-tertiary hover:text-text-primary hover:bg-surface-container rounded-xl transition-colors" id="close-drawer-btn" type="button">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<!-- Drawer Body Form -->
+<div class="p-6 space-y-5 overflow-y-auto flex-1">
+<!-- Category Code & Display Name -->
+<div class="grid grid-cols-3 gap-3">
+<div class="col-span-1 flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-text-secondary">Schema Code</label>
+<input class="h-10 px-3 rounded-xl bg-input-surface text-accent-light font-code-meta text-code-meta outline-none focus:bg-surface-container transition-all" type="text" value="CAT-NET-08"/>
+</div>
+<div class="col-span-2 flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-text-secondary">Category Name <span class="text-status-danger">*</span></label>
+<input class="h-10 px-3.5 rounded-xl bg-input-surface text-text-primary font-body-md text-body-md outline-none focus:bg-surface-container transition-all" placeholder="e.g. Cloud Infrastructure &amp; DevOps" type="text"/>
+</div>
+</div>
+<!-- Description -->
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-text-secondary">Scope Description</label>
+<textarea class="p-3 rounded-xl bg-input-surface text-text-primary font-body-md text-body-md outline-none focus:bg-surface-container transition-all resize-none" placeholder="Provide clarity on what tickets belong in this classification..." rows="3"></textarea>
+</div>
+<!-- Queue Binding & SLA Matrix -->
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-text-secondary">Default Queue Binding <span class="text-status-danger">*</span></label>
+<select class="h-10 px-3 rounded-xl bg-input-surface text-text-primary font-body-md text-body-md outline-none cursor-pointer">
+<option>NetOps Tier-2 Escalation</option>
+<option>SecOps Identity &amp; Compliance</option>
+<option>Depot Logistics &amp; Hardware Ops</option>
+<option>Workplace Software Support</option>
+<option>Business Systems Eng</option>
+</select>
+</div>
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-text-secondary">Target SLA Profile <span class="text-status-danger">*</span></label>
+<select class="h-10 px-3 rounded-xl bg-input-surface text-text-primary font-body-md text-body-md outline-none cursor-pointer">
+<option>Tier 1 - Mission Critical (15m/1h)</option>
+<option selected="">Tier 2 - Enterprise Standard (2h/8h)</option>
+<option>Tier 3 - Routine Request (4h/24h)</option>
+<option>Internal Backlog (No SLA)</option>
+</select>
+</div>
+</div>
+<!-- Subcategories Multi-Tag Builder -->
+<div class="flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-text-secondary">Subcategory Taxonomies</label>
+<button class="text-status-info hover:text-accent-light font-label-sm text-label-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">add</span> Add Subcategory
+              </button>
+</div>
+<div class="p-3 rounded-xl bg-input-surface flex flex-wrap gap-2">
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-card-surface text-text-primary font-code-meta text-code-meta">
+<span>AWS VPC Peering</span>
+<button class="text-text-tertiary hover:text-status-danger transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">cancel</span>
+</button>
+</div>
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-card-surface text-text-primary font-code-meta text-code-meta">
+<span>Kubernetes Ingress</span>
+<button class="text-text-tertiary hover:text-status-danger transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">cancel</span>
+</button>
+</div>
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-card-surface text-text-primary font-code-meta text-code-meta">
+<span>Terraform State Lock</span>
+<button class="text-text-tertiary hover:text-status-danger transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">cancel</span>
+</button>
+</div>
+<input class="bg-transparent text-text-primary placeholder:text-text-disabled font-code-meta text-code-meta outline-none px-2 py-1 w-28" placeholder="+ Type tag..." type="text"/>
+</div>
+</div>
+<!-- Routing Rules & Auto-Triage Trigger -->
+<div class="p-4 rounded-xl bg-surface-container-high/50 flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary">ML Auto-Classification Engine</span>
+<span class="font-caption text-caption text-text-secondary">Allow model to triage high confidence incoming tickets directly to this category</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary">Classification Status</span>
+<span class="font-caption text-caption text-text-secondary">Make available immediately across Incident Portal</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Drawer Footer Buttons -->
+<div class="p-5 bg-card-elevated flex items-center justify-between">
+<button class="px-4 py-2 rounded-xl bg-surface-container hover:bg-surface-container-highest text-text-secondary hover:text-text-primary font-label-md text-label-md transition-colors" id="cancel-drawer-btn" type="button">
+            Cancel
+          </button>
+<div class="flex items-center gap-3">
+<button class="px-4 py-2 rounded-xl bg-card-surface hover:bg-surface-container-highest text-text-primary font-label-md text-label-md transition-colors" type="button">
+              Save Draft
+            </button>
+<button class="px-5 py-2 rounded-xl bg-primary-container hover:bg-accent-electric text-white font-label-md text-label-md shadow-[0_0_20px_rgba(37,99,235,0.3)] transition-all" type="button">
+              Save &amp; Activate
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple drawer modal interactions
+  const openBtn = document.getElementById('open-drawer-btn');
+  const closeBtn = document.getElementById('close-drawer-btn');
+  const cancelBtn = document.getElementById('cancel-drawer-btn');
+  const drawer = document.getElementById('category-drawer');
+  const backdrop = document.getElementById('drawer-backdrop');
+
+  function openDrawer() {
+    if (drawer) {
+      drawer.classList.remove('hidden');
+    }
+  }
+
+  function closeDrawer() {
+    if (drawer) {
+      drawer.classList.add('hidden');
+    }
+  }
+
+  if (openBtn) openBtn.addEventListener('click', openDrawer);
+  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+  if (cancelBtn) cancelBtn.addEventListener('click', closeDrawer);
+  if (backdrop) backdrop.addEventListener('click', closeDrawer);
+</script></main></div></body></html>

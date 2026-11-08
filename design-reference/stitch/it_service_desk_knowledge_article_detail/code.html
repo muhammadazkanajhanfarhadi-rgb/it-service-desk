@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"border-hover":"rgba(59, 130, 246, 0.40)","secondary-container":"#045ecf","on-secondary-fixed-variant":"#004398","on-tertiary-fixed":"#001a42","on-secondary-container":"#d5e0ff","on-secondary-fixed":"#001a43","background":"#0c1321","on-primary-fixed-variant":"#003ea8","outline":"#8d90a0","tertiary-container":"#0f69dc","primary-dark":"#1D4ED8","on-primary-fixed":"#00174b","on-tertiary":"#002e6a","on-secondary":"#002d6c","on-surface":"#dce2f6","inverse-on-surface":"#2a3040","on-surface-variant":"#c3c6d7","tertiary-fixed":"#d8e2ff","inverse-surface":"#dce2f6","text-tertiary":"#64748B","text-disabled":"#475569","sidebar-surface":"#10182A","surface":"#0c1321","overlay-backdrop":"rgba(0, 0, 0, 0.60)","tertiary-fixed-dim":"#adc6ff","surface-variant":"#2e3544","card-elevated":"#16233F","surface-bright":"#323949","border-glass":"rgba(255, 255, 255, 0.08)","on-error-container":"#ffdad6","surface-container":"#19202e","accent-electric":"#4F8CFF","surface-tint":"#b4c5ff","status-info":"#38BDF8","text-primary":"#F8FAFC","primary-fixed-dim":"#b4c5ff","card-surface":"#121C31","status-warning":"#F59E0B","input-surface":"#0F1930","surface-container-high":"#232a39","on-tertiary-container":"#edf0ff","primary-fixed":"#dbe1ff","primary-container":"#2563eb","secondary-fixed-dim":"#afc6ff","border-subtle":"rgba(148, 163, 184, 0.14)","error":"#ffb4ab","status-danger":"#EF4444","error-container":"#93000a","surface-container-highest":"#2e3544","primary":"#b4c5ff","surface-container-low":"#151b2a","on-background":"#dce2f6","text-secondary":"#94A3B8","surface-container-lowest":"#070e1c","secondary":"#afc6ff","inverse-primary":"#0053db","outline-variant":"#434655","on-tertiary-fixed-variant":"#004395","app-bg":"#0B1220","surface-dim":"#0c1321","on-error":"#690005","on-primary-container":"#eeefff","status-success":"#22C55E","status-pending":"#A78BFA","on-primary":"#002a78","border-input":"rgba(148, 163, 184, 0.16)","accent-light":"#60A5FA","interactive-active-bg":"rgba(37, 99, 235, 0.18)","tertiary":"#adc6ff","secondary-fixed":"#d9e2ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-lg":"1rem","space-xs":"0.25rem","margin-desktop":"2rem","space-xl":"1.5rem","gutter":"1rem","space-2xl":"2rem","margin":"1rem","space-md":"0.75rem","gutter-desktop":"1.5rem","space-sm":"0.5rem"},fontFamily:{"headline-xl":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"caption":["Inter"],"headline-sm":["Inter"],"headline-xl-mobile":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"label-sm":["Inter"],"code-meta":["Inter"],"headline-lg":["Inter"],"body-sm":["Inter"]},fontSize:{"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"16px","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"caption":["11px",{"lineHeight":"14px","fontWeight":"400"}],"headline-sm":["15px",{"lineHeight":"20px","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"code-meta":["12px",{"lineHeight":"16px","fontWeight":"600"}],"headline-lg":["22px",{"lineHeight":"28px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}]}}}};</script></head><body class="bg-app-bg text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-sidebar-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-xl flex items-center gap-space-sm"><img alt="Apex Desk Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VKUVTXqCpH-FXGmoK-2kF4Tt2Dm-ELJWNCFuhJRqxpucrf4IryWidKtv_Q0i67U1DztVk9VzJC0EsZC-a1xPMoyWWek-zeUmUQrolyMIxGtdrX_HloMIiTdV0dL-dQC5QOeFeXOaoHF4wjDBw80_QhVfa9HVVIO2AcIxk-DSzSILIDugmjsidWD6D0DWWMHSP0kOcZ83Y-Tgw13zy8zqj4TqsCM5GHesvHzCzQa9YO"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight">Apex Desk</span><span class="font-caption text-caption text-text-tertiary">Enterprise IT Ops</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Main</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-white shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl"><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="dashboard" href="#"><span>Dashboard</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="my-tickets" href="#"><span>My Tickets</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="all-tickets" href="#"><span>All Tickets</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="create-ticket" href="#"><span>Create Ticket</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="service-catalog" href="#"><span>Service Catalog</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="assets" href="#"><span>Assets</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="knowledge-base" href="#"><span>Knowledge Base</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="reports" href="#"><span>Reports</span></a></nav></div><div class="px-space-md py-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Administration</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-white shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl"><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="users" href="#"><span>Users</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="categories" href="#"><span>Categories</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="sla" href="#"><span>SLA</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="settings" href="#"><span>Settings</span></a></nav></div></div><div class="p-space-md bg-surface-container-lowest m-space-md rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><div class="relative flex-shrink-0"><img alt="Azka Avatar" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-status-success"></span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-text-primary truncate">Azka</span><span class="font-caption text-caption text-text-secondary truncate">Incident Lead</span></div></div><a class="text-on-surface-variant hover:text-status-danger p-space-xs rounded-lg transition-colors flex items-center justify-center" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-xl">logout</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 px-margin-desktop flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><nav class="hidden sm:flex items-center gap-space-sm font-body-sm text-body-sm text-text-secondary"><span class="hover:text-text-primary cursor-pointer transition-colors">Home</span><span class="text-outline-variant font-caption text-caption">/</span><span class="hover:text-text-primary cursor-pointer transition-colors">Knowledge Base</span><span class="text-outline-variant font-caption text-caption">/</span><span class="text-text-primary font-label-md text-label-md">IT Runbooks &amp; Solutions</span></nav></div><div class="flex items-center gap-space-lg"><div class="relative hidden md:flex items-center"><div class="absolute left-space-md flex items-center pointer-events-none text-text-tertiary"><span class="material-symbols-outlined text-lg">search</span></div><input class="w-72 h-10 bg-input-surface text-text-primary placeholder:text-text-tertiary pl-10 pr-16 rounded-xl font-body-md text-body-md focus:bg-surface-container focus:text-text-primary transition-all outline-none" placeholder="Search incidents, tickets, KB..." type="text"/><div class="absolute right-space-sm flex items-center gap-space-xs pointer-events-none"><kbd class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-high text-text-secondary">⌘K</kbd></div></div><div class="flex items-center gap-space-sm"><button class="relative p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-danger"></span></button><button class="p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-colors" type="button"><span class="material-symbols-outlined text-xl">help</span></button><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-full"><span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span><span class="font-label-sm text-label-sm text-status-success hidden lg:inline">Operational</span></div></div><div class="flex items-center gap-space-sm pl-space-xs border-l border-border-subtle"><div class="relative"><img alt="Azka Avatar" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-status-success"></span></div><div class="hidden xl:flex flex-col"><span class="font-label-md text-label-md text-text-primary leading-tight">Azka</span><span class="font-caption text-caption text-text-secondary leading-tight">Incident Lead</span></div></div></div></header><main class="w-full pt-16 bg-app-bg px-margin-desktop min-h-screen"><div class="flex flex-col w-full pb-space-2xl">
+<!-- Article Header Meta & Operational Action Strip -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md py-space-md mb-space-lg">
+<div class="flex flex-wrap items-center gap-space-sm text-text-secondary font-body-sm text-body-sm">
+<span class="hover:text-text-primary cursor-pointer transition-colors">Home</span>
+<span class="text-text-disabled">/</span>
+<span class="hover:text-text-primary cursor-pointer transition-colors">Knowledge Base</span>
+<span class="text-text-disabled">/</span>
+<span class="hover:text-text-primary cursor-pointer transition-colors">Network</span>
+<span class="text-text-disabled">/</span>
+<span class="text-text-primary font-label-md text-label-md">WiFi Troubleshooting &amp; 802.1X Re-authentication</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-text-primary text-label-sm font-label-sm transition-all" onclick="navigator.clipboard?.writeText(window.location.href); alert('Article permalink copied to clipboard.');" type="button">
+<span class="material-symbols-outlined text-base">share</span>
+<span>Share Runbook</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-text-primary text-label-sm font-label-sm transition-all" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-base">print</span>
+<span>PDF Export</span>
+</button>
+<button class="p-space-xs rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-accent-electric transition-colors" title="Edit Runbook (Requires NetOps / SecOps Perms)" type="button">
+<span class="material-symbols-outlined text-lg">edit_note</span>
+</button>
+</div>
+</div>
+<!-- Primary Asymmetric Grid Layout (72% Runbook Canvas / 28% Sticky Command Rail) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left Main Article Runbook Area (8 cols = ~67-72% Desktop) -->
+<article class="lg:col-span-8 flex flex-col gap-space-xl min-w-0">
+<!-- Article Identity Header Card -->
+<section class="bg-card-surface rounded-xl p-space-xl shadow-xl flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-container/20 text-accent-light font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">wifi</span>
+            Network Infrastructure
+          </span>
+<span class="font-code-meta text-code-meta text-text-tertiary px-2 py-0.5 rounded bg-surface-container-lowest">
+            KB-2041
+          </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-status-success/15 text-status-success font-caption text-caption font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success animate-pulse"></span>
+            Verified Enterprise Runbook
+          </span>
+<span class="inline-flex items-center gap-1 text-text-tertiary font-caption text-caption ml-auto">
+<span class="material-symbols-outlined text-sm">schedule</span>
+            4 min read
+          </span>
+</div>
+<h1 class="text-headline-xl font-headline-xl text-text-primary tracking-tight leading-snug">
+          Troubleshooting Corporate Wi-Fi Drops &amp; 802.1X Certificate Re-enrollment
+        </h1>
+<!-- Author, Approver & Telemetry Strip -->
+<div class="pt-space-sm bg-surface-container-lowest/60 rounded-lg p-space-md flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-lg flex-wrap">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Close up professional portrait of Azka, enterprise IT operations engineer wearing modern dark headset against a high-tech datacenter background with soft blue lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0tfmtd89VaMDNtQEgUi7hrUvcUJxrO7FtsNm6d-pqiWdJ_aq0xkjFZDJTJR7PgbaDm9sZ-yUyYLrwwARq_kJqX5-pLwqS4dEBFHpZmOPvrFrWBYTgLPsE2YuaKqV39m6hCiqVlym9b6GqSQcQxNjdwygdDI7WxFp8GV1KQ7fIe6UUnCmDaL7IPRMD6ghCZuUuMUWqIj5PBXLOauvin67gb0Yt5HyukjDDLd71fQ8"/>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-primary">Azka</span>
+<span class="font-caption text-caption text-text-secondary">Incident Lead / NetOps</span>
+</div>
+</div>
+<div class="h-6 w-px bg-surface-container-high hidden sm:block"></div>
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Portrait of Marcus Vance, senior SecOps technical reviewer wearing navy suit against cyber defense screens in soft ambient evening tone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx5xNPsKRDKTUw8ZyoMmkvYYnnoNfO_2yCrDjnVvnYsLjkq4yhhPUGI1kK9F22DITcgmD2RbMHr6AecsK--W5Pt2YkKk1OEftOVvK0nrbTgNee9SviE01t0nFgOpniinZ5DHhEiQlFcEpyvHmueYWOm8QlNos66dZhXOGpjHeoi1ly4OJbKLhfZ03Brr2uuWidf_Gk3CRiQQxx-PcJ4wrhSlbZiHDLUlpM-qPTuZY"/>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-primary">Marcus Vance</span>
+<span class="font-caption text-caption text-text-secondary">Technical Reviewer • SecOps</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-start lg:items-end">
+<span class="font-caption text-caption text-text-tertiary">Verified for macOS Sequoia 15.1 &amp; Win 11 24H2</span>
+<div class="flex items-center gap-space-xs text-status-info font-code-meta text-code-meta mt-0.5">
+<span class="material-symbols-outlined text-sm">visibility</span>
+<span>3,842 views</span>
+<span class="text-text-disabled">•</span>
+<span class="text-status-success">98.4% helpful (342 votes)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Executive Diagnostic Box -->
+<section class="relative overflow-hidden rounded-xl bg-card-elevated p-space-lg shadow-xl shadow-primary-container/5">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex items-start gap-space-md relative z-10">
+<div class="p-space-xs rounded-lg bg-primary-container/20 text-accent-light shrink-0">
+<span class="material-symbols-outlined text-xl">verified_user</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-accent-light font-semibold">Scope &amp; Impact Assessment</span>
+<p class="font-body-md text-body-md text-text-primary leading-relaxed">
+              Applies directly to enterprise SSID <code class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-lowest text-accent-electric">Apex-Corp-Secure</code>, expiring client-side EAP-TLS device certificates, and sudden micro-disconnects when roaming across 5GHz/6GHz AP clusters in Tokyo HQ and Remote Regional Hubs.
+            </p>
+</div>
+</div>
+</section>
+<!-- Section 1: Symptom & Root Cause Analysis -->
+<section class="bg-card-surface rounded-xl p-space-xl shadow-xl flex flex-col gap-space-lg" id="symptom-identification">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-status-warning font-label-md text-label-md">01</div>
+<h2 class="text-headline-md font-headline-md text-text-primary">Symptom &amp; Root Cause Analysis</h2>
+</div>
+<span class="font-label-sm text-label-sm text-text-tertiary">Triaging Checklist</span>
+</div>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+          Following updates to macOS Sequoia 15.x and Windows Credential Isolation rings, cached 802.1X private keys stored inside the local device keystore can lose hardware-attested trust anchors. This causes RADIUS round-trip timeouts with the FreeRADIUS/ISE cluster, dropping packets every 12–15 minutes.
+        </p>
+<!-- Troubleshooting Verification Indicators -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-status-danger text-lg mt-0.5 shrink-0">signal_wifi_bad</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary">EAP Handshake Timeout</span>
+<span class="font-caption text-caption text-text-tertiary">Wi-Fi icon continually loops seeking credentials despite stored enterprise profiles.</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-status-warning text-lg mt-0.5 shrink-0">lock_clock</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary">Certificate Expired / Desynced</span>
+<span class="font-caption text-caption text-text-tertiary">SCEP profile shows valid date but root CA thumbprint has mismatched SHA-256 digests.</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-status-info text-lg mt-0.5 shrink-0">speed</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary">Packet Loss on AP Transition</span>
+<span class="font-caption text-caption text-text-tertiary">Client hangs during 802.11r Fast BSS Transition between floor controller nodes.</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-status-success text-lg mt-0.5 shrink-0">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary">Apex-Guest Still Accessible</span>
+<span class="font-caption text-caption text-text-tertiary">Confirms hardware radio and driver stack are intact; isolates defect to 802.1X auth.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Step-by-Step Resolution Guide -->
+<section class="bg-card-surface rounded-xl p-space-xl shadow-xl flex flex-col gap-space-xl">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-accent-electric font-label-md text-label-md">02</div>
+<h2 class="text-headline-md font-headline-md text-text-primary">Step-by-Step Resolution Guide</h2>
+</div>
+<!-- Step 1 -->
+<div class="flex flex-col gap-space-sm" id="step-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-accent-light uppercase tracking-wider">Step 1</span>
+<span class="font-caption text-caption text-text-tertiary">Target: Client Keychain / Cert Manager</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">
+            Verify 802.1X Machine Certificate Trust in Keychain Access / Certmgr.msc
+          </h3>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+            Open <kbd class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-lowest text-text-primary">Keychain Access.app</kbd> on macOS or run <kbd class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-lowest text-text-primary">certmgr.msc</kbd> on Windows 11. Navigate to the <strong>System Keychain</strong> and locate the certificate issued by <code class="font-code-meta text-code-meta text-accent-electric">Apex Enterprise Root CA G4</code>. Ensure the certificate has a green check indicating trust anchors are explicitly accepted.
+          </p>
+<div class="p-space-md rounded-xl bg-surface-container-lowest/80 flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-accent-light text-base mt-0.5">info</span>
+<span class="font-body-sm text-body-sm text-text-secondary">
+              If the certificate icon has a red X or states "This certificate is not trusted", do not attempt to import it manually. Proceed to profile re-sync via Kandji below.
+            </span>
+</div>
+</div>
+<!-- Step 2 (Code Block Terminal) -->
+<div class="flex flex-col gap-space-sm" id="step-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-accent-light uppercase tracking-wider">Step 2</span>
+<span class="font-caption text-caption text-text-tertiary">Target: Local DNS Resolver &amp; Interface Stack</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">
+            Flush DNS Cache and Reset Network Interface via Terminal / PowerShell
+          </h3>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+            Execute the following command sequence in an elevated Terminal session to flush local Multicast DNS responders and reset the hardware Wi-Fi power subsystem cleanly:
+          </p>
+<!-- CLI Code Block Component with Interactive Copy -->
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-md">
+<div class="flex items-center justify-between px-space-md py-space-xs bg-surface-container-high/60">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-status-danger/70 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-status-warning/70 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-status-success/70 inline-block"></span>
+<span class="font-code-meta text-code-meta text-text-tertiary ml-2">zsh — Terminal (Administrator)</span>
+</div>
+<button class="flex items-center gap-1 font-label-sm text-label-sm text-text-secondary hover:text-accent-electric transition-colors" onclick="navigator.clipboard?.writeText('sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder\nnetworksetup -setairportpower en0 off &amp;&amp; networksetup -setairportpower en0 on'); this.innerHTML = '&lt;span class=\'material-symbols-outlined text-sm\'&gt;done&lt;/span&gt; Copied!'; setTimeout(() =&gt; { this.innerHTML = '&lt;span class=\'material-symbols-outlined text-sm\'&gt;content_copy&lt;/span&gt; Copy'; }, 2000);" type="button">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+<span>Copy</span>
+</button>
+</div>
+<pre class="p-space-md text-text-primary font-code-meta text-code-meta overflow-x-auto leading-relaxed"><code><span class="text-text-tertiary"># 1. Flush DNS cache &amp; restart mDNS responder</span>
+sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
+
+<span class="text-text-tertiary"># 2. Cycle hardware airport interface</span>
+networksetup -setairportpower en0 off &amp;&amp; networksetup -setairportpower en0 on</code></pre>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col gap-space-sm" id="step-3">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-accent-light uppercase tracking-wider">Step 3</span>
+<span class="font-caption text-caption text-text-tertiary">Target: Kandji Self-Service MDM Agent</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">
+            Trigger Profile Re-enrollment via Kandji Self-Service
+          </h3>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+            Launch the <strong>Kandji Self-Service</strong> application from the Applications folder. Locate the item labeled <span class="text-accent-electric font-medium">"Network: Apex Corporate Wi-Fi Configuration (802.1X EAP-TLS)"</span> and click <strong>Reinstall / Verify Profile</strong>. Wait approximately 45 seconds while Kandji provisions a fresh client identity certificate with hardware biometric anchoring.
+          </p>
+<div class="p-space-md rounded-xl bg-status-warning/10 text-on-surface flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-status-warning text-lg shrink-0 mt-0.5">warning</span>
+<div class="flex flex-col font-body-sm text-body-sm text-text-secondary">
+<strong class="text-status-warning font-label-md text-label-md">Operational Guardrail:</strong>
+              Do not manually delete configuration profiles under macOS System Settings &gt; Privacy &amp; Security &gt; Profiles. Manual deletion without a synchronized MDM profile receipt will invalidate hardware escrow tokens.
+            </div>
+</div>
+</div>
+</section>
+<!-- Interactive Diagnostic Tooling Box -->
+<section class="bg-card-surface rounded-xl p-space-xl shadow-xl flex flex-col gap-space-md" id="automated-diagnostics">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-accent-electric text-xl">network_check</span>
+<h2 class="text-headline-md font-headline-md text-text-primary">Live Self-Service Diagnostics</h2>
+</div>
+<span class="inline-flex items-center gap-1 font-caption text-caption text-status-success bg-status-success/10 px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+            Agent Online
+          </span>
+</div>
+<p class="font-body-md text-body-md text-text-secondary">
+          Run non-invasive client diagnostics directly against your local workstation to test authentication routes and gateway latency before escalating to Tier 2.
+        </p>
+<!-- Tool Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-xs">
+<!-- Ping Gateway Tool -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md text-text-primary">Wi-Fi Gateway Ping</span>
+<span class="material-symbols-outlined text-text-tertiary text-sm">router</span>
+</div>
+<span class="font-caption text-caption text-text-secondary">Tests ICMP latency to the closest 802.11ax Aruba access point.</span>
+</div>
+<button class="w-full py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-accent-electric text-label-sm font-label-sm transition-all" onclick="this.innerText='Pinging... 4ms (Loss: 0%)'; this.classList.add('text-status-success');" type="button">
+              Run Latency Test
+            </button>
+</div>
+<!-- RADIUS Auth Tool -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md text-text-primary">RADIUS Auth Probe</span>
+<span class="material-symbols-outlined text-text-tertiary text-sm">security</span>
+</div>
+<span class="font-caption text-caption text-text-secondary">Validates EAP-TLS handshake without severing your existing session.</span>
+</div>
+<button class="w-full py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-accent-electric text-label-sm font-label-sm transition-all" onclick="this.innerText='Verified OK (TLS 1.3)'; this.classList.add('text-status-success');" type="button">
+              Validate Certificate
+            </button>
+</div>
+<!-- Download Profile Bundle -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md text-text-primary">CA Trust Bundle</span>
+<span class="material-symbols-outlined text-text-tertiary text-sm">download</span>
+</div>
+<span class="font-caption text-caption text-text-secondary">Signed mobileconfig profile package for manual enterprise provisioning.</span>
+</div>
+<button class="w-full py-1.5 rounded-lg bg-primary-container text-white text-label-sm font-label-sm hover:bg-primary-dark transition-all" onclick="alert('Downloading signed profile payload: Apex_WiFi_Corp_2026.mobileconfig');" type="button">
+              Download Bundle (.pkg)
+            </button>
+</div>
+</div>
+</section>
+<!-- Article Feedback Section (Prominent Clean Card) -->
+<section class="bg-card-surface rounded-xl p-space-xl shadow-xl flex flex-col gap-space-lg text-center items-center">
+<div class="flex flex-col items-center gap-space-xs max-w-md">
+<span class="w-12 h-12 rounded-full bg-primary-container/20 text-accent-electric flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-2xl">thumb_up</span>
+</span>
+<h3 class="font-headline-md text-headline-md text-text-primary">Was this runbook helpful?</h3>
+<p class="font-body-md text-body-md text-text-secondary">
+            Your feedback directly tunes automated IT diagnostics and updates escalation triggers for on-call engineers.
+          </p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-space-md w-full max-w-lg">
+<button class="flex-1 min-w-[200px] flex items-center justify-center gap-space-sm px-space-xl py-space-md rounded-xl bg-status-success/15 hover:bg-status-success/25 text-status-success font-label-md text-label-md transition-all shadow-md group" onclick="this.classList.add('ring-2', 'ring-status-success'); alert('Thank you! Your feedback has been recorded.');" type="button">
+<span class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">thumb_up</span>
+<span>Yes, resolved my issue (342)</span>
+</button>
+<button class="flex-1 min-w-[200px] flex items-center justify-center gap-space-sm px-space-xl py-space-md rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-text-secondary font-label-md text-label-md transition-all group" onclick="document.getElementById('escalate-banner').classList.remove('hidden');" type="button">
+<span class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">thumb_down</span>
+<span>No, need more help (6)</span>
+</button>
+</div>
+<!-- Hidden Fallback Escalation Callout (Revealed or Permanent Alternative) -->
+<div class="w-full bg-surface-container-lowest p-space-md rounded-xl flex flex-col sm:flex-row items-center justify-between gap-space-md text-left mt-space-xs" id="escalate-banner">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-accent-electric text-xl">contact_support</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary">Issue still unresolved on your device?</span>
+<span class="font-caption text-caption text-text-secondary">Escalate directly to Tier 2 Network Operations with system diagnostics attached.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<a class="px-space-md py-space-xs rounded-xl bg-primary-container hover:bg-primary-dark text-white font-label-sm text-label-sm transition-all shadow-sm" data-path="create-ticket" href="#">
+              Create Ticket from KB
+            </a>
+<button class="px-space-md py-space-xs rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-text-primary font-label-sm text-label-sm transition-all" type="button">
+              Ask IT Concierge
+            </button>
+</div>
+</div>
+</section>
+<!-- Section 6: Related Articles Section (Matching SCREEN_2 Style) -->
+<section class="flex flex-col gap-space-md pt-space-md">
+<div class="flex items-center justify-between">
+<h2 class="text-headline-md font-headline-md text-text-primary">Related Runbooks &amp; Solutions</h2>
+<a class="text-accent-electric hover:underline font-label-sm text-label-sm flex items-center gap-1" data-path="knowledge-base" href="#">
+<span>Explore all Network Runbooks</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Related 1 -->
+<a class="bg-card-surface hover:bg-card-elevated rounded-xl p-space-lg flex flex-col justify-between gap-space-md transition-all hover:-translate-y-0.5 shadow-lg group" href="#">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-accent-light font-caption text-caption">Network</span>
+<span class="font-caption text-caption text-text-tertiary">4 min read</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-electric transition-colors line-clamp-2">
+                VPN Setup: WireGuard &amp; GlobalProtect Dual-Gateway Setup
+              </h4>
+<p class="font-body-sm text-body-sm text-text-secondary line-clamp-2">
+                Configuring split tunneling routing rules for low-latency engineering build clusters.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-status-success font-caption text-caption">
+<span>96% found helpful</span>
+<span class="material-symbols-outlined text-base text-text-tertiary group-hover:text-accent-electric transition-colors">arrow_outward</span>
+</div>
+</a>
+<!-- Related 2 -->
+<a class="bg-card-surface hover:bg-card-elevated rounded-xl p-space-lg flex flex-col justify-between gap-space-md transition-all hover:-translate-y-0.5 shadow-lg group" href="#">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-status-pending/20 text-status-pending font-caption text-caption">Account</span>
+<span class="font-caption text-caption text-text-tertiary">2 min read</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-electric transition-colors line-clamp-2">
+                Reset Password: Okta SSO &amp; FileVault Escrow
+              </h4>
+<p class="font-body-sm text-body-sm text-text-secondary line-clamp-2">
+                Emergency cryptographic key retrieval process during corporate device lockout incidents.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-status-success font-caption text-caption">
+<span>99% found helpful</span>
+<span class="material-symbols-outlined text-base text-text-tertiary group-hover:text-accent-electric transition-colors">arrow_outward</span>
+</div>
+</a>
+<!-- Related 3 -->
+<a class="bg-card-surface hover:bg-card-elevated rounded-xl p-space-lg flex flex-col justify-between gap-space-md transition-all hover:-translate-y-0.5 shadow-lg group" href="#">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-accent-light font-caption text-caption">Network</span>
+<span class="font-caption text-caption text-text-tertiary">3 min read</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-electric transition-colors line-clamp-2">
+                Network Gateway Latency Inspector Runbook
+              </h4>
+<p class="font-body-sm text-body-sm text-text-secondary line-clamp-2">
+                Diagnosing internal BGP flap events and jitter across high-density trading floors.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-status-success font-caption text-caption">
+<span>95% found helpful</span>
+<span class="material-symbols-outlined text-base text-text-tertiary group-hover:text-accent-electric transition-colors">arrow_outward</span>
+</div>
+</a>
+</div>
+</section>
+</article>
+<!-- Right-Side Sticky Contextual Rail (4 cols = ~28% Desktop) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-lg">
+<div class="sticky top-20 flex flex-col gap-space-lg">
+<!-- Table of Contents Widget with Visual Progress Tracker -->
+<nav class="bg-card-surface rounded-xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-text-primary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent-electric text-base">format_list_bulleted</span>
+              On this page
+            </span>
+<span class="font-caption text-caption text-text-tertiary">Quick Navigation</span>
+</div>
+<div class="flex flex-col gap-1 relative pl-2">
+<!-- Continuous Hairline Indicator -->
+<div class="absolute left-2.5 top-2 bottom-2 w-0.5 bg-surface-container-high"></div>
+<a class="group flex items-center gap-space-sm py-1.5 pl-3 rounded-lg text-text-primary hover:bg-surface-container transition-all relative z-10" href="#symptom-identification">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-electric ring-4 ring-card-surface"></span>
+<span class="font-body-sm text-body-sm text-text-primary font-medium group-hover:text-accent-electric">Symptom Identification</span>
+</a>
+<a class="group flex items-center gap-space-sm py-1.5 pl-3 rounded-lg text-text-secondary hover:bg-surface-container transition-all relative z-10" href="#step-1">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-high group-hover:bg-accent-electric ring-4 ring-card-surface"></span>
+<span class="font-body-sm text-body-sm group-hover:text-text-primary">Step 1: Certificate Verification</span>
+</a>
+<a class="group flex items-center gap-space-sm py-1.5 pl-3 rounded-lg text-text-secondary hover:bg-surface-container transition-all relative z-10" href="#step-2">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-high group-hover:bg-accent-electric ring-4 ring-card-surface"></span>
+<span class="font-body-sm text-body-sm group-hover:text-text-primary">Step 2: Flush DNS &amp; Interface Reset</span>
+</a>
+<a class="group flex items-center gap-space-sm py-1.5 pl-3 rounded-lg text-text-secondary hover:bg-surface-container transition-all relative z-10" href="#step-3">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-high group-hover:bg-accent-electric ring-4 ring-card-surface"></span>
+<span class="font-body-sm text-body-sm group-hover:text-text-primary">Step 3: Kandji Profile Re-sync</span>
+</a>
+<a class="group flex items-center gap-space-sm py-1.5 pl-3 rounded-lg text-text-secondary hover:bg-surface-container transition-all relative z-10" href="#automated-diagnostics">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-high group-hover:bg-accent-electric ring-4 ring-card-surface"></span>
+<span class="font-body-sm text-body-sm group-hover:text-text-primary">Automated Self-Diagnostics</span>
+</a>
+</div>
+</nav>
+<!-- Related Incidents & Tickets Widget -->
+<section class="bg-card-surface rounded-xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-text-primary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-status-warning text-base">confirmation_number</span>
+              Linked Incidents (2)
+            </span>
+<span class="font-caption text-caption text-text-tertiary">Live IT Ops</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Ticket Item 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex flex-col gap-space-xs hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center justify-between">
+<span class="font-code-meta text-code-meta text-accent-electric">#INC-00125</span>
+<span class="px-2 py-0.5 rounded-full bg-status-danger/15 text-status-danger font-caption text-caption font-semibold">High Priority</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-primary font-medium line-clamp-2">
+                Laptop disconnects when moving between 4th &amp; 5th floor APs
+              </p>
+<div class="flex items-center justify-between pt-1 text-text-tertiary font-caption text-caption">
+<span class="flex items-center gap-1 text-status-info">
+<span class="w-1.5 h-1.5 rounded-full bg-status-info"></span>
+                  In Progress
+                </span>
+<span>Assignee: Budi P.</span>
+</div>
+</div>
+<!-- Ticket Item 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex flex-col gap-space-xs hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center justify-between">
+<span class="font-code-meta text-code-meta text-accent-electric">#INC-00098</span>
+<span class="px-2 py-0.5 rounded-full bg-status-warning/15 text-status-warning font-caption text-caption font-semibold">Medium</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-primary font-medium line-clamp-2">
+                802.1X handshake timeout on MacBook Pro M3 Max
+              </p>
+<div class="flex items-center justify-between pt-1 text-text-tertiary font-caption text-caption">
+<span class="flex items-center gap-1 text-status-success">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+                  Resolved
+                </span>
+<span>Closed Yesterday</span>
+</div>
+</div>
+</div>
+<button class="w-full py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-text-secondary hover:text-text-primary font-label-sm text-label-sm flex items-center justify-center gap-1 transition-all" type="button">
+<span class="material-symbols-outlined text-sm">link</span>
+<span>+ Link Another Incident</span>
+</button>
+</section>
+<!-- Runbook Health & Governance Widget -->
+<section class="bg-card-surface rounded-xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-text-primary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent-light text-base">monitoring</span>
+              Runbook Governance
+            </span>
+<span class="font-code-meta text-code-meta text-status-success">ISO 27001</span>
+</div>
+<!-- Progress Ring Graphic / Telemetry Stat -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-text-tertiary uppercase tracking-wider">Escalation Deflection</span>
+<span class="font-headline-lg text-headline-lg text-text-primary">84.2%</span>
+<span class="font-caption text-caption text-status-success">+2.4% vs last month</span>
+</div>
+<div class="w-14 h-14 relative flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-accent-electric" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="84.2, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="material-symbols-outlined text-sm text-accent-electric absolute">trending_up</span>
+</div>
+</div>
+<div class="flex flex-col gap-1 text-text-secondary font-body-sm text-body-sm">
+<div class="flex items-center justify-between py-1">
+<span class="text-text-tertiary">Next Review:</span>
+<span class="font-medium text-text-primary">Dec 15, 2026</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<span class="text-text-tertiary">Audit Frequency:</span>
+<span class="font-medium text-text-primary">Quarterly Cycle</span>
+</div>
+</div>
+<button class="w-full py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-accent-light font-label-sm text-label-sm flex items-center justify-center gap-1 transition-all" onclick="alert('Feedback form opened: Submitting corrections to SecOps reviewers.');" type="button">
+<span class="material-symbols-outlined text-sm">rate_review</span>
+<span>Submit Correction / Feedback</span>
+</button>
+</section>
+</div>
+</aside>
+</div>
+</div></main></div></body></html>

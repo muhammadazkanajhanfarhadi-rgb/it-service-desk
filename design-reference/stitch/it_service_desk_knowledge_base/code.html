@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"border-hover":"rgba(59, 130, 246, 0.40)","secondary-container":"#045ecf","on-secondary-fixed-variant":"#004398","on-tertiary-fixed":"#001a42","on-secondary-container":"#d5e0ff","on-secondary-fixed":"#001a43","background":"#0c1321","on-primary-fixed-variant":"#003ea8","outline":"#8d90a0","tertiary-container":"#0f69dc","primary-dark":"#1D4ED8","on-primary-fixed":"#00174b","on-tertiary":"#002e6a","on-secondary":"#002d6c","on-surface":"#dce2f6","inverse-on-surface":"#2a3040","on-surface-variant":"#c3c6d7","tertiary-fixed":"#d8e2ff","inverse-surface":"#dce2f6","text-tertiary":"#64748B","text-disabled":"#475569","sidebar-surface":"#10182A","surface":"#0c1321","overlay-backdrop":"rgba(0, 0, 0, 0.60)","tertiary-fixed-dim":"#adc6ff","surface-variant":"#2e3544","card-elevated":"#16233F","surface-bright":"#323949","border-glass":"rgba(255, 255, 255, 0.08)","on-error-container":"#ffdad6","surface-container":"#19202e","accent-electric":"#4F8CFF","surface-tint":"#b4c5ff","status-info":"#38BDF8","text-primary":"#F8FAFC","primary-fixed-dim":"#b4c5ff","card-surface":"#121C31","status-warning":"#F59E0B","input-surface":"#0F1930","surface-container-high":"#232a39","on-tertiary-container":"#edf0ff","primary-fixed":"#dbe1ff","primary-container":"#2563eb","secondary-fixed-dim":"#afc6ff","border-subtle":"rgba(148, 163, 184, 0.14)","error":"#ffb4ab","status-danger":"#EF4444","error-container":"#93000a","surface-container-highest":"#2e3544","primary":"#b4c5ff","surface-container-low":"#151b2a","on-background":"#dce2f6","text-secondary":"#94A3B8","surface-container-lowest":"#070e1c","secondary":"#afc6ff","inverse-primary":"#0053db","outline-variant":"#434655","on-tertiary-fixed-variant":"#004395","app-bg":"#0B1220","surface-dim":"#0c1321","on-error":"#690005","on-primary-container":"#eeefff","status-success":"#22C55E","status-pending":"#A78BFA","on-primary":"#002a78","border-input":"rgba(148, 163, 184, 0.16)","accent-light":"#60A5FA","interactive-active-bg":"rgba(37, 99, 235, 0.18)","tertiary":"#adc6ff","secondary-fixed":"#d9e2ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-lg":"1rem","space-xs":"0.25rem","margin-desktop":"2rem","space-xl":"1.5rem","gutter":"1rem","space-2xl":"2rem","margin":"1rem","space-md":"0.75rem","gutter-desktop":"1.5rem","space-sm":"0.5rem"},fontFamily:{"headline-xl":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"caption":["Inter"],"headline-sm":["Inter"],"headline-xl-mobile":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"label-sm":["Inter"],"code-meta":["Inter"],"headline-lg":["Inter"],"body-sm":["Inter"]},fontSize:{"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"16px","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"caption":["11px",{"lineHeight":"14px","fontWeight":"400"}],"headline-sm":["15px",{"lineHeight":"20px","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"code-meta":["12px",{"lineHeight":"16px","fontWeight":"600"}],"headline-lg":["22px",{"lineHeight":"28px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}]}}}};</script></head><body class="bg-app-bg text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-sidebar-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-xl flex items-center gap-space-sm"><img alt="Apex Desk Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VKUVTXqCpH-FXGmoK-2kF4Tt2Dm-ELJWNCFuhJRqxpucrf4IryWidKtv_Q0i67U1DztVk9VzJC0EsZC-a1xPMoyWWek-zeUmUQrolyMIxGtdrX_HloMIiTdV0dL-dQC5QOeFeXOaoHF4wjDBw80_QhVfa9HVVIO2AcIxk-DSzSILIDugmjsidWD6D0DWWMHSP0kOcZ83Y-Tgw13zy8zqj4TqsCM5GHesvHzCzQa9YO"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight">Apex Desk</span><span class="font-caption text-caption text-text-tertiary">Enterprise IT Ops</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Main</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-white shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl"><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="dashboard" href="#"><span>Dashboard</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="my-tickets" href="#"><span>My Tickets</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="all-tickets" href="#"><span>All Tickets</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="create-ticket" href="#"><span>Create Ticket</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="service-catalog" href="#"><span>Service Catalog</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="assets" href="#"><span>Assets</span></a><a aria-current="page" class="flex items-center px-space-md py-space-sm transition-all font-body-md bg-primary-container text-white shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl" data-path="knowledge-base" href="#"><span>Knowledge Base</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="reports" href="#"><span>Reports</span></a></nav></div><div class="px-space-md py-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-text-tertiary uppercase tracking-wider">Administration</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-white shadow-[0_0_30px_rgba(37,99,235,0.25)] rounded-xl"><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="users" href="#"><span>Users</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="categories" href="#"><span>Categories</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="sla" href="#"><span>SLA</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="settings" href="#"><span>Settings</span></a></nav></div></div><div class="p-space-md bg-surface-container-lowest m-space-md rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><div class="relative flex-shrink-0"><img alt="Azka Avatar" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-status-success"></span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-text-primary truncate">Azka</span><span class="font-caption text-caption text-text-secondary truncate">Incident Lead</span></div></div><a class="text-on-surface-variant hover:text-status-danger p-space-xs rounded-lg transition-colors flex items-center justify-center" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-xl">logout</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 px-margin-desktop flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><nav class="hidden sm:flex items-center gap-space-sm font-body-sm text-body-sm text-text-secondary"><span class="hover:text-text-primary cursor-pointer transition-colors">Home</span><span class="text-outline-variant font-caption text-caption">/</span><span class="hover:text-text-primary cursor-pointer transition-colors">Knowledge Base</span><span class="text-outline-variant font-caption text-caption">/</span><span class="text-text-primary font-label-md text-label-md">IT Runbooks &amp; Solutions</span></nav></div><div class="flex items-center gap-space-lg"><div class="relative hidden md:flex items-center"><div class="absolute left-space-md flex items-center pointer-events-none text-text-tertiary"><span class="material-symbols-outlined text-lg">search</span></div><input class="w-72 h-10 bg-input-surface text-text-primary placeholder:text-text-tertiary pl-10 pr-16 rounded-xl font-body-md text-body-md focus:bg-surface-container focus:text-text-primary transition-all outline-none" placeholder="Search incidents, tickets, KB..." type="text"/><div class="absolute right-space-sm flex items-center gap-space-xs pointer-events-none"><kbd class="font-code-meta text-code-meta px-1.5 py-0.5 rounded bg-surface-container-high text-text-secondary">⌘K</kbd></div></div><div class="flex items-center gap-space-sm"><button class="relative p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-danger"></span></button><button class="p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-colors" type="button"><span class="material-symbols-outlined text-xl">help</span></button><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-full"><span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span><span class="font-label-sm text-label-sm text-status-success hidden lg:inline">Operational</span></div></div><div class="flex items-center gap-space-sm pl-space-xs border-l border-border-subtle"><div class="relative"><img alt="Azka Avatar" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmLjKL-xOQMCae7d-uAGy0Cs6Q5L__xaUnB7_XXWywtYN6KkL0dIXWLosVh0xAKJEMW4bgAdWn0v_jiTzAsjuDmc6kHL01O7YoeqK2_DmqD6uP7B0KXKvigAMwdtTedXYZ1cVmJqblq4Ei7CGaLV0ZkoUFYZDkODquc0mn7ZAsnuenU6pMIcYJ31mSTNB5gNFigt7HDngo1a0HZh_TkkKH7KCCxUMo_ocj8wYNAU"/><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-status-success"></span></div><div class="hidden xl:flex flex-col"><span class="font-label-md text-label-md text-text-primary leading-tight">Azka</span><span class="font-caption text-caption text-text-secondary leading-tight">Incident Lead</span></div></div></div></header><main class="w-full pt-16 bg-app-bg px-margin-desktop min-h-screen"><div class="flex flex-col w-full pb-space-2xl">
+<!-- System Status Alert / Live Ticker -->
+<div class="w-full mb-space-xl">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low px-space-lg py-space-sm shadow-sm flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="flex items-center gap-space-xs px-2.5 py-0.5 rounded-full bg-status-success/10 text-status-success font-label-sm text-label-sm shrink-0">
+<span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span>
+<span>ANNOUNCEMENT</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-primary truncate">
+<span class="font-label-sm text-label-sm text-status-info mr-1.5">[Resolved]</span>
+          Tokyo HQ Wi-Fi AP firmware update completed successfully at 06:00 JST. All 802.1X enterprise profiles operational.
+        </p>
+</div>
+<div class="hidden sm:flex items-center gap-space-sm shrink-0 text-text-tertiary font-caption text-caption">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>Synced 4m ago</span>
+</div>
+</div>
+</div>
+<!-- Hero / Search-First Section -->
+<div class="relative w-full rounded-2xl bg-card-surface px-space-xl py-space-2xl md:px-12 md:py-16 shadow-[0_8px_30px_rgba(0,0,0,0.18)] overflow-hidden mb-space-2xl">
+<!-- Atmospheric Ambient Radial Glow -->
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[340px] bg-gradient-to-b from-primary-container/20 via-accent-electric/10 to-transparent blur-3xl pointer-events-none rounded-full"></div>
+<div class="absolute -bottom-24 -right-16 w-80 h-80 bg-primary-container/10 blur-3xl pointer-events-none rounded-full"></div>
+<div class="relative z-10 max-w-3xl mx-auto flex flex-col items-center text-center">
+<!-- Eyebrow Tag -->
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-surface-container-high/80 text-text-secondary font-code-meta text-code-meta uppercase tracking-wider mb-space-md">
+<span class="material-symbols-outlined text-accent-light text-sm">auto_stories</span>
+<span>Apex Verified Runbook Engine</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-headline-xl text-headline-xl text-text-primary tracking-tight mb-space-sm">
+        How can we help?
+      </h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-text-secondary max-w-xl mb-space-xl leading-relaxed">
+        Search through verified IT runbooks, self-service resolution guides, and hardware documentation.
+      </p>
+<!-- Search Bar -->
+<div class="w-full relative group">
+<div class="absolute inset-y-0 left-space-lg flex items-center pointer-events-none text-text-tertiary group-focus-within:text-accent-light transition-colors">
+<span class="material-symbols-outlined text-2xl">search</span>
+</div>
+<input class="w-full h-14 pl-14 pr-24 rounded-xl bg-input-surface text-text-primary placeholder:text-text-tertiary font-body-md text-body-md focus:bg-surface-container focus:text-text-primary transition-all outline-none shadow-[0_4px_20px_rgba(0,0,0,0.25)] focus:shadow-[0_0_30px_rgba(37,99,235,0.25)]" id="kbSearchInput" placeholder="Search IT Knowledge Base (e.g. WiFi setup, Okta MFA, VPN configuration...)" type="text"/>
+<div class="absolute inset-y-0 right-space-md flex items-center gap-space-xs">
+<span class="hidden sm:inline-flex items-center gap-0.5 px-2 py-1 rounded bg-surface-container-high text-text-secondary font-code-meta text-code-meta">
+            ⌘K
+          </span>
+<button aria-label="Submit search" class="h-9 px-3 rounded-lg bg-primary-container text-white hover:bg-accent-electric transition-colors flex items-center justify-center shadow-[0_0_16px_rgba(37,99,235,0.35)]" type="button">
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Quick Search Chips -->
+<div class="flex flex-wrap items-center justify-center gap-space-xs mt-space-lg text-left">
+<span class="font-caption text-caption text-text-tertiary uppercase tracking-wider mr-1">Frequent:</span>
+<button class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-text-secondary hover:text-text-primary font-label-sm text-label-sm transition-all hover:scale-[1.02]" type="button">
+          Global VPN Profile
+        </button>
+<button class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-text-secondary hover:text-text-primary font-label-sm text-label-sm transition-all hover:scale-[1.02]" type="button">
+          macOS Sequoia Update
+        </button>
+<button class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-text-secondary hover:text-text-primary font-label-sm text-label-sm transition-all hover:scale-[1.02]" type="button">
+          Printer Driver
+        </button>
+<button class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-text-secondary hover:text-text-primary font-label-sm text-label-sm transition-all hover:scale-[1.02]" type="button">
+          Slack SSO
+        </button>
+<button class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-text-secondary hover:text-text-primary font-label-sm text-label-sm transition-all hover:scale-[1.02]" type="button">
+          Zero-Touch Enrollment
+        </button>
+</div>
+</div>
+</div>
+<!-- Telemetry Strip / Metrics Snapshot -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md mb-space-2xl">
+<div class="rounded-xl bg-card-surface p-space-lg shadow-sm flex items-center justify-between">
+<div>
+<p class="font-caption text-caption text-text-tertiary uppercase tracking-wider">Indexed Runbooks</p>
+<p class="font-headline-lg text-headline-lg text-text-primary mt-1">129</p>
+</div>
+<div class="w-10 h-10 rounded-xl bg-primary-container/15 flex items-center justify-center text-accent-light">
+<span class="material-symbols-outlined">menu_book</span>
+</div>
+</div>
+<div class="rounded-xl bg-card-surface p-space-lg shadow-sm flex items-center justify-between">
+<div>
+<p class="font-caption text-caption text-text-tertiary uppercase tracking-wider">Avg Resolution Time</p>
+<p class="font-headline-lg text-headline-lg text-status-success mt-1">4.2 min</p>
+</div>
+<div class="w-10 h-10 rounded-xl bg-status-success/15 flex items-center justify-center text-status-success">
+<span class="material-symbols-outlined">timer</span>
+</div>
+</div>
+<div class="rounded-xl bg-card-surface p-space-lg shadow-sm flex items-center justify-between">
+<div>
+<p class="font-caption text-caption text-text-tertiary uppercase tracking-wider">Helpfulness Rate</p>
+<p class="font-headline-lg text-headline-lg text-text-primary mt-1">97.8%</p>
+</div>
+<div class="w-10 h-10 rounded-xl bg-status-info/15 flex items-center justify-center text-status-info">
+<span class="material-symbols-outlined">thumb_up</span>
+</div>
+</div>
+<div class="rounded-xl bg-card-surface p-space-lg shadow-sm flex items-center justify-between">
+<div>
+<p class="font-caption text-caption text-text-tertiary uppercase tracking-wider">Escalation Avoidance</p>
+<p class="font-headline-lg text-headline-lg text-accent-electric mt-1">82.4%</p>
+</div>
+<div class="w-10 h-10 rounded-xl bg-accent-electric/15 flex items-center justify-center text-accent-electric">
+<span class="material-symbols-outlined">verified</span>
+</div>
+</div>
+</div>
+<!-- Knowledge Base Categories Section -->
+<div class="flex flex-col w-full mb-space-2xl">
+<div class="flex items-center justify-between mb-space-lg">
+<div>
+<h2 class="font-headline-md text-headline-md text-text-primary">Knowledge Categories</h2>
+<p class="font-body-sm text-body-sm text-text-secondary mt-0.5">Explore by technology domain, operational infrastructure, and tooling</p>
+</div>
+<span class="font-code-meta text-code-meta text-text-tertiary">6 DOMAINS ACTIVE</span>
+</div>
+<!-- Category Grid (6 Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- 1. Network -->
+<a class="group block rounded-2xl bg-card-surface p-space-xl transition-all duration-200 hover:-translate-y-1 hover:bg-card-elevated shadow-sm hover:shadow-[0_16px_50px_rgba(0,0,0,0.28)]" href="#">
+<div class="flex items-start justify-between mb-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container/15 group-hover:bg-primary-container/25 text-accent-light flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-2xl">wifi</span>
+</div>
+<span class="font-caption text-caption text-status-info bg-status-info/10 px-2 py-0.5 rounded-full font-semibold">2 Runbooks</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-light transition-colors mb-space-xs flex items-center gap-1.5">
+          Network
+          <span class="material-symbols-outlined text-base opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mb-space-md line-clamp-2">
+          Routers, DNS, IP assignment, Wi-Fi coverage, and VPN gateways.
+        </p>
+<div class="pt-space-sm flex items-center justify-between text-text-tertiary font-label-sm text-label-sm">
+<span>18 Articles</span>
+<span class="text-accent-electric group-hover:translate-x-1 transition-transform inline-flex items-center">
+            View Articles
+          </span>
+</div>
+</a>
+<!-- 2. Hardware -->
+<a class="group block rounded-2xl bg-card-surface p-space-xl transition-all duration-200 hover:-translate-y-1 hover:bg-card-elevated shadow-sm hover:shadow-[0_16px_50px_rgba(0,0,0,0.28)]" href="#">
+<div class="flex items-start justify-between mb-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container/15 group-hover:bg-primary-container/25 text-accent-light flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-2xl">laptop_mac</span>
+</div>
+<span class="font-caption text-caption text-status-info bg-status-info/10 px-2 py-0.5 rounded-full font-semibold">5 Runbooks</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-light transition-colors mb-space-xs flex items-center gap-1.5">
+          Hardware
+          <span class="material-symbols-outlined text-base opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mb-space-md line-clamp-2">
+          MacBook Pro, ThinkPad, dock stations, studio displays, and peripherals.
+        </p>
+<div class="pt-space-sm flex items-center justify-between text-text-tertiary font-label-sm text-label-sm">
+<span>24 Articles</span>
+<span class="text-accent-electric group-hover:translate-x-1 transition-transform inline-flex items-center">
+            View Articles
+          </span>
+</div>
+</a>
+<!-- 3. Software -->
+<a class="group block rounded-2xl bg-card-surface p-space-xl transition-all duration-200 hover:-translate-y-1 hover:bg-card-elevated shadow-sm hover:shadow-[0_16px_50px_rgba(0,0,0,0.28)]" href="#">
+<div class="flex items-start justify-between mb-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container/15 group-hover:bg-primary-container/25 text-accent-light flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-2xl">terminal</span>
+</div>
+<span class="font-caption text-caption text-status-info bg-status-info/10 px-2 py-0.5 rounded-full font-semibold">4 Runbooks</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-light transition-colors mb-space-xs flex items-center gap-1.5">
+          Software
+          <span class="material-symbols-outlined text-base opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mb-space-md line-clamp-2">
+          OS updates, standard developer toolchains, licensed apps, and utilities.
+        </p>
+<div class="pt-space-sm flex items-center justify-between text-text-tertiary font-label-sm text-label-sm">
+<span>32 Articles</span>
+<span class="text-accent-electric group-hover:translate-x-1 transition-transform inline-flex items-center">
+            View Articles
+          </span>
+</div>
+</a>
+<!-- 4. Account -->
+<a class="group block rounded-2xl bg-card-surface p-space-xl transition-all duration-200 hover:-translate-y-1 hover:bg-card-elevated shadow-sm hover:shadow-[0_16px_50px_rgba(0,0,0,0.28)]" href="#">
+<div class="flex items-start justify-between mb-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container/15 group-hover:bg-primary-container/25 text-accent-light flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-2xl">manage_accounts</span>
+</div>
+<span class="font-caption text-caption text-status-info bg-status-info/10 px-2 py-0.5 rounded-full font-semibold">1 Runbook</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-light transition-colors mb-space-xs flex items-center gap-1.5">
+          Account
+          <span class="material-symbols-outlined text-base opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mb-space-md line-clamp-2">
+          Okta SSO, Google Workspace, password recovery, and role delegations.
+        </p>
+<div class="pt-space-sm flex items-center justify-between text-text-tertiary font-label-sm text-label-sm">
+<span>15 Articles</span>
+<span class="text-accent-electric group-hover:translate-x-1 transition-transform inline-flex items-center">
+            View Articles
+          </span>
+</div>
+</a>
+<!-- 5. Security -->
+<a class="group block rounded-2xl bg-card-surface p-space-xl transition-all duration-200 hover:-translate-y-1 hover:bg-card-elevated shadow-sm hover:shadow-[0_16px_50px_rgba(0,0,0,0.28)]" href="#">
+<div class="flex items-start justify-between mb-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container/15 group-hover:bg-primary-container/25 text-accent-light flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-2xl">security</span>
+</div>
+<span class="font-caption text-caption text-status-info bg-status-info/10 px-2 py-0.5 rounded-full font-semibold">6 Runbooks</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-light transition-colors mb-space-xs flex items-center gap-1.5">
+          Security
+          <span class="material-symbols-outlined text-base opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mb-space-md line-clamp-2">
+          FileVault encryption, Kandji MDM, YubiKey setup, and compliance guidelines.
+        </p>
+<div class="pt-space-sm flex items-center justify-between text-text-tertiary font-label-sm text-label-sm">
+<span>21 Articles</span>
+<span class="text-accent-electric group-hover:translate-x-1 transition-transform inline-flex items-center">
+            View Articles
+          </span>
+</div>
+</a>
+<!-- 6. Applications -->
+<a class="group block rounded-2xl bg-card-surface p-space-xl transition-all duration-200 hover:-translate-y-1 hover:bg-card-elevated shadow-sm hover:shadow-[0_16px_50px_rgba(0,0,0,0.28)]" href="#">
+<div class="flex items-start justify-between mb-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container/15 group-hover:bg-primary-container/25 text-accent-light flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-2xl">grid_view</span>
+</div>
+<span class="font-caption text-caption text-status-info bg-status-info/10 px-2 py-0.5 rounded-full font-semibold">3 Runbooks</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-light transition-colors mb-space-xs flex items-center gap-1.5">
+          Applications
+          <span class="material-symbols-outlined text-base opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mb-space-md line-clamp-2">
+          Datadog, Jira, Slack enterprise grid, Figma licenses, and Zoom rooms.
+        </p>
+<div class="pt-space-sm flex items-center justify-between text-text-tertiary font-label-sm text-label-sm">
+<span>19 Articles</span>
+<span class="text-accent-electric group-hover:translate-x-1 transition-transform inline-flex items-center">
+            View Articles
+          </span>
+</div>
+</a>
+</div>
+</div>
+<!-- Popular Articles Section -->
+<div class="flex flex-col w-full mb-space-2xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="material-symbols-outlined text-accent-electric text-lg">local_fire_department</span>
+<h2 class="font-headline-md text-headline-md text-text-primary">Popular Articles</h2>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">Most viewed and highly rated solutions across the organization</p>
+</div>
+<!-- Filter/Sorting Pills -->
+<div class="inline-flex p-1 rounded-xl bg-surface-container-low shrink-0 self-start md:self-auto">
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-white font-label-sm text-label-sm shadow-[0_0_15px_rgba(37,99,235,0.3)] transition-all" type="button">
+          Most Helpful
+        </button>
+<button class="px-3 py-1.5 rounded-lg text-text-secondary hover:text-text-primary font-label-sm text-label-sm transition-colors" type="button">
+          Recently Updated
+        </button>
+<button class="px-3 py-1.5 rounded-lg text-text-secondary hover:text-text-primary font-label-sm text-label-sm transition-colors" type="button">
+          Highest Rated
+        </button>
+</div>
+</div>
+<!-- Articles Grid (6 High-Impact Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Article 1: WiFi Troubleshooting -->
+<div class="group flex flex-col justify-between rounded-2xl bg-card-surface p-space-xl shadow-sm hover:shadow-[0_16px_50px_rgba(0,0,0,0.28)] hover:-translate-y-1 transition-all duration-200">
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-md">
+<span class="px-2.5 py-0.5 rounded-full bg-status-info/15 text-status-info font-caption text-caption font-semibold">
+              Network
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-primary-container/20 text-accent-light font-code-meta text-code-meta">
+              Verified Runbook
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-light transition-colors mb-space-xs line-clamp-1">
+            WiFi Troubleshooting
+          </h3>
+<p class="font-body-sm text-body-sm text-text-secondary line-clamp-3 mb-space-lg">
+            Step-by-step resolution for 802.1X corporate Wi-Fi drops, roaming lag, and certificate re-installation.
+          </p>
+</div>
+<div class="space-y-space-sm pt-space-md border-t border-border-subtle/40">
+<div class="flex items-center justify-between font-caption text-caption text-text-tertiary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+              3 min read
+            </span>
+<span class="flex items-center gap-1 text-status-success font-medium">
+<span class="material-symbols-outlined text-sm">thumb_up</span>
+              98% Helpful (342)
+            </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-caption text-caption text-text-tertiary">Updated 2 days ago</span>
+<a class="font-label-sm text-label-sm text-accent-light group-hover:text-white group-hover:translate-x-1 transition-all inline-flex items-center gap-1" href="#">
+              Read Article <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Article 2: Reset Password -->
+<div class="group flex flex-col justify-between rounded-2xl bg-card-surface p-space-xl shadow-sm hover:shadow-[0_16px_50px_rgba(0,0,0,0.28)] hover:-translate-y-1 transition-all duration-200">
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-md">
+<span class="px-2.5 py-0.5 rounded-full bg-status-info/15 text-status-info font-caption text-caption font-semibold">
+              Account
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-status-success/20 text-status-success font-code-meta text-code-meta">
+              Instant Self-Service
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-light transition-colors mb-space-xs line-clamp-1">
+            Reset Password
+          </h3>
+<p class="font-body-sm text-body-sm text-text-secondary line-clamp-3 mb-space-lg">
+            Self-service recovery for Active Directory, Okta verify tokens, and macOS FileVault escrow password.
+          </p>
+</div>
+<div class="space-y-space-sm pt-space-md border-t border-border-subtle/40">
+<div class="flex items-center justify-between font-caption text-caption text-text-tertiary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+              2 min read
+            </span>
+<span class="flex items-center gap-1 text-status-success font-medium">
+<span class="material-symbols-outlined text-sm">thumb_up</span>
+              99% Helpful (814)
+            </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-caption text-caption text-text-tertiary">Updated 1 week ago</span>
+<a class="font-label-sm text-label-sm text-accent-light group-hover:text-white group-hover:translate-x-1 transition-all inline-flex items-center gap-1" href="#">
+              Read Article <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Article 3: VPN Setup -->
+<div class="group flex flex-col justify-between rounded-2xl bg-card-surface p-space-xl shadow-sm hover:shadow-[0_16px_50px_rgba(0,0,0,0.28)] hover:-translate-y-1 transition-all duration-200">
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-md">
+<span class="px-2.5 py-0.5 rounded-full bg-status-info/15 text-status-info font-caption text-caption font-semibold">
+              Network
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-primary-container/20 text-accent-light font-code-meta text-code-meta">
+              Verified Runbook
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-light transition-colors mb-space-xs line-clamp-1">
+            VPN Setup
+          </h3>
+<p class="font-body-sm text-body-sm text-text-secondary line-clamp-3 mb-space-lg">
+            Configuring WireGuard and GlobalProtect VPN clients with split-tunneling and geo-redundant gateways.
+          </p>
+</div>
+<div class="space-y-space-sm pt-space-md border-t border-border-subtle/40">
+<div class="flex items-center justify-between font-caption text-caption text-text-tertiary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+              4 min read
+            </span>
+<span class="flex items-center gap-1 text-status-success font-medium">
+<span class="material-symbols-outlined text-sm">thumb_up</span>
+              96% Helpful (528)
+            </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-caption text-caption text-text-tertiary">Updated 3 days ago</span>
+<a class="font-label-sm text-label-sm text-accent-light group-hover:text-white group-hover:translate-x-1 transition-all inline-flex items-center gap-1" href="#">
+              Read Article <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Article 4: Printer Offline -->
+<div class="group flex flex-col justify-between rounded-2xl bg-card-surface p-space-xl shadow-sm hover:shadow-[0_16px_50px_rgba(0,0,0,0.28)] hover:-translate-y-1 transition-all duration-200">
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-md">
+<span class="px-2.5 py-0.5 rounded-full bg-status-info/15 text-status-info font-caption text-caption font-semibold">
+              Hardware
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-status-warning/20 text-status-warning font-code-meta text-code-meta">
+              Quick Fix
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-light transition-colors mb-space-xs line-clamp-1">
+            Printer Offline
+          </h3>
+<p class="font-body-sm text-body-sm text-text-secondary line-clamp-3 mb-space-lg">
+            Troubleshooting Tokyo HQ and remote office badge release printing, spooler queues, and IPP driver installation.
+          </p>
+</div>
+<div class="space-y-space-sm pt-space-md border-t border-border-subtle/40">
+<div class="flex items-center justify-between font-caption text-caption text-text-tertiary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+              3 min read
+            </span>
+<span class="flex items-center gap-1 text-status-success font-medium">
+<span class="material-symbols-outlined text-sm">thumb_up</span>
+              94% Helpful (192)
+            </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-caption text-caption text-text-tertiary">Updated 5 days ago</span>
+<a class="font-label-sm text-label-sm text-accent-light group-hover:text-white group-hover:translate-x-1 transition-all inline-flex items-center gap-1" href="#">
+              Read Article <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Article 5: Install Approved Software -->
+<div class="group flex flex-col justify-between rounded-2xl bg-card-surface p-space-xl shadow-sm hover:shadow-[0_16px_50px_rgba(0,0,0,0.28)] hover:-translate-y-1 transition-all duration-200">
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-md">
+<span class="px-2.5 py-0.5 rounded-full bg-status-info/15 text-status-info font-caption text-caption font-semibold">
+              Applications
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-status-pending/20 text-status-pending font-code-meta text-code-meta">
+              Guide
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-light transition-colors mb-space-xs line-clamp-1">
+            Install Approved Software
+          </h3>
+<p class="font-body-sm text-body-sm text-text-secondary line-clamp-3 mb-space-lg">
+            Requesting and installing software via Kandji Self Service portal without requiring root administrator elevation.
+          </p>
+</div>
+<div class="space-y-space-sm pt-space-md border-t border-border-subtle/40">
+<div class="flex items-center justify-between font-caption text-caption text-text-tertiary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+              5 min read
+            </span>
+<span class="flex items-center gap-1 text-status-success font-medium">
+<span class="material-symbols-outlined text-sm">thumb_up</span>
+              97% Helpful (419)
+            </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-caption text-caption text-text-tertiary">Updated Oct 28, 2024</span>
+<a class="font-label-sm text-label-sm text-accent-light group-hover:text-white group-hover:translate-x-1 transition-all inline-flex items-center gap-1" href="#">
+              Read Article <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Article 6: Developer Environment Setup -->
+<div class="group flex flex-col justify-between rounded-2xl bg-card-surface p-space-xl shadow-sm hover:shadow-[0_16px_50px_rgba(0,0,0,0.28)] hover:-translate-y-1 transition-all duration-200">
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-md">
+<span class="px-2.5 py-0.5 rounded-full bg-status-info/15 text-status-info font-caption text-caption font-semibold">
+              Software
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-status-pending/20 text-status-pending font-code-meta text-code-meta">
+              Guide
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-accent-light transition-colors mb-space-xs line-clamp-1">
+            Developer Environment Setup (Docker &amp; Local K8s)
+          </h3>
+<p class="font-body-sm text-body-sm text-text-secondary line-clamp-3 mb-space-lg">
+            Configuring Rancher Desktop, Docker credentials, and internal private container registry authentication.
+          </p>
+</div>
+<div class="space-y-space-sm pt-space-md border-t border-border-subtle/40">
+<div class="flex items-center justify-between font-caption text-caption text-text-tertiary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+              6 min read
+            </span>
+<span class="flex items-center gap-1 text-status-success font-medium">
+<span class="material-symbols-outlined text-sm">thumb_up</span>
+              99% Helpful (620)
+            </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-caption text-caption text-text-tertiary">Updated Yesterday</span>
+<a class="font-label-sm text-label-sm text-accent-light group-hover:text-white group-hover:translate-x-1 transition-all inline-flex items-center gap-1" href="#">
+              Read Article <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Visual Workflow / Troubleshooting Walkthrough Graphic -->
+<div class="rounded-2xl bg-card-surface p-space-xl mb-space-2xl shadow-sm">
+<div class="flex flex-col lg:flex-row items-center justify-between gap-space-xl">
+<div class="max-w-md">
+<span class="px-2 py-0.5 rounded bg-status-info/15 text-status-info font-code-meta text-code-meta uppercase">Automated Diagnoser</span>
+<h3 class="font-headline-md text-headline-md text-text-primary mt-2">Network Gateway Latency Inspector</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Real-time trace to Tokyo Core Edge DC and regional egress endpoints. Run an instant diagnosis before escalating.</p>
+<div class="mt-space-lg flex items-center gap-space-md">
+<button class="px-4 py-2 rounded-xl bg-primary-container text-white font-label-md text-label-md hover:bg-accent-electric transition-all shadow-[0_0_20px_rgba(37,99,235,0.25)] flex items-center gap-2" id="runDiagnosticBtn" type="button">
+<span class="material-symbols-outlined text-base">play_arrow</span>
+            Run Live Test
+          </button>
+<span class="font-caption text-caption text-text-secondary" id="diagnosticStatus">Ready to test connection</span>
+</div>
+</div>
+<!-- Live Interactive SVG Diagram -->
+<div class="w-full lg:w-auto flex-1 max-w-xl rounded-xl bg-surface-container-lowest p-space-md overflow-hidden">
+<div class="flex items-center justify-between font-code-meta text-code-meta text-text-tertiary mb-3 px-1">
+<span>ENDPOINT TRACE ROUTE</span>
+<span class="text-status-success flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-status-success"></span> Latency 14ms</span>
+</div>
+<svg class="w-full h-24" fill="none" viewbox="0 0 500 80" xmlns="http://www.w3.org/2000/svg">
+<!-- Connection Path Line -->
+<path d="M 40 40 L 150 40 L 260 40 L 370 40 L 460 40" stroke="rgba(148, 163, 184, 0.2)" stroke-dasharray="4 4" stroke-width="2"></path>
+<path class="transition-all duration-1000" d="M 40 40 L 460 40" id="activeTraceLine" stroke="#3B82F6" stroke-dasharray="420" stroke-dashoffset="0" stroke-width="2"></path>
+<!-- Node 1: Workstation -->
+<circle cx="40" cy="40" fill="#121C31" r="16" stroke="#3B82F6" stroke-width="2"></circle>
+<text fill="#F8FAFC" font-family="Inter" font-size="9" font-weight="600" text-anchor="middle" x="40" y="44">HOST</text>
+<!-- Node 2: AP -->
+<circle cx="150" cy="40" fill="#121C31" r="14" stroke="#22C55E" stroke-width="2"></circle>
+<text fill="#F8FAFC" font-family="Inter" font-size="8" text-anchor="middle" x="150" y="44">AP-08</text>
+<!-- Node 3: VPN Gateway -->
+<circle cx="260" cy="40" fill="#121C31" r="14" stroke="#3B82F6" stroke-width="2"></circle>
+<text fill="#F8FAFC" font-family="Inter" font-size="8" text-anchor="middle" x="260" y="44">GW-TYO</text>
+<!-- Node 4: Radius SSO -->
+<circle cx="370" cy="40" fill="#121C31" r="14" stroke="#3B82F6" stroke-width="2"></circle>
+<text fill="#F8FAFC" font-family="Inter" font-size="8" text-anchor="middle" x="370" y="44">OKTA</text>
+<!-- Node 5: Cloud WAN -->
+<circle cx="460" cy="40" fill="#121C31" r="16" stroke="#22C55E" stroke-width="2"></circle>
+<text fill="#F8FAFC" font-family="Inter" font-size="9" font-weight="600" text-anchor="middle" x="460" y="44">WAN</text>
+</svg>
+</div>
+</div>
+</div>
+<!-- Help Desk Support Banner -->
+<div class="relative w-full rounded-2xl bg-gradient-to-r from-card-elevated via-card-surface to-card-elevated p-space-xl md:p-space-2xl shadow-[0_16px_50px_rgba(0,0,0,0.28)] overflow-hidden">
+<!-- Subtle glow accents -->
+<div class="absolute -right-20 -bottom-20 w-72 h-72 bg-primary-container/20 blur-3xl pointer-events-none rounded-full"></div>
+<div class="absolute -left-20 -top-20 w-72 h-72 bg-accent-electric/15 blur-3xl pointer-events-none rounded-full"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-xl">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-status-success/15 text-status-success font-code-meta text-code-meta uppercase mb-space-sm">
+<span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span>
+<span>TIER 1 &amp; 2 DISPATCH ONLINE</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-text-primary tracking-tight">
+          Still can't find what you're looking for?
+        </h3>
+<p class="font-body-md text-body-md text-text-secondary mt-1 max-w-xl">
+          Our IT service desk team is online 24/7. Create a support ticket or initiate an emergency live chat with a tier 2 technician.
+        </p>
+<!-- Quick War Room Audio Link -->
+<div class="flex items-center gap-space-sm mt-space-md font-body-sm text-body-sm">
+<a class="text-status-warning hover:text-amber-300 transition-colors inline-flex items-center gap-1 font-label-sm text-label-sm" href="#">
+<span class="material-symbols-outlined text-base">emergency_share</span>
+            Active Incident? Join War Room Audio Bridge
+          </a>
+<span class="text-outline-variant font-caption text-caption">•</span>
+<span class="text-text-tertiary font-caption text-caption">SLA: P1 &lt; 15 mins</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-md shrink-0">
+<a class="h-11 px-5 rounded-xl bg-surface-container-high/80 hover:bg-surface-container-highest text-text-primary hover:text-status-info font-label-md text-label-md transition-all flex items-center gap-2 shadow-sm" href="#">
+<span class="material-symbols-outlined text-xl">forum</span>
+          Ask IT Concierge
+        </a>
+<a class="h-11 px-6 rounded-xl bg-primary-container text-white font-label-md text-label-md transition-all hover:bg-accent-electric shadow-[0_0_30px_rgba(37,99,235,0.35)] flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-xl">add_circle</span>
+          Create Ticket
+        </a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Keyboard Shortcut Handler for Search [⌘K / Ctrl+K]
+  document.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+      e.preventDefault();
+      const input = document.getElementById('kbSearchInput');
+      if (input) {
+        input.focus();
+        input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  });
+
+  // Diagnostic Runner Interactive Simulation
+  const runBtn = document.getElementById('runDiagnosticBtn');
+  const traceLine = document.getElementById('activeTraceLine');
+  const statusLabel = document.getElementById('diagnosticStatus');
+
+  if (runBtn && traceLine && statusLabel) {
+    runBtn.addEventListener('click', () => {
+      runBtn.disabled = true;
+      runBtn.classList.add('opacity-75');
+      statusLabel.textContent = 'Tracing packet routes to gateway...';
+      statusLabel.className = 'font-caption text-caption text-accent-electric animate-pulse';
+
+      // Reset and trigger line dash transition
+      traceLine.style.strokeDashoffset = '420';
+      setTimeout(() => {
+        traceLine.style.strokeDashoffset = '0';
+      }, 50);
+
+      setTimeout(() => {
+        statusLabel.textContent = 'All 5 edge hops OK • Latency: 11ms';
+        statusLabel.className = 'font-caption text-caption text-status-success font-semibold';
+        runBtn.disabled = false;
+        runBtn.classList.remove('opacity-75');
+      }, 1100);
+    });
+  }
+
+  // Quick tag filler for the search bar
+  document.querySelectorAll('.rounded-full button, .gap-space-xs button').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const input = document.getElementById('kbSearchInput');
+      if (input) {
+        input.value = btn.innerText.trim();
+        input.focus();
+      }
+    });
+  });
+</script></main></div></body></html>
